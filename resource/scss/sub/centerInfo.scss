@@ -1,0 +1,153 @@
+@import "../_mixin";
+
+/* tab */
+.tab {
+    @include d-flex;
+
+    li {
+        @include d-flex;
+        height: 7rem;
+        flex: 1;
+
+        font : {
+            size: 2.2rem;
+            weight: 500;
+        }
+
+        color:#555555;
+        background: #eef1f6;
+
+        &.current {
+            position: relative;
+            color: #000000;
+            box-shadow: .03rem .03rem 1.8rem rgba(0, 0, 0, 0.18);
+            border: solid 1px #005aab;
+            background-color: #fff;
+            z-index: 1;
+
+            font : {
+                size: 2rem;
+                weight: 500;
+            }
+        }
+
+        a {
+            @include d-flex;
+        }
+    }
+}
+
+
+
+
+.tabcontent {
+    display: none;
+    margin-top: 7rem;
+    &.current {
+        display: block;
+    }
+}
+
+
+.tab-content {
+    height: auto;
+}
+
+.history {
+    &__inner {
+        .swiper {
+            &-container{
+                &::before{
+                    position: absolute;
+                    top: 1rem;
+                    left: 0;
+                    width:100%;
+                    height: 1px;
+                    background: url(../../image/sub/bg-dash.png);
+                    content:""
+                }
+            }
+            &-wrapper{
+                padding: 0 5rem;
+            }
+            &-slide {
+                @include d-flex;
+                width: auto;
+            }
+            &-scrollbar{
+                left: 0;
+                bottom: 0;
+                width:100%;
+                height: 1rem;
+                background: #eeeeee;
+                &-drag{
+                    background: #747478;
+                }
+            }
+        }
+    }
+    &-item {
+        position: relative;
+        padding-top: 4rem;
+        padding-bottom: 7rem;
+        &::before{
+            position: absolute;
+            top:0;
+            width: 2.1rem;
+            height: 2.1rem;
+            background: #ffffff;
+            box-shadow: .3rem .3rem 1.8rem rgba(0, 0, 0, 0.18);
+            border:.5rem solid #005aab;
+            border-radius: 100%;
+            box-sizing: border-box;
+            content:""
+        }
+        .year {
+            
+            margin-bottom: 2.5rem;
+            font: {
+                size: 2.4rem;
+                weight: 600;
+            }
+            color:#005aab;
+            
+        }
+
+        &__cont {
+            li {
+                @include display-flex;
+                @include flex-column;
+
+                font : {
+                    size: 1.8rem;
+                    weight: 500;
+                }
+
+                color:#555555;
+                line-height: 2.8rem;
+
+                span {
+                    font : {
+                        size: 1.8rem;
+                        weight: 600;
+                    }
+
+                    color:#000000;
+                    line-height: 2.8rem;
+                }
+
+                &+li {
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/
+
+
+@media screen and(max-width:1024px) {}
