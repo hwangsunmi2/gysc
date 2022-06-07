@@ -12,7 +12,7 @@
     <!-- sub css -->
     <link rel="stylesheet" href="../../resource/css/sub/subCommon.css">
     <link rel="stylesheet" href="../../resource/css/sub/location.css">
-
+    <link rel="stylesheet" href="../../resource/css/sub/form.css">
     <link rel="stylesheet" href="../../resource/css/sub/button.css">
 
     <link rel="stylesheet" href="../../resource/css/sub/openYard.css">
@@ -734,9 +734,29 @@
         </div>
         <div class="sub-container">
             <div class="sub-container__inner">
-                <div class="sub-title">공지사항</div>
+                <div class="sub-title">보도자료실</div>
 
-                <div class="pressData">
+                <!-- 전달사항 :: 220607 추가 -->
+
+                <div class="search-box d-flex align-items-center">
+                    <div class="form-group d-flex align-items-center ml-auto w-200">
+                        <input type="text" name="" value="" id="" class="form-input date" placeholder="년-월-일">
+                    </div>
+                    <div class="form-select d-flex w-200 ml_5">
+                        <select class="select ">
+                            <option value="">전체</option>
+                        </select>
+                    </div>
+                    <div class="ml_5">
+                        <div class="form-search d-flex align-items-center">
+                            <input type="text" name="searchKeyword" value="" id="" class="form-input" placeholder="">
+                            <button type="submit" class="button-search"><i></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- // 전달사항 :: 220607 추가 -->
+
+                <div class="pressData mt_50"><!-- 전달사항 :: 220607 mt_50 추가 -->
                     <div class="pressData__inner">
                         <div class="year-wrap">
                             <em class="year">2021</em>

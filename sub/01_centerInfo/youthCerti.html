@@ -249,37 +249,73 @@
                 <div class="sub-tab">
                     <div class="sub-tab__inner">
                         <ul>
-                            <li ><a href="javascript:void(0)">청소년수련활동신고제</a></li>
-                            <li class="on"><a href="javascript:void(0)">신고절차 및 점검</a></li>
+                            <li class="on"><a href="javascript:void(0)">청소년수련활동신고제</a></li>
+                            <li><a href="javascript:void(0)">신고절차 및 점검</a></li>
                             <li><a href="javascript:void(0)">교육 및 모니터링</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="youthReportPro">
-                    <div class="cont-title">신고수리절차</div>
-                    <div class="img-wrap">
-                        <img src="../../resource/image/sub/img-youthReportPro01.png" alt="">
-                    </div>
-
-                    <div class="mt_50">
-                        <div class="box-blue">
-                            <div class="cont-title">신고 수리 후 조치사항</div>
+                <div class="youthCouncil">
+                    <div class="youthCouncil__inner">
+                        <div class="youthCouncil-top d-flex">
                             <div class="img-wrap">
-                                <img src="../../resource/image/sub/img-youthReportPro02.png" alt="">
+                                <img src="../../resource/image/sub/img-youthReport.png" alt="">
                             </div>
+                            <div class="youthCouncil-des">
+                                <div>
+                                    <p class="title">청소년수련활동인증제란? </p>
+                                    <div>
+                                        <p>
+                                            일정기준을 갖춘 청소년활동 프로그램에 대해 인증하고 인증된 수련활동에 참여한 청소년의 활동기록을 
+                                            유지 · 관리 · 제공하는 국가 인증제도 입니다. 
+                                        </p>
+                                        <div class="mt_30 d-flex align-items-center">
+                                            <div class="button-wrap button-large">
+                                                <button type="button" class="button-blue" onclick="window.open('https://www.youth.go.kr/youth/act/actSearch/allActSearchLst.yt?crtfc=Y&curMenuSn=undefined&curMenuSn=undefined&sCrtfc=Y&sCurSearchFlag=Y')">청소년수련활동 인증프로그램(e청소년)찾아보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="youthCouncil-bottom">
+                            <ul>
+                                <li>
+                                    <div class="title">청소년수련활동인증제
+                                        목적</div>
+                                    <div class="cont w-50">
+                                        <p>질적으로 우수한 국가인증 프로그램</p>
+                                        <p>인증된 전문가들에 의한 청소년지도</p>
+                                        <p>청소년활동환경의안전성</p>
+                                        <p>참여청소년활동의 참여 기록관리 </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="title">신청기한</div>
+                                    <div class="cont">
+                                        <p>청소년활동진흥법 시행규칙에 참가모집 14일 전까지 신고하도록 규정 <br>
+                                            ※ 계획 변경 시 활동 실시 3일전 지자체 변경신고 (제출서류 : 변경신고서 , 변경사유서, 변경 내용등)</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="title">신고대상</div>
+                                    <div class="cont">
+                                        <p>청소년 참가인원이 150명 이상 청소년수련활동</p>
+                                        <p>150명 이상이거나 위험도가 높은 비숙박형 청소년수련활동 (ex. 스킨스쿠버 등)
+                                        </p>
+                                    </div>
+                                    
+                                </li>
+
+                                
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="mt_50">
-                    <div class="button-wrap button-down d-flex w-640">
-                        <button type="button" class="button-blue"><a href="../../resource/download/22-1. 건강 상태 확인서 서식.hwp" download="">건강상태확인서 서식 다운받기</a>
-                        </button>
-                    </div>
-                </div>
-
-               
 
 
 
@@ -365,7 +401,42 @@
 </body>
 
 <script>
-   
+    $(function () {
+
+        //상세검색 클릭시
+        $(".click").click(function () {
+            $(".search-plus").slideToggle();
+            $(".filter").toggleClass("expand");
+            $(".remove").toggle();
+        });
+
+        //input을 datepicker로 선언
+        $("#datepicker .date").datepicker({
+            dateFormat: 'yy-mm-dd' //Input Display Format 변경
+                ,
+            yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+                ,
+            monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11',
+                    '12'
+                ] //달력의 월 부분 텍스트
+                ,
+            monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월',
+                    '12월'
+                ] //달력의 월 부분 Tooltip 텍스트
+                ,
+            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'] //달력의 요일 부분 텍스트
+                ,
+            dayNames: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'] //달력의 요일 부분 Tooltip 텍스트
+                ,
+            minDate: "-1M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+                ,
+            maxDate: "+1M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)                
+        });
+
+        //초기값을 오늘 날짜로 설정
+        $('#datepicker').datepicker('setDate',
+            'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)            
+    });
 </script>
 
 </html>

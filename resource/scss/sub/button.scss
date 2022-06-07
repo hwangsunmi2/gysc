@@ -163,5 +163,13 @@
                 color:#ffffff;
             }
         }
+        &.w{
+            &-640{
+                button{
+                    width: 64rem;
+                    flex:none;
+                }
+            }
+        }
     }
 }

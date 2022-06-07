@@ -2,6 +2,31 @@
 /* select */
 .search-box { margin-bottom: 2rem; }
 
+/* search-box */
+.search-box { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; margin-bottom: 2rem; }
+
+.search-box .form-select { height: 4.5rem; }
+
+.search-box .form-select select { width: 12.5rem; height: 100%; padding-left: 2rem; padding-right: 2rem; border: 1px solid #cccccc; font-size: 1.6rem; font-weight: 500; text-indent: 0rem; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='M8.833-.001 4.999 4.35 1.166-.001-.001 1.323l5 5.676 5-5.676L8.833-.001Z'/%3E%3C/svg%3E"); background-size: 1rem .7rem; background-position: right 2rem center; line-height: 100%; }
+
+.search-box .form-select select + select { margin-left: .5rem; }
+
+.search-box .form-search { position: relative; width: 25.5rem; height: 4.5rem; border: 1px solid #cccccc; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.search-box .form-search input { width: calc(100% - 4.5rem); height: 100%; padding-left: 2rem; border: none; font-size: 1.6rem; color: #777777; text-indent: 0; }
+
+.search-box .form-search button { position: absolute; top: 0; right: 0; width: 4.5rem; height: 100%; background: url(../../image/sub/icon-search.png) no-repeat center; background-size: 2rem; }
+
+.search-box .form-group input { width: 18.5rem; height: 4.5rem; }
+
+.search-box .form-group input::-webkit-input-placeholder { font-size: 1.6rem; font-weight: 500; color: #000000; }
+
+.search-box .form-group input:-ms-input-placeholder { font-size: 1.6rem; font-weight: 500; color: #000000; }
+
+.search-box .form-group input::-ms-input-placeholder { font-size: 1.6rem; font-weight: 500; color: #000000; }
+
+.search-box .form-group input::placeholder { font-size: 1.6rem; font-weight: 500; color: #000000; }
+
 .form-wrap button { width: 11.9rem !important; height: 4.9rem !important; font-weight: 300 !important; }
 
 .form-wrap.w-s select, .form-wrap.w-s input { width: 19.5rem; }

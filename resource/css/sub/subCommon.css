@@ -64,7 +64,7 @@ button, select, input { font-family: 'notokr', sans-serif; }
 
 .sub-tab ul li + li::before { position: absolute; width: 1px; height: 100%; background: #bbbbbb; content: ""; }
 
-.cont-title { margin-bottom: 5rem; text-align: center; font-size: 3.6rem; font-weight: 500; }
+.cont-title { margin-bottom: 5rem; text-align: center; font-size: 3.6rem; font-weight: 600; }
 
 .w-50 { width: 50%; }
 

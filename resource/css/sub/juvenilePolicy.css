@@ -68,9 +68,15 @@
 
 .youthCouncil-bottom .cont { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 
-.youthCouncil-bottom .cont p { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 8rem; text-align: center; border-radius: .3rem; font-size: 1.8rem; font-weight: 500; line-height: 3.2rem; border: 1px solid #005bac; }
+.youthCouncil-bottom .cont p { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 8rem; text-align: center; border-radius: .3rem; font-size: 1.8rem; font-weight: 500; line-height: 3.2rem; border: 1px solid #005bac; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .youthCouncil-bottom .cont p + p { margin-top: 1rem; }
+
+.youthCouncil-bottom .cont.w-50 { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.youthCouncil-bottom .cont.w-50 p { -webkit-box-flex: 0; -ms-flex: none; flex: none; width: 50%; margin: .5rem; }
+
+.youthCouncil-bottom .cont.w-50 p + p { margin-top: 0; }
 
 .youthCouncil-bottom .progress__inner { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
@@ -121,3 +127,7 @@
 .youthCouncil-bottom .step-des a { position: relative; font-size: 1.6rem; font-weight: 500; color: #005aab; }
 
 .youthCouncil-bottom .step-des a::before { position: absolute; bottom: -.5rem; width: 100%; height: 1px; background: #005aab; content: ""; }
+
+.youthReportPro .img-wrap img { display: block; margin: 0 auto; }
+
+.youthReportPro .box-blue { padding: 5rem; background: #f5f8f9; }
