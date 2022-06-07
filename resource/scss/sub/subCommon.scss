@@ -90,8 +90,10 @@ button, select, input{
 
 .sub-visual{
     height: 24rem;
+    background-repeat: no-repeat;
+    background-position: center;
     &.businessInfo{
-        background: url(../../image/sub/sub-visual__02.jpg)no-repeat center;
+        background-image: url(../../image/sub/sub-visual__02.jpg);
     }
     &__inner{
         @include display-flex;
@@ -313,10 +315,22 @@ dl{
 
 
 @media screen and(max-width:720px){
-    .sub-visual{
-        &.businessInfo{
-            background-image: url(../../image/sub/sub-visual__mobile.jpg);
+    .sub{
+        &-visual{
+            height: 19.2rem;
+            padding: 0 2.4rem;
+            font-size: 4rem;
             background-position: right center;
+            background-size: cover;
+            &.businessInfo{
+                background-image: url(../../image/sub/sub-visual__mobile.jpg);    
+            }
+        }
+        &-container{
+            &__inner{
+                padding: 0 2.4rem;
+                box-sizing: border-box;
+            }
         }
     }
 }

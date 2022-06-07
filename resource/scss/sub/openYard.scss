@@ -284,23 +284,80 @@
 }
 
 @media screen and(max-width:720px){
-    .forumBoardList {
-        .itemBox{
-            @include flex-column;
-        }
-        .left{
-            .img{
-                width:100%;
-                height:auto;
-            }
-        }
-    }
     .pressData__inner{
         .year{
             left: 0;
+            width: auto;
+            height: auto;
+            padding-top:1rem;
+            padding-bottom:2rem;
+            background: #ffffff;
             transform: none;
+            border-radius: 0;
+            font-size: 5rem;
+            &::before{
+                display: none;
+            }
+            &-wrap{
+                height: 5rem;
+            }
+        }
+        &::before{
+            left: 3rem
         }
     } 
+    .forumBoardList {
+        .itemBox{
+            @include flex-column;
+            padding-left: 6rem;
+        }
+        .left{
+            width: 100%;
+            .img{
+                width:100%;
+                height:auto;
+                padding: 0;
+            }
+        }
+        .yearWrap{
+            .right{
+                width: 100%;
+                &::after{
+                    top: 1.7rem;
+                    left: -3.8rem;
+                }
+            }
+            &:nth-child(odd){
+                .left{
+                    padding-right: 0;
+                }
+                .right{
+                    padding-top:3rem;
+                    padding-left: 0;
+                }
+                
+            }
+            &:nth-child(even){
+                .itemBox{
+                    @include flex-column;
+                    padding-left: 6rem;
+                }
+                .left{
+                    padding-left: 0;
+                }
+                .right{
+                    padding-top: 3rem;
+                    padding-right: 0;
+                    &::after{
+                        top: 1.7rem;
+                        left: -3.8rem;
+                        right: auto;
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 @media screen and(max-width:375px){

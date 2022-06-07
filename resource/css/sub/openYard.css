@@ -79,6 +79,18 @@
 ==================================================================================================*/
 @media screen and (max-width: 1024px) { .forumBoardList .left .img { width: 100%; height: auto; } }
 
-@media screen and (max-width: 720px) { .forumBoardList .itemBox { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-  .forumBoardList .left .img { width: 100%; height: auto; }
-  .pressData__inner .year { left: 0; -webkit-transform: none; transform: none; } }
+@media screen and (max-width: 720px) { .pressData__inner .year { left: 0; width: auto; height: auto; padding-top: 1rem; padding-bottom: 2rem; background: #ffffff; -webkit-transform: none; transform: none; border-radius: 0; font-size: 5rem; }
+  .pressData__inner .year::before { display: none; }
+  .pressData__inner .year-wrap { height: 5rem; }
+  .pressData__inner::before { left: 3rem; }
+  .forumBoardList .itemBox { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding-left: 6rem; }
+  .forumBoardList .left { width: 100%; }
+  .forumBoardList .left .img { width: 100%; height: auto; padding: 0; }
+  .forumBoardList .yearWrap .right { width: 100%; }
+  .forumBoardList .yearWrap .right::after { top: 1.7rem; left: -3.8rem; }
+  .forumBoardList .yearWrap:nth-child(odd) .left { padding-right: 0; }
+  .forumBoardList .yearWrap:nth-child(odd) .right { padding-top: 3rem; padding-left: 0; }
+  .forumBoardList .yearWrap:nth-child(even) .itemBox { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding-left: 6rem; }
+  .forumBoardList .yearWrap:nth-child(even) .left { padding-left: 0; }
+  .forumBoardList .yearWrap:nth-child(even) .right { padding-top: 3rem; padding-right: 0; }
+  .forumBoardList .yearWrap:nth-child(even) .right::after { top: 1.7rem; left: -3.8rem; right: auto; } }

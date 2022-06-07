@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .d-flex { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; }
 
 /* search-box */
@@ -106,7 +107,7 @@
 
 .table-wrap.thin tbody td.file { display: table-cell; border: 0; border-right: 1px solid #efefef; }
 
-.table-wrap.thin tbody td.file a { display: inline-block; margin-right: 1rem; padding-right: 2.8rem; background: url(../../image/sub/icon-file.png) no-repeat right 0 center; }
+.table-wrap.thin tbody td.file a { display: inline-block; margin-right: 1rem; padding-right: 2.8rem; background: url(../../image/sub/icon-file.png) no-repeat right 0 center; background-size: 1.8rem 1.4rem; }
 
 .table-wrap.text-left td { font-weight: 400; text-align: left; color: #555555; }
 
@@ -172,3 +173,13 @@
 .paging__inner a + a { margin-left: 1px; }
 
 .total { font-size: 2rem; font-weight: 500; }
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/
+@media screen and (max-width: 720px) { .table-wrap.ver .table { table-layout: fixed; }
+  .table-wrap.ver .table colgroup col:nth-child(1) { width: 14rem; }
+  .table-wrap:not(.ver) { position: relative; overflow-x: scroll; }
+  .table-wrap:not(.ver)::before { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: absolute; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.48); color: #ffffff; font-size: 2rem; content: "표를 밀어보세요"; z-index: 1; }
+  .table-wrap:not(.ver).scroll::before { display: none; }
+  .table-wrap:not(.ver) .table { width: 80rem; } }
