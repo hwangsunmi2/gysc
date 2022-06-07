@@ -105,3 +105,8 @@ dl > div { display: -webkit-box; display: flex; display: -ms-flexbox; display: f
 .top-des dl dd ul li { font-size: 1.8rem; font-weight: 500; line-height: 3rem; }
 
 .top-des p { font-size: 2rem; font-weight: 600; line-height: 2.8rem; }
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/
+@media screen and (max-width: 720px) { .sub-visual.businessInfo { background-image: url(../../image/sub/sub-visual__mobile.jpg); background-position: right center; } }

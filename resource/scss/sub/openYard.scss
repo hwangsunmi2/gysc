@@ -270,3 +270,39 @@
     }
 }
 
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/ 
+
+
+@media screen and(max-width:1024px) {
+    .forumBoardList .left .img{
+        width:100%;
+        height: auto;
+    }
+}
+
+@media screen and(max-width:720px){
+    .forumBoardList {
+        .itemBox{
+            @include flex-column;
+        }
+        .left{
+            .img{
+                width:100%;
+                height:auto;
+            }
+        }
+    }
+    .pressData__inner{
+        .year{
+            left: 0;
+            transform: none;
+        }
+    } 
+}
+
+@media screen and(max-width:375px){
+    
+}

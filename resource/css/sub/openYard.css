@@ -73,3 +73,12 @@
 .inquiry__inner { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 5rem 0; background: #ffeb00; }
 
 .inquiry__inner button { margin-top: 1rem; padding: 0; background: transparent; }
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/
+@media screen and (max-width: 1024px) { .forumBoardList .left .img { width: 100%; height: auto; } }
+
+@media screen and (max-width: 720px) { .forumBoardList .itemBox { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+  .forumBoardList .left .img { width: 100%; height: auto; }
+  .pressData__inner .year { left: 0; -webkit-transform: none; transform: none; } }

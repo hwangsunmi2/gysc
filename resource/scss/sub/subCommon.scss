@@ -303,3 +303,24 @@ dl{
         line-height: 2.8rem;
     }
 }
+
+
+
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/ 
+
+
+@media screen and(max-width:720px){
+    .sub-visual{
+        &.businessInfo{
+            background-image: url(../../image/sub/sub-visual__mobile.jpg);
+            background-position: right center;
+        }
+    }
+}
+
+@media screen and(max-width:375px){
+    
+}
