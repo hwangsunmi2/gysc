@@ -252,7 +252,7 @@
                     size: 1.8rem;
                     weight:500;
                 }
-                line-height: 3.2rem;
+                line-height: 3rem;
                 border:1px solid #005bac;
                 box-sizing: border-box;
                 &+p{
@@ -262,13 +262,11 @@
             &.w-50{
                 @include display-flex;
                 flex-wrap: wrap;
+                margin: -.5rem;
                 p{
                     flex:none;
-                    width:50%;
+                    width:calc(50% - 1rem);
                     margin: .5rem;
-                    &+p{
-                        margin-top: 0
-                    }
                 }
             }
         }
