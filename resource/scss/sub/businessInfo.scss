@@ -74,3 +74,59 @@
         }    
     }
 }
+
+.contFlex {
+    @include display-flex;
+    margin-top: 1rem;
+    p {
+        width:50%;
+        vertical-align: top;
+        &+p{
+            margin-left:1rem;
+            margin-top: 0 !important;
+        }
+    }
+}
+
+
+/* group */
+.groupTit {
+    display:block;
+    font-size:3rem;
+    font-weight:600;
+}
+.groupTable {
+    margin-top:3rem;
+    border-top:1px solid #005aab;
+    table {
+       
+        thead {
+            th {
+                background-color:#f2f7fb;
+                border:0 !important;
+                &+th {
+                    border-left:1px solid #ddd !important;
+                    border-bottom:1px solid #ddd !important;
+                }
+            }
+        }
+        tbody {
+            td {
+                text-align:left;
+                color:#000 !important;
+                border:0 !important;
+                &+td {
+                    border-left:1px solid #ddd !important;
+                    border-bottom:1px solid #ddd !important;
+                }
+            }
+        }
+    }
+}
+
+.groupWrap {
+    display:none;
+    &.on {
+        display:block;
+    }
+}
