@@ -28,10 +28,21 @@
 }
 
 .content .grayBox .info {
+  position: relative;
   display: inline-block;
   width: calc(100% - 815px);
   margin-left: 11rem;
   vertical-align: top;
+}
+
+.content .grayBox .info::before {
+  position: absolute;
+  top: -5rem;
+  left: -5rem;
+  width: 1px;
+  height: 52.8rem;
+  background-color: #fff;
+  content: '';
 }
 
 .content .grayBox .info p {
@@ -119,7 +130,7 @@
 }
 
 .content .est .bottom ul li:nth-child(1) {
-  background-color: #005aab;
+  background: #005aab url(../../image/sub/estIcon1.png) no-repeat 90% 90%;
   height: 22.5rem;
 }
 
@@ -136,19 +147,89 @@
   line-height: 3rem;
 }
 
+.content .est .bottom ul li:nth-child(2) {
+  background: url(../../image/sub/estIcon2.png) no-repeat 90% 90%;
+}
+
+.content .est .bottom ul li:nth-child(3) {
+  background: url(../../image/sub/estIcon3.png) no-repeat 90% 90%;
+}
+
+.content .est .bottom ul li:nth-child(4) {
+  background: url(../../image/sub/estIcon4.png) no-repeat 90% 90%;
+}
+
+.content .est .bottom ul li:nth-child(5) {
+  background: url(../../image/sub/estIcon5.png) no-repeat 90% 90%;
+}
+
+.content .est .bottom ul li:nth-child(6) {
+  background: url(../../image/sub/estIcon6.png) no-repeat 90% 90%;
+}
+
 .content .est .bottom ul li div {
   margin-bottom: 3rem;
   font-size: 2rem;
-  color: #005aab;
-  font-weight: 500;
+  color: #000;
+  font-weight: 600;
 }
 
 .content .est .bottom ul li p {
   font-size: 1.8rem;
-  color: #005aab;
+  color: #000;
   line-height: 3rem;
+  font-weight: 400;
+}
+
+.content .est .bottom ul li span {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: #555;
+  line-height: 2.2rem;
 }
 
 .content .vision {
   width: 100%;
+}
+
+/* 조직도 */
+.groupTit {
+  display: block;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.groupTable {
+  margin-top: 3rem;
+  border-top: 1px solid #005aab;
+}
+
+.groupTable table thead th {
+  background-color: #f2f7fb;
+  border: 0 !important;
+}
+
+.groupTable table thead th + th {
+  border-left: 1px solid #ddd !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.groupTable table tbody td {
+  text-align: left;
+  color: #000 !important;
+  border: 0 !important;
+}
+
+.groupTable table tbody td + td {
+  border-left: 1px solid #ddd !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.groupWrap {
+  display: none;
+}
+
+.groupWrap.on {
+  display: block;
 }
