@@ -26,7 +26,7 @@
 
 .board-view__inner .view-file .file-list { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 1rem 0; width: 100%; }
 
-.board-view__inner .view-file .file-list a { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: .5rem 1.4rem; padding-left: 2.4rem; font-weight: 500; background: url(../../image/sub/icon-file.png) no-repeat left center; }
+.board-view__inner .view-file .file-list a { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: .5rem 1.4rem; padding-left: 2.4rem; font-weight: 500; background: url(../../image/sub/icon-file.png) no-repeat left center; background-size: 1.8rem 1.4rem; }
 
 .board-view__inner .view-content { padding: 5rem 6rem; font-size: 2rem; color: #555555; line-height: 3.2rem; border-bottom: 1px solid #dddddd; }
 
@@ -63,3 +63,13 @@
 .answer-content { color: #555555; font-size: 1.8rem; font-weight: 400; line-height: 3.2rem; }
 
 .table-wrap + .board-prevnext { margin-top: 5rem; border-top: 1px solid #e4e4e4; }
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/
+@media screen and (max-width: 720px) { .board-view__inner .view-header { padding: 3rem 0; }
+  .board-view__inner .view-title__wrap { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+  .board-view__inner .view-title__wrap .badge { margin-left: 0; margin-bottom: 3rem; }
+  .board-view__inner .view-info { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+  .board-view__inner .view-date { margin-right: 0; margin-bottom: 1rem; }
+  .board-view__inner .view-content { padding: 3rem; } }

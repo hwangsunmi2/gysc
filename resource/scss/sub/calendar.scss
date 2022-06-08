@@ -351,7 +351,13 @@
         left: 0;
         transform: none;
     }
-    
+    .adjust-month__wrap{
+        .search-box{
+            .form-select{
+                flex:none;
+            }
+        }
+    }
 }
 
 @media screen and(max-width:720px){
@@ -453,4 +459,5 @@
             }
         }
     }
+    
 }

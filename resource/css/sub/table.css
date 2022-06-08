@@ -57,11 +57,11 @@
 
 .table-wrap td.link > div i, .table-wrap td.map > div i, .table-wrap td.phone > div i { margin-left: 1rem; }
 
-.table-wrap td.link i { display: inline-block; width: 1.9rem; height: 1.8rem; background: url(../../image/sub/icon-site.png); }
+.table-wrap td.link i { display: inline-block; width: 1.9rem; height: 1.8rem; background: url(../../image/sub/icon-site.png); background-size: 1.9rem 1.8rem; }
 
-.table-wrap td.map i { display: inline-block; width: 1.2rem; height: 1.8rem; background: url(../../image/sub/icon-map.png); }
+.table-wrap td.map i { display: inline-block; width: 1.2rem; height: 1.8rem; background: url(../../image/sub/icon-map.png); background-size: 1.2rem 1.8rem; }
 
-.table-wrap td.phone i { display: inline-block; width: 1.3rem; height: 1.8rem; background: url(../../image/sub/icon-phone.png); }
+.table-wrap td.phone i { display: inline-block; width: 1.3rem; height: 1.8rem; background: url(../../image/sub/icon-phone.png); background-size: 1.3rem 1.8rem; }
 
 .table-wrap td.h-150 { min-height: 15rem !important; height: 15rem !important; padding-top: 1rem !important; padding-bottom: 1rem !important; }
 
@@ -133,6 +133,8 @@
 
 .table-wrap.table-content > p { font-size: 1.6rem; color: #555555; }
 
+.table-ps { margin-top: 1rem; font-size: 1.8rem; font-weight: 500; text-align: right; }
+
 .table-title { margin-bottom: 3.5rem; font-size: 3.2rem; font-weight: 500; text-align: center; }
 
 .board-bottom { margin-top: 5rem; }
@@ -177,11 +179,21 @@
 /*===================================================================================================
 ===========================================  responsive ==========================================
 ==================================================================================================*/
+@media screen and (max-width: 1200px) { .table-wrap { position: relative; overflow-x: scroll; }
+  .table-wrap .table { width: 130rem; } }
+
 @media screen and (max-width: 720px) { .table-wrap.ver .table { table-layout: fixed; }
   .table-wrap.ver .table colgroup col:nth-child(1) { width: 14rem !important; }
   .table-wrap.ver .table-wrap { overflow-x: unset; }
   .table-wrap.ver .table-wrap::before { display: none; }
+  .table-wrap.ver .table-wrap table { display: block; width: 100%; }
+  .table-wrap.ver .table-wrap table tbody, .table-wrap.ver .table-wrap table tr, .table-wrap.ver .table-wrap table th, .table-wrap.ver .table-wrap table td { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; border-right: 0; }
   .table-wrap:not(.ver) { position: relative; overflow-x: scroll; }
   .table-wrap:not(.ver)::before { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: absolute; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.48); color: #ffffff; font-size: 2rem; content: "표를 밀어보세요"; z-index: 1; }
   .table-wrap:not(.ver).scroll::before { display: none; }
-  .table-wrap:not(.ver) .table { width: 80rem; } }
+  .table-wrap:not(.ver) .table { width: 80rem; }
+  .table-wrap.table-auto table { width: 80rem; }
+  .table-wrap.table-area .table { width: 130rem; }
+  .table-wrap.filter .checks { padding: 1rem 0; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .table-wrap.filter .checks .form-group { padding-bottom: 0; }
+  .viewer-wrap ul li .button-viewer { -webkit-box-flex: 0; -ms-flex: none; flex: none; width: auto; } }

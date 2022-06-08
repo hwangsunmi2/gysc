@@ -60,7 +60,7 @@
             }
             .button-wrap{
                 flex:none;
-                margin-left: 3rem;
+                margin-left: 0rem;
                 button{
                     width: 16.4rem;
                     height: 6rem;
@@ -85,14 +85,17 @@
                     @include display-flex;
                     @include flex-column;
                     width:calc((100% / 4));
+                    height: 100%;
                     padding: 0;
                     border-bottom:none;
+                    box-sizing: border-box;
                     .img-wrap{
                         max-width: 100%;
                         width: 100%;
                         max-height: 24.4rem;
                         height: 100%;
                         margin-right: 0;
+                        overflow: hidden;
                     }
                     a{
                         @include display-flex;
@@ -206,6 +209,7 @@
                             margin-right: 3rem;
                             border: 1px solid #eeeeee;
                             box-sizing: border-box;
+                            overflow: hidden;
                             .badge{
                                 @include d-flex;
                                 position: absolute;
@@ -256,6 +260,7 @@
                             span{
                                 color: #005aab;
                                 font-weight: 500;
+                                line-height: 3rem;
                             }
                         }
                     }
@@ -340,7 +345,77 @@
 ===========================================  responsive ==========================================
 ==================================================================================================*/ 
 
-
+@media screen and(max-width:1024px){
+    .board{
+        &-list{
+            .board-list__inner{
+                >ul{
+                    margin: -1.2rem;
+                    >li{
+                        flex-direction: column;
+                        height: 100%;
+                        padding: 1.2rem;
+                        width: 50%;
+                        .img-wrap{
+                            max-width: none;
+                            margin-right: 0;
+                            margin-bottom: 3rem;
+                            border: 1px solid #eeeeee;
+                            box-sizing: border-box;
+                            img{
+                                width:100%;
+                            }
+                        }
+                        a{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .info{
+                width: 100%;
+                ul {
+                    li{
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        //align-items: flex-start;
+                    }
+                }
+            }
+            &.hor{
+                .info{
+                    margin-top: 0;
+                }
+            }
+            &.hor3 {
+                .board-list__inner{
+                    >ul{
+                        margin: -1.2rem;
+                        >li{
+                            flex-direction: column;
+                            padding: 1.2rem;
+                            .img-wrap{
+                                max-width: none;
+                                margin-right: 0;
+                                margin-bottom: 3rem;
+                                border: 1px solid #eeeeee;
+                            }
+                        }
+                    }
+                }
+                .info{
+                    ul {
+                        li{
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            //align-items: flex-start;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media screen and(max-width:720px){
     .board-list__inner{

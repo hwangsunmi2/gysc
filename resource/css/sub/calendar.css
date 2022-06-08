@@ -116,7 +116,8 @@
 /*===================================================================================================
 ===========================================  responsive ==========================================
 ==================================================================================================*/
-@media screen and (max-width: 1024px) { .adjust-month { position: unset; left: 0; -webkit-transform: none; transform: none; } }
+@media screen and (max-width: 1024px) { .adjust-month { position: unset; left: 0; -webkit-transform: none; transform: none; }
+  .adjust-month__wrap .search-box .form-select { -webkit-box-flex: 0; -ms-flex: none; flex: none; } }
 
 @media screen and (max-width: 720px) { .user-area { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
   .user-area .button-wrap { margin-top: 1rem; }
