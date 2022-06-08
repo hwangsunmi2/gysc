@@ -782,8 +782,3 @@
 }
 
 /* responsive */
-@media screen and (max-width: 1600px) {
-  .se1 .se1Wrap .se1Box1 {
-    height: auto;
-  }
-}
