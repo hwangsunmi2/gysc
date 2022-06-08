@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+.grayBox_sh .info {
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+
+    display: block;
+    text-align: center;
+}
+.content_ci .grayBox_sh .info p {padding-top:8rem; padding-bottom:8rem;}
+.grayBox_sh .info::before {
+    position: absolute;
+    left: 0;
+    content: "";
+    z-index: -1;
+    background-color: #f5f8f9;
+
+}
+.content_ci .grayBox_sh .info {
+
+}
+.content_ci .grayBox_sh .info::before{
+
+    top: -11.4rem;
+
+    width:100%;
+    height: calc(100% + 11.4rem );
+
+    content: "";
+    z-index: -1;
+}
+
+
+    .content_ch .grayBox_sh .info::before {
+    top: -38.5rem;
+    width: 100%;
+    height: calc(100% + 38.5rem);
+    background-color: #f5f8f9;
+    }
+
+    .content_ch .grayBox_sh .info p {
+        padding: 5rem 0;
+    }
+
+.content_map .grayBox_sh .info::before{
+
+    background-color: #fff;
+}
+
+.content_map .grayBox_sh .info {
+    display: flex;
+    /* top: 10%; */
+    text-align: center;
+    justify-content: flex-start;
+}
+
+
+
+.grayBox_sh,
+.grayBox_sh2 {
+    /* position: relative; */
+    padding: 0 0 0 0;
+    margin-top: 5.3rem;
+    /* width: 140.0rem; */
+    background-color: #ffff0000;
+    /* display: flex; */
+    /* overflow: visible; */
+    /* flex-wrap: wrap; */
+    /* height: 32.6rem; */
+}
+.grayBox_sh .grayBox_img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* margin: 0 auto; */
+    /* width: 89%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+
+.grayBox_sh .grayBox_img img {
+    box-shadow: 0px .2rem 1.3rem rgb(0 0 0 / 5%);
+
+}
+.grayBox_sh img:nth-child(1){
+    /* float:left; */
+    margin-right: 1rem;
+}
+
+/* .grayBox_sh img:nth-child(2){
+    float:right;
+ } */
+
+
+
+
+.content_ci .grayBox_sh .info p {}
+.grayBox_sh .info p {font-size: 2.2rem; line-height: 3.6rem; font-weight: 400;}
+
+.grayBox_sh .info p .color-blue {
+    font-weight: 500;
+    color:#005aab;
+}
+
+
+
+p span.color-blue2 {
+
+    color:#1e80c1
+}
+
+p .color-green {
+
+    color:#1ec144;
+}
+
+p span.color-orange {
+
+    color:#d75207
+}
+
+p .bold {
+
+    font-weight: 500;
+}
+/* .grayBox_sh .info p:nth-child(1) {
+    position: absolute;
+    bottom: 19%;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 100%;
+    text-align: center;
+} */
+
+.grayBox_sh .grayBox_ul {
+    /* width: 89rem; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.grayBox_sh .grayBox_ul li{box-sizing: border-box; text-align: center;}
+.grayBox_sh .grayBox_ul img {border:1px solid #ddd; margin:0;}
+.grayBox_sh .grayBox_ul li:nth-child(n+2){
+    margin-top: 1rem;
+}
+
+.grayBox_sh .grayBox_ul li.list1{width:100%;}
+.grayBox_sh .grayBox_ul li.list2, .grayBox_sh .grayBox_ul li.list4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.grayBox_sh .grayBox_ul li.list3{margin-left: 1rem;margin-right: 1rem;}
+
+
+
+
+
+
+.youthCouncil-top .img-wrap-sh {
+    width: 47.5rem;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+}
+
+.youthCouncil-top .img-wrap-sh img {
+    display: block;
+    margin: 0 auto;
+    border:1px solid #ddd;
+    border-radius: 12rem;
+    -webkit-box-shadow: 1rem 1rem 1.8rem rgba(0, 0, 0, 0.1);
+    box-shadow: 1rem 1rem 1.8rem rgba(0, 0, 0, 0.1);
+}
+
+
+.youthCouncil_sh .youthCouncil-des {
+    
+    padding-right: 10.5rem;
+}
+.youthCouncil_sh .youthCouncil-bottom .cont p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: flex-start;
+    height: 8rem;
+    text-align: left;
+    border-radius: .3rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+    border: none; 
+}
+
+
+.content_map .grayBox_sh img:nth-child(1) {
+    /* float: left; */
+    margin-right: 0;
+}
+.content_map .grayBox_wrap .grayBoxd{
+    background-color: #edeff3;
+    padding:2.2% 2.7%;
+    align-items: center;
+    display: flex;
+    flex:1;
+}
+
+.content_map .grayBox_wrap .grayBox_1,.content_map .grayBox_wrap .grayBox_3{display: flex;}
+.content_map .grayBox_wrap .grayBox_2 {margin:0 0.1rem; }
+.content_map .grayBox_wrap .grayBox_4 {width:calc(100%); padding:0; background-color: #fff; }
+
+.content_map .grayBox_sh .info p {
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 100%; */
+}
+.content_map .grayBox_sh .info img {
+    /* float: left; */
+    margin-right: 0;
+    margin-left: 5rem;
+    display: block;
+}
+
+
+.content_map .grayBox_wrap
+{display: flex; flex-wrap: wrap; margin-top:0.1rem}
+.content_map .grayBox_wrap .grayBoxd img{padding:3% 0;}
+.content_map span {display: block;}
+.content_map .grayBox_wrap .grayBox_1 img{width:4.2rem; height:4.4rem;}
+.content_map .grayBox_wrap .grayBox_2 img{width:5.4rem; height:4.3rem;}
+.content_map .grayBox_wrap .grayBox_3 img{width:5.4rem; height:4.4rem;}
+.content_map .grayBox_wrap .grayBox_4 img{width:5.4rem; height:5.1rem; margin-left:3%; padding:2.4% 0;}
+
+.content_map .grayBox_wrap .grayBoxd p{display:inline-block; font-size:1.8rem; margin-left:3.8rem; line-height: 2.8rem; letter-spacing: -0.25rem; font-weight: 400;}
+.content_map .grayBox_wrap .grayBox_4 p{margin-left:2%;}
+.content_map .grayBox_wrap .grayBoxd p span{display:block; font-size:2rem; font-weight: 600; width:24rem; margin-bottom: 1rem;}
+.content_map .grayBox_sh .info{padding:0; display: flex;}
+.content_map .info .bus1,.content_map .info .bus2{display: flex;}
+.content_map .info .bus1 .bus_default,.content_map .info .bus2 .bus_stand{line-height: 3.4rem; text-align: center; width:8.4rem; height: 3.4rem; letter-spacing: -0.25rem; color:#fff; border-radius: 0.3rem; font-size: 1.8rem; font-weight: 400;}
+.content_map .info .bus1 > p,.content_map .info .bus2 > p {padding-left: 1rem;}
+.content_map .info .bus1{margin-left: 12.4rem;}
+.content_map .info .bus2{margin-left: 3.6rem;}
+
+.content_map .info .bus1 .bus_default{background-color:#1ec144; }
+
+.content_map .info .bus2 .bus_stand{background-color:#c52116}
