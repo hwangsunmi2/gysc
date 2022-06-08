@@ -331,8 +331,11 @@ dl{
             overflow-x: scroll;
         }
         ul{
-            width: 110rem;
+            width: auto;
             justify-content: flex-start;
+            li{
+                flex:none;
+            }
         }
     } 
 }
