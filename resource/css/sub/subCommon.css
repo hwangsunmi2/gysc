@@ -110,7 +110,7 @@ dl > div { display: -webkit-box; display: flex; display: -ms-flexbox; display: f
 ===========================================  responsive ==========================================
 ==================================================================================================*/
 @media screen and (max-width: 1200px) { .sub-tab__inner { overflow-x: scroll; }
-  .sub-tab ul { width: 110rem; } }
+  .sub-tab ul { width: 110rem; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; } }
 
 @media screen and (max-width: 1024px) { .border-box__inner { padding: 5rem 3rem; }
   .border-box__inner img { max-width: 100%; }

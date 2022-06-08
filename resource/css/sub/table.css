@@ -164,13 +164,13 @@
 
 .paging__inner a.on::before { position: absolute; top: 0; left: 0; width: 100%; height: 100%; -webkit-box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.44); box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.44); content: ""; }
 
-.paging__inner a.first { background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='10'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='m7.071 5.1 4.68 3.943-.96.958-5.781-4.87.251-.249-.013-.013.16-.134.563-.561.051.043L11.029 0l.96.957L7.071 5.1Zm-.32 3.943-.96.958L.01 5.131l.251-.249-.013-.013.16-.134.563-.561.051.043L6.029 0l.96.957L2.071 5.1l4.68 3.943Z'/%3E%3C/svg%3E"); }
+.paging__inner a.first { background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='10'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='m7.071 5.1 4.68 3.943-.96.958-5.781-4.87.251-.249-.013-.013.16-.134.563-.561.051.043L11.029 0l.96.957L7.071 5.1Zm-.32 3.943-.96.958L.01 5.131l.251-.249-.013-.013.16-.134.563-.561.051.043L6.029 0l.96.957L2.071 5.1l4.68 3.943Z'/%3E%3C/svg%3E"); background-size: 1.2rem 1rem; }
 
-.paging__inner a.prev { background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='10'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='M6.989.957 2.071 5.1l4.68 3.943-.96.958L.01 5.131l.251-.249-.013-.013.16-.134.563-.561.051.043L6.029 0l.96.957Z'/%3E%3C/svg%3E"); }
+.paging__inner a.prev { background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='10'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='M6.989.957 2.071 5.1l4.68 3.943-.96.958L.01 5.131l.251-.249-.013-.013.16-.134.563-.561.051.043L6.029 0l.96.957Z'/%3E%3C/svg%3E"); background-size: .7rem 1rem; }
 
-.paging__inner a.next { background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='10'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='m6.739 4.882.251.249-5.781 4.87-.961-.958L4.929 5.1.011.957.971 0l5.007 4.217.051-.043.563.561.16.134-.013.013Z'/%3E%3C/svg%3E"); }
+.paging__inner a.next { background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='10'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='m6.739 4.882.251.249-5.781 4.87-.961-.958L4.929 5.1.011.957.971 0l5.007 4.217.051-.043.563.561.16.134-.013.013Z'/%3E%3C/svg%3E"); background-size: .7rem 1rem; }
 
-.paging__inner a.last { background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='10'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='m11.739 4.882.251.249-5.781 4.87-.961-.958L9.929 5.1 5.011.957 5.971 0l5.007 4.217.051-.043.563.561.16.134-.013.013Zm-5.71-.708.563.561.16.134-.013.013.251.249-5.781 4.87-.961-.958L4.929 5.1.011.957.971 0l5.007 4.217.051-.043Z'/%3E%3C/svg%3E"); }
+.paging__inner a.last { background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='10'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='m11.739 4.882.251.249-5.781 4.87-.961-.958L9.929 5.1 5.011.957 5.971 0l5.007 4.217.051-.043.563.561.16.134-.013.013Zm-5.71-.708.563.561.16.134-.013.013.251.249-5.781 4.87-.961-.958L4.929 5.1.011.957.971 0l5.007 4.217.051-.043Z'/%3E%3C/svg%3E"); background-size: 1.2rem 1rem; }
 
 .paging__inner a + a { margin-left: 1px; }
 
@@ -179,8 +179,11 @@
 /*===================================================================================================
 ===========================================  responsive ==========================================
 ==================================================================================================*/
-@media screen and (max-width: 1200px) { .table-wrap { position: relative; overflow-x: scroll; }
-  .table-wrap .table { width: 130rem; } }
+@media screen and (max-width: 1200px) { .table-wrap:not(.filter) { position: relative; overflow-x: scroll; }
+  .table-wrap:not(.filter) .table { width: 130rem; }
+  .search-plus .table { width: 100%; }
+  .search-plus .table input { max-width: 100% !important; }
+  .search-plus .form-check { margin-top: 0; margin-bottom: 0; } }
 
 @media screen and (max-width: 720px) { .table-wrap.ver .table { table-layout: fixed; }
   .table-wrap.ver .table colgroup col:nth-child(1) { width: 14rem !important; }
@@ -188,10 +191,10 @@
   .table-wrap.ver .table-wrap::before { display: none; }
   .table-wrap.ver .table-wrap table { display: block; width: 100%; }
   .table-wrap.ver .table-wrap table tbody, .table-wrap.ver .table-wrap table tr, .table-wrap.ver .table-wrap table th, .table-wrap.ver .table-wrap table td { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; border-right: 0; }
-  .table-wrap:not(.ver) { position: relative; overflow-x: scroll; }
-  .table-wrap:not(.ver)::before { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: absolute; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.48); color: #ffffff; font-size: 2rem; content: "표를 밀어보세요"; z-index: 1; }
-  .table-wrap:not(.ver).scroll::before { display: none; }
-  .table-wrap:not(.ver) .table { width: 80rem; }
+  .table-wrap:not(.ver):not(.table-content) { position: relative; overflow-x: scroll; }
+  .table-wrap:not(.ver):not(.table-content)::before { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: absolute; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.48); color: #ffffff; font-size: 2rem; content: "표를 밀어보세요"; z-index: 1; }
+  .table-wrap:not(.ver):not(.table-content).scroll::before { display: none; }
+  .table-wrap:not(.ver):not(.table-content) .table { width: 80rem; }
   .table-wrap.table-auto table { width: 80rem; }
   .table-wrap.table-area .table { width: 130rem; }
   .table-wrap.filter .checks { padding: 1rem 0; -ms-flex-wrap: wrap; flex-wrap: wrap; }

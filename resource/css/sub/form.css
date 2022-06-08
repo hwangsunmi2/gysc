@@ -177,7 +177,9 @@
 
 .filter .form-group input { border-color: #dddddd; }
 
-.filter .checks input[type="radio"] + label { font-weight: 400; margin-right: 3rem; }
+.filter .checks { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.filter .checks input[type="radio"] + label { font-weight: 400; margin-right: 3rem; -webkit-box-flex: 0; -ms-flex: none; flex: none; }
 
 .filter .table tr { border-bottom: 1px solid #eeeeee; }
 
@@ -192,6 +194,9 @@
 /*===================================================================================================
 ===========================================  responsive ==========================================
 ==================================================================================================*/
+@media screen and (max-width: 1200px) { .filter .search-plus .checks .form-group { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+  .filter .search-plus .checks .form-group input { width: auto !important; min-width: 10rem; max-width: 100% !important; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; } }
+
 @media screen and (max-width: 1024px) { .form-group { -ms-flex-wrap: wrap; flex-wrap: wrap; padding-top: 1rem; padding-bottom: 1rem; }
   .form-group button { width: auto; }
   .form-check { width: 100% !important; -webkit-box-flex: 0; -ms-flex: none; flex: none; margin: 1rem -1rem; }
@@ -201,7 +206,10 @@
   .form-wrap.flex3 > div > * { width: 100%; }
   .form-wrap.flex3 > span { -webkit-box-flex: 0; -ms-flex: none; flex: none; }
   .search-box .form-select { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
-  .security { -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
+  .security { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  .search-plus .form-group { padding-top: 0; padding-bottom: 0; }
+  .filter .checks { padding: 1rem 0; }
+  .filter .checks input[type="radio"] + label { width: 100%; margin: .5rem 0; } }
 
 @media screen and (max-width: 500px) { td > .d-flex:not(.flex3) { -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 1rem 0; }
   td > .d-flex:not(.flex3) > p { width: 100%; margin-bottom: 1rem; } }

@@ -170,6 +170,7 @@
                 width:100%;
                 max-width: 45rem;
                 height: 6rem;
+                line-height: normal;
                 font-size:2rem;
                 border-radius: .5rem;
                 box-shadow: .3rem .3rem 1rem rgba(0,0,0,0.28);
@@ -182,6 +183,9 @@
         padding-right: 11.5rem;
         .button-blue{
            min-width: 45rem;
+        }
+        &__box{
+            flex-wrap: wrap;
         }
     }
     &-bottom{
@@ -447,5 +451,104 @@
     .box-blue{
         padding:5rem;
         background: #f5f8f9;
+    }
+}
+
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/ 
+
+
+@media screen and(max-width:1024px) {
+    .youthCouncil{
+        &-top{
+            .img-wrap{
+                width: 50%;   
+            }
+            .button-wrap{
+                button{
+                    min-width: unset;
+                    max-width: none;
+                }
+            }
+        }
+        &-bottom{
+            .title{
+                //width: auto;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:720px) {
+    .youthCouncil{
+        &-top{
+            .img-wrap{
+                width: 20%;   
+                margin: 0 5%;
+                img{
+                    width: 100%;
+                    
+                }
+            }
+            .button-wrap{
+                button{
+                    min-width: unset;
+                    max-width: none;
+                }
+            }
+        }
+        &-bottom{
+            >ul{
+                >li{
+                    flex-direction: column;
+                }
+            }
+            .title{
+                width: 100%;
+                margin-left: 0;
+                padding-right: 0rem;
+                padding-bottom: 3rem;
+            }
+            .cont{
+                p{
+                    padding: 0 1rem;
+                }
+                &.w-50{
+                    width: 100%;
+                }
+            }
+        }
+        &-des{
+            padding-right: 3rem;
+            &__box{
+                .button-wrap{
+                    width:100%;
+                }
+                p{
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+    .volunteer{
+        &__inner{
+            ul{
+                li{
+                    flex-direction: column;
+                }
+            }
+            .type{
+                margin-right: 0;
+                margin-bottom: 3rem;
+            }
+            .info{
+                width:100%;
+                padding-top: 0;
+                padding-bottom: 3rem;
+            }
+        } 
     }
 }

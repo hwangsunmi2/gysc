@@ -576,9 +576,13 @@
             
         }
     }
-    .checks input[type="radio"] + label{
-        font-weight: 400;
-        margin-right: 3rem;
+    .checks{
+        flex-wrap: wrap;
+        input[type="radio"] + label{
+            font-weight: 400;
+            margin-right: 3rem;
+            flex:none;
+        }
     }
     .table{
         tr{
@@ -614,7 +618,19 @@
 /*===================================================================================================
 ===========================================  responsive ==========================================
 ==================================================================================================*/ 
-
+@media screen and(max-width:1200px){
+    .filter .search-plus .checks {
+        .form-group{
+            flex: 1;
+            input{
+                width: auto !important;
+                min-width: 10rem;
+                max-width: 100% !important;
+                flex: 1;
+            }
+        }
+    }
+}
 
 @media screen and(max-width:1024px){
     .form{
@@ -666,17 +682,23 @@
     .security{
         align-items: center;
     }
+    .search-plus{
+        .form-group{
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+    .filter .checks {
+        padding: 1rem 0;
+        input[type="radio"] + label{
+            width: 100%;
+            margin: .5rem 0;
+        }
+    }
 }
-// @media screen and(max-width:720px){
-//     .adjust-month__wrap{
-//         .search-box{
-//             .form-select{
-//                 flex:none;
-//             }
-//         }
-//     }
-
-// }
+@media screen and(max-width:720px){
+    
+}
 @media screen and(max-width:500px){
     td{
         >.d-flex:not(.flex3){

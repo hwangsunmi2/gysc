@@ -6,7 +6,7 @@
 
 .area-select .cho_place .tit { margin-bottom: 3rem; font-size: 3rem; font-weight: 500; }
 
-.area-select .cho_place .des { margin-bottom: 5rem; font-size: 2rem; font-weight: 500; }
+.area-select .cho_place .des { margin-bottom: 5rem; font-size: 2rem; font-weight: 500; line-height: normal; }
 
 .area-img { width: 62rem; border: 1px solid #dfdfdf; }
 
