@@ -386,10 +386,15 @@ p .bold {
     .grayBox_sh .grayBox_img{width:100%}
     .grayBox_sh .grayBox_img img{
         width:40%;
+    }.grayBox_sh .grayBox_img img {
+        box-shadow: 0px .2rem 1.3rem rgb(0 0 0 / 5%);
+    }
+    .grayBox_sh .grayBox_img img {
+        width: 48%;
     }
     .content_ci .grayBox_sh .info p {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
         width: 90%;
         margin: 0 auto;
     }
