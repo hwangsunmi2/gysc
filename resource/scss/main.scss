@@ -1,3 +1,5 @@
+@import "./_mixin";
+
 /* se1 */
 .se1{
     margin: 0 auto;
@@ -7,8 +9,8 @@
     background-size:cover;
     
     .se1Wrap {
+        @include d-flex;
         position: relative;
-        display: block;
         width:100%;
         top: 50%;
         transform: translateY(-50%);
@@ -304,8 +306,8 @@
     padding: 50px 0;
     background-color:#f3f4f6;
     .se3Wrap {
-        display:flex;
-        justify-content: space-between;
+        @include d-flex;
+        justify-content: flex-start;
         .mainBoard {
             position:relative;
             width:82.3rem;
@@ -595,7 +597,7 @@
 /* //se4 */
 
 /* hoverEffect */
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     .se2 {
         .iconWrap {
             .icon {
@@ -617,5 +619,24 @@
             }
         }
     }
+
+}
+
+
+/* responsive */
+@media screen and (max-width: 1600px) {
+    .se1 {
+        .se1Wrap {
+            .se1Box1{
+                height: auto;
+            }
+            .se1Box2{
+
+            }
+        }
+    }
+    
+}
+@media (max-width: 1024px) {
 
 }
