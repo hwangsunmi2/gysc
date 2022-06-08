@@ -2,13 +2,13 @@
 
 .volunteer__inner ul li + li { margin-top: 1rem; }
 
-.volunteer__inner .info { padding-top: 1.8rem; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+.volunteer__inner .info { height: 100%; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 
-.volunteer__inner .info p { overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; font-size: 1.8rem; font-weight: 500; color: #555555; }
+.volunteer__inner .info p { overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; font-size: 1.8rem; font-weight: 500; color: #555555; line-height: 2rem; }
 
-.volunteer__inner .info p + p { margin-top: 1.5rem; }
+.volunteer__inner .info p + p { margin-top: 1rem; }
 
-.volunteer__inner .info .tit { margin-bottom: 2rem; font-size: 2.3rem; color: #000000; }
+.volunteer__inner .info .tit { margin-bottom: 2rem; font-size: 2.3rem; color: #000000; line-height: normal; }
 
 .volunteer__inner .type { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 15.6rem; height: 19.5rem; margin-right: 5rem; border: 1px solid #005aab; border-radius: .5rem; }
 
@@ -34,9 +34,9 @@
 
 .volunteer__inner .apply .button-wrap button { width: 12rem; height: 5rem; font-size: 1.8rem; font-weight: 500; color: #005aab; background: #eaf3fa; border: 1px dashed #005aab; }
 
-.youthCouncil-top { position: relative; margin-bottom: 6rem; }
+.youthCouncil-top { position: relative; margin-bottom: 5rem; }
 
-.youthCouncil-top::before { position: absolute; top: 6.5rem; width: 100%; height: calc(100% - .5rem); background: #f5f8f9; content: ""; z-index: -1; }
+.youthCouncil-top::before { position: absolute; top: 6.5rem; width: 100%; height: calc(100% - 1.5rem); background: #f5f8f9; content: ""; z-index: -1; }
 
 .youthCouncil-top .img-wrap { width: 47.5rem; -webkit-box-flex: 0; -ms-flex: none; flex: none; }
 
@@ -44,7 +44,7 @@
 
 .youthCouncil-top .title { margin-bottom: 3rem; font-size: 3rem; font-weight: 600; color: #005aab; }
 
-.youthCouncil-top p { font-weight: 500; line-height: 3.4rem; letter-spacing: -.075rem; }
+.youthCouncil-top p { font-weight: 500; line-height: 3rem; letter-spacing: -.075rem; }
 
 .youthCouncil-top .button-wrap { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
 
@@ -59,6 +59,8 @@
 .youthCouncil-bottom > ul > li { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; padding: 5rem 0; }
 
 .youthCouncil-bottom > ul > li + li { border-top: 1px dashed #dddddd; }
+
+.youthCouncil-bottom > ul > li:nth-last-child(1) { padding-bottom: 0; }
 
 .youthCouncil-bottom .list-dashed li { position: relative; padding-left: 1rem; font-size: 1.8rem; font-weight: 500; line-height: 3.2rem; }
 

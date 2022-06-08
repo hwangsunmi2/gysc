@@ -13,9 +13,11 @@
 
 .tab-content { height: auto; }
 
+.history__inner .swiper-container { padding: 0 5rem; }
+
 .history__inner .swiper-container::before { position: absolute; top: 1rem; left: 0; width: 100%; height: 1px; background: url(../../image/sub/bg-dash.png); content: ""; }
 
-.history__inner .swiper-wrapper { padding: 0 5rem; }
+.history__inner .swiper-wrapper { padding-right: 10rem; }
 
 .history__inner .swiper-slide { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: auto; }
 

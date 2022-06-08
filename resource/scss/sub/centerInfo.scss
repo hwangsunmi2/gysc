@@ -57,6 +57,7 @@
     &__inner {
         .swiper {
             &-container{
+                padding: 0 5rem;
                 &::before{
                     position: absolute;
                     top: 1rem;
@@ -68,7 +69,10 @@
                 }
             }
             &-wrapper{
-                padding: 0 5rem;
+                //padding: 0 5rem;
+                //padding-left: 5rem;
+                //width:calc(100% - 10rem);
+                padding-right: 10rem
             }
             &-slide {
                 @include d-flex;

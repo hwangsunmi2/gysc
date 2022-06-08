@@ -15,7 +15,8 @@
             }
         }
         .info{
-            padding-top: 1.8rem;
+            // padding-top: 1.8rem;
+            height: 100%;
             flex:1;
             p{
                 @include text-overflow;
@@ -24,14 +25,16 @@
                     weight:500;
                 }
                 color:#555555;
+                line-height: 2rem;
                 &+p{
-                    margin-top: 1.5rem;
+                    margin-top: 1rem;
                 }
             }
             .tit{
                 margin-bottom: 2rem;
                 font-size: 2.3rem;
                 color:#000000;
+                line-height: normal
             }
         }
         .type{
@@ -128,12 +131,12 @@
 .youthCouncil{
     &-top{
         position: relative;
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
         &::before{
             position: absolute;
             top: 6.5rem;
             width:100%;
-            height:calc(100% - .5rem);
+            height:calc(100% - 1.5rem);
             background: #f5f8f9;
             content: "";
             z-index: -1;
@@ -161,7 +164,7 @@
             font : {
                 weight:500;
             }
-            line-height: 3.4rem;
+            line-height: 3rem;
             letter-spacing: -.075rem;
         }
         .button-wrap{
@@ -195,6 +198,9 @@
                 padding: 5rem 0;
                 &+li{
                     border-top:1px dashed #dddddd;
+                }
+                &:nth-last-child(1){
+                    padding-bottom: 0;
                 }
             }
         }
