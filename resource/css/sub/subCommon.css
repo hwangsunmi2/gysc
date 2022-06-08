@@ -98,7 +98,7 @@ dl > div { display: -webkit-box; display: flex; display: -ms-flexbox; display: f
 
 .top-des dl > div + div { margin-top: 1rem; }
 
-.top-des dl dt { margin-right: 1.2rem; margin-bottom: 0; line-height: 3rem; }
+.top-des dl dt { min-width: 7rem; margin-right: 1.2rem; margin-bottom: 0; line-height: 3rem; }
 
 .top-des dl dd { margin-bottom: 0; line-height: 3rem; font-weight: 500; }
 
