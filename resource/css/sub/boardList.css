@@ -18,15 +18,15 @@
 
 .board-list__inner .info .date, .board-list__inner .info .target { overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; font-size: 1.8rem; font-weight: 500; color: #555555; }
 
-.board-list__inner .button-wrap { -webkit-box-flex: 0; -ms-flex: none; flex: none; margin-left: 3rem; }
+.board-list__inner .button-wrap { -webkit-box-flex: 0; -ms-flex: none; flex: none; margin-left: 0rem; }
 
 .board-list__inner .button-wrap button { width: 16.4rem; height: 6rem; font-size: 1.8rem; font-weight: 600; color: #005aab; border: 1px solid #005aab; background: #ffffff; letter-spacing: -1px; }
 
 .board-list.hor ul { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; border-top: 0; margin: -1.35rem -1.5rem; }
 
-.board-list.hor ul li { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: calc((100% / 4)); padding: 0; border-bottom: none; }
+.board-list.hor ul li { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: calc((100% / 4)); height: 100%; padding: 0; border-bottom: none; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.board-list.hor ul li .img-wrap { max-width: 100%; width: 100%; max-height: 24.4rem; height: 100%; margin-right: 0; }
+.board-list.hor ul li .img-wrap { max-width: 100%; width: 100%; max-height: 24.4rem; height: 100%; margin-right: 0; overflow: hidden; }
 
 .board-list.hor ul li a { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin: 1.35rem 1.5rem; border-bottom: 1px solid; }
 
@@ -60,7 +60,7 @@
 
 .board-list.hor3 ul li { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; width: calc(100% / 2); padding: 2.5rem; border-bottom: none; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.board-list.hor3 ul li .img-wrap { position: relative; max-width: 32.8rem; width: 100%; max-height: 24.4rem; height: 100%; margin-right: 3rem; border: 1px solid #eeeeee; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.board-list.hor3 ul li .img-wrap { position: relative; max-width: 32.8rem; width: 100%; max-height: 24.4rem; height: 100%; margin-right: 3rem; border: 1px solid #eeeeee; -webkit-box-sizing: border-box; box-sizing: border-box; overflow: hidden; }
 
 .board-list.hor3 ul li .img-wrap .badge { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: absolute; top: 0; left: 0; width: 12rem; height: 5rem; border-radius: 0; font-size: 1.8rem; font-weight: 300; color: #ffffff; }
 
@@ -78,7 +78,7 @@
 
 .board-list.hor3 .info ul li { width: 100%; padding: 0; font-size: 1.8rem; font-weight: 500; line-height: 3rem; color: #555555; }
 
-.board-list.hor3 .info ul li span { color: #005aab; font-weight: 500; }
+.board-list.hor3 .info ul li span { color: #005aab; font-weight: 500; line-height: 3rem; }
 
 .board-list.hor3 .info .tit { height: 7.2rem; margin-bottom: 0rem; font-size: 2.2rem; line-height: 3.6rem; -webkit-line-clamp: 2; }
 
@@ -108,6 +108,19 @@
 /*===================================================================================================
 ===========================================  responsive ==========================================
 ==================================================================================================*/
+@media screen and (max-width: 1024px) { .board-list .board-list__inner > ul { margin: -1.2rem; }
+  .board-list .board-list__inner > ul > li { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; height: 100%; padding: 1.2rem; width: 50%; }
+  .board-list .board-list__inner > ul > li .img-wrap { max-width: none; margin-right: 0; margin-bottom: 3rem; border: 1px solid #eeeeee; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  .board-list .board-list__inner > ul > li .img-wrap img { width: 100%; }
+  .board-list .board-list__inner > ul > li a { margin: 0; }
+  .board-list .info { width: 100%; }
+  .board-list .info ul li { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .board-list.hor .info { margin-top: 0; }
+  .board-list.hor3 .board-list__inner > ul { margin: -1.2rem; }
+  .board-list.hor3 .board-list__inner > ul > li { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding: 1.2rem; }
+  .board-list.hor3 .board-list__inner > ul > li .img-wrap { max-width: none; margin-right: 0; margin-bottom: 3rem; border: 1px solid #eeeeee; }
+  .board-list.hor3 .info ul li { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
+
 @media screen and (max-width: 720px) { .board-list__inner ul li { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
   .board-list__inner .img-wrap { margin-right: 0; margin-bottom: 3rem; }
   .board-list__inner .button-wrap { margin-left: 0; margin-top: 3rem; } }

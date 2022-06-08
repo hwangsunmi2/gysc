@@ -54,3 +54,9 @@
 .receipt-footer { margin-top: 2rem; padding-bottom: 5rem; text-align: center; }
 
 .receipt-footer img { display: inline-block; width: 35.6rem; height: 4.6rem; }
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/
+@media screen and (max-width: 720px) { .modal-content { padding: 3rem; }
+  .modal-receipt .modal-content { background-size: 100% 100%; } }

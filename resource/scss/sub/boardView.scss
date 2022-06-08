@@ -84,6 +84,7 @@
                             padding-left: 2.4rem;
                             font-weight: 500;
                             background: url(../../image/sub/icon-file.png)no-repeat left center;
+                            background-size: 1.8rem 1.4rem;
                         }
                     }
                 }
@@ -211,3 +212,39 @@
     }
 }
 
+
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/ 
+
+@media screen and(max-width:720px){
+    .board-view{
+        &__inner{
+            .view{
+                &-header{
+                    padding:3rem 0;
+                }
+                &-title{
+                    &__wrap{
+                        flex-direction: column-reverse;
+                        .badge{
+                            margin-left: 0;
+                            margin-bottom: 3rem;
+                        }
+                    }
+                }
+                &-info{
+                    flex-direction: column;
+                }
+                &-date{
+                    margin-right: 0;
+                    margin-bottom: 1rem;
+                }
+                &-content{
+                    padding:3rem;
+                }
+            }
+        }
+    }
+}

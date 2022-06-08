@@ -27,6 +27,7 @@
                     size: 2rem;
                     weight: 500;
                 }
+                line-height: normal;
             }
         }
     }
@@ -121,9 +122,47 @@
     } 
 }
 
+@media screen and(max-width:1024px){
+    .area{
+        &-img{
+            width:100%;
+            img{
+                margin: 0 auto;
+            }
+        }
+        &-select{
+            padding: 5rem;
+        }
+        &-wrap{
+            >div{
+                flex-direction: column;
+            }
+        }
+    }
+}
+
 @media screen and(max-width:720px){
-   
-    
+    .youthPop__inner{
+        .img-wrap{
+            img{
+                width:100%;
+            }
+        }
+    }
+    .area{
+        &-img {
+            .list {
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .cho_place{
+        .form-select{
+            height: 100%;
+        }    
+    }
 }
 
 @media screen and(max-width:375px){

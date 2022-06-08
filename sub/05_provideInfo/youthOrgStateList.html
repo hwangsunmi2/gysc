@@ -25,7 +25,10 @@
     <script type="text/javascript" src="../../resource/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../../resource/js/swiper.min.js"></script>
     <script type="text/javascript" src="../../resource/js/common.js"></script>
-    <!-- <script type="text/javascript" src="../../resource/js/main.js"></script> -->
+
+    <!-- 220608 js 추가 :: 이미지맵 반응형 -->
+    <script type="text/javascript" src="../../resource/js/jquery.rwdImageMaps.min.js"></script>
+    
 
     <title>경기도청소년활동진흥센터</title>
 </head>
@@ -625,7 +628,7 @@
                 </div>
 
                 <div class="mt_30">
-                    <div class="table-wrap thin">
+                    <div class="table-wrap thinv table-area">
                         <table class="table">
                             <caption>소개 공지사항 테이블</caption>
                             <colgroup>
@@ -770,10 +773,14 @@
 </body>
 
 <script>
+    $(document).ready(function(e) {
+	    $('img[usemap]').rwdImageMaps();
+      });
+
+
     function fn_detail(idx) {
         $("#idx").val(idx);
-        $("#listForm").attr("action", "/user/01/aview.do");
-        $("#listForm").submit();
+        
     }
 
     function fn_search3(region) {
@@ -781,8 +788,7 @@
         //return false;
         $("#searchCondition2").val(3);
         $("#searchKeyword2").val(region);
-        $("#listForm").attr("action", "/user/year100aList.do");
-        $("#listForm").submit();
+        
     }
 
     function tab_menu(num) {
