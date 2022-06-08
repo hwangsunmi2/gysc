@@ -109,6 +109,9 @@ dl > div { display: -webkit-box; display: flex; display: -ms-flexbox; display: f
 /*===================================================================================================
 ===========================================  responsive ==========================================
 ==================================================================================================*/
+@media screen and (max-width: 1024px) { .border-box__inner { padding: 5rem 3rem; }
+  .border-box__inner img { max-width: 100%; } }
+
 @media screen and (max-width: 720px) { .sub-visual { height: 19.2rem; padding: 0 2.4rem; font-size: 4rem; background-position: right center; background-size: cover; }
   .sub-visual.businessInfo { background-image: url(../../image/sub/sub-visual__mobile.jpg); }
   .sub-container__inner { padding: 0 2.4rem; -webkit-box-sizing: border-box; box-sizing: border-box; } }

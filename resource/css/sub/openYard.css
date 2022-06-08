@@ -93,4 +93,8 @@
   .forumBoardList .yearWrap:nth-child(even) .itemBox { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding-left: 6rem; }
   .forumBoardList .yearWrap:nth-child(even) .left { padding-left: 0; }
   .forumBoardList .yearWrap:nth-child(even) .right { padding-top: 3rem; padding-right: 0; }
-  .forumBoardList .yearWrap:nth-child(even) .right::after { top: 1.7rem; left: -3.8rem; right: auto; } }
+  .forumBoardList .yearWrap:nth-child(even) .right::after { top: 1.7rem; left: -3.8rem; right: auto; }
+  .inquiry__inner { padding: 5rem; }
+  .inquiry__inner .img-wrap img { width: 100%; }
+  .inquiry__inner button { width: 27.6rem; }
+  .inquiry__inner button img { width: 100%; } }

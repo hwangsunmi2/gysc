@@ -520,7 +520,13 @@
                 table-layout: fixed;
                 colgroup {
                     col:nth-child(1) {
-                        width: 14rem;
+                        width: 14rem !important;
+                    }
+                }
+                &-wrap{
+                    overflow-x: unset;
+                    &::before{
+                        display: none;
                     }
                 }
             }

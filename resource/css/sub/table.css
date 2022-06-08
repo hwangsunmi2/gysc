@@ -178,7 +178,9 @@
 ===========================================  responsive ==========================================
 ==================================================================================================*/
 @media screen and (max-width: 720px) { .table-wrap.ver .table { table-layout: fixed; }
-  .table-wrap.ver .table colgroup col:nth-child(1) { width: 14rem; }
+  .table-wrap.ver .table colgroup col:nth-child(1) { width: 14rem !important; }
+  .table-wrap.ver .table-wrap { overflow-x: unset; }
+  .table-wrap.ver .table-wrap::before { display: none; }
   .table-wrap:not(.ver) { position: relative; overflow-x: scroll; }
   .table-wrap:not(.ver)::before { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: absolute; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.48); color: #ffffff; font-size: 2rem; content: "표를 밀어보세요"; z-index: 1; }
   .table-wrap:not(.ver).scroll::before { display: none; }

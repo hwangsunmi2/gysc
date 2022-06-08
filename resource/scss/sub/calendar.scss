@@ -12,6 +12,7 @@
             width: 4.5rem;
             height:4.5rem;
             background: #ffffff url(../../image/sub/icon-search.png) no-repeat center;
+            background-size: 2rem;
             border:1px solid #cccccc;
         }
     }
@@ -32,9 +33,11 @@
         height: 4.5rem;
         &.prev_month{
             background: url(../../image/sub/btn_clamp_prev.jpg) no-repeat 0 0;
+            background-size: cover;
         }
         &.next_month{
             background: url(../../image/sub/btn_clamp_next.jpg) no-repeat 0 0;
+            background-size: cover;
         }
     }
     p{
@@ -334,4 +337,120 @@
 .lists .info>div button.noend {
     background: #fff;
     color: #555;
+}
+
+
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/ 
+
+@media screen and(max-width:1024px){
+    .adjust-month{
+        position: unset;
+        left: 0;
+        transform: none;
+    }
+    
+}
+
+@media screen and(max-width:720px){
+    .user-area{
+        flex-direction: column;
+        align-items: flex-end;
+        .button-wrap{
+            margin-top: 1rem;
+        }
+    }
+    .month_list {
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+        li{
+            width:100%;
+            &:nth-child(1){
+                a{
+                    span{
+                        position: relative;
+                        &::after{
+                            content: "(일)";
+                        }
+                    }
+                }
+            } 
+            &:nth-child(2){
+                a{
+                    span{
+                        position: relative;
+                        &::after{
+                            content: "(월)";
+                        }
+                    }
+                }
+            } 
+            &:nth-child(3){
+                a{
+                    span{
+                        position: relative;
+                        &::after{
+                            content: "(화)";
+                        }
+                    }
+                }
+            } 
+            &:nth-child(4){
+                a{
+                    span{
+                        position: relative;
+                        &::after{
+                            content: "(수)";
+                        }
+                    }
+                }
+            } 
+            &:nth-child(5){
+                a{
+                    span{
+                        position: relative;
+                        &::after{
+                            content: "(목)";
+                        }
+                    }
+                }
+            } 
+            &:nth-child(6){
+                a{
+                    span{
+                        position: relative;
+                        &::after{
+                            content: "(금)";
+                        }
+                    }
+                }
+            } 
+            &:nth-child(7){
+                a{
+                    span{
+                        position: relative;
+                        &::after{
+                            content: "(토)";
+                        }
+                    }
+                }
+            } 
+            &.today{
+                span{
+                    &::before{
+                        top: -1.5rem;
+                        left: -1.5rem;
+                        width:7.5rem;
+                        height: 5rem;
+                        transform: none;
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+    }
 }

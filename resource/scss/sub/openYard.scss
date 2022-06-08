@@ -357,7 +357,20 @@
             }
         }
     }
-    
+    .inquiry__inner{
+        padding:5rem;
+        .img-wrap{
+            img{
+                width:100%;
+            }
+        }
+        button{
+            width:27.6rem;
+            img{
+                width:100%;
+            }
+        }
+    }
 }
 
 @media screen and(max-width:375px){

@@ -145,6 +145,7 @@
             &.date{
                 width: 19.6rem;
                 background-image: url(../../image/sub/icon-date.png);
+                background-size: 1.6rem 1.7rem;
                 background-repeat: no-repeat;
                 background-position: right 1rem center;
                 font-size: 1.8rem;
@@ -182,6 +183,7 @@
         @include display-flex;
         @include flex-wrap;
         margin: -.5rem -1.5rem;
+        flex:none;
         input {
             height: auto ;
             &[type='checkbox'] {
@@ -599,4 +601,34 @@
 
 .border-top__none{
     border-top: 0 !important;
+}
+
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/ 
+
+
+@media screen and(max-width:1024px){
+    .form{
+        &-group{
+            flex-wrap: wrap;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        &-check{
+            flex:none;
+            margin: 1rem -1rem;
+        }
+        &-select{
+            flex:1;
+            &.w{
+                &-xs{
+                    select{
+                        width:100%;
+                    }
+                }
+            }
+        }
+    }
 }
