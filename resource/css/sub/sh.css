@@ -86,7 +86,9 @@
     transform: translateX(-50%); */
 }
 
-.grayBox_sh .grayBox_img img {
+.content_ci .grayBox_sh .grayBox_img img {
+    width:48%;
+    max-width: 61.3rem;
     box-shadow: 0px .2rem 1.3rem rgb(0 0 0 / 5%);
 
 }
@@ -103,7 +105,7 @@
 
 
 
-.content_ci .grayBox_sh .info p {}
+
 
 .grayBox_sh .info p {
     font-size: 2.2rem;
@@ -232,7 +234,10 @@ p .bold {
     border: none;
 }
 
-
+.content_map .grayBox_sh .grayBox_img img{
+    display: block;
+    width: 100%;
+}
 .content_map .grayBox_sh img:nth-child(1) {
     /* float: left; */
     margin-right: 0;
@@ -383,13 +388,11 @@ p .bold {
 ===========================================  responsive ==========================================
 ==================================================================================================*/ 
 @media all and (max-width:1200px){
-    .grayBox_sh .grayBox_img{width:100%}
-    .grayBox_sh .grayBox_img img{
-        width:40%;
-    }.grayBox_sh .grayBox_img img {
-        box-shadow: 0px .2rem 1.3rem rgb(0 0 0 / 5%);
-    }
-    .grayBox_sh .grayBox_img img {
+    .grayBox_sh .grayBox_img{width:100%;}
+   
+    .grayBox_sh img:nth-child(1) {
+        /* float: left; */
+        margin-right: 1rem;
         width: 48%;
     }
     .content_ci .grayBox_sh .info p {
