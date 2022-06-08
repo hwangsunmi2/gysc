@@ -252,3 +252,205 @@ p .bold {
 .content_map .info .bus1 .bus_default{background-color:#1ec144; }
 
 .content_map .info .bus2 .bus_stand{background-color:#c52116}
+
+
+@media all and (max-width:768px)  { 
+
+    .sub-title {
+        margin-bottom: 0;
+        font-size: 3.8rem;
+    }
+    .grayBox_sh .grayBox_img {
+        width:78%;
+        margin:0 auto;
+        justify-content: space-evenly;
+ 
+    }
+    .grayBox_sh .grayBox_img img{
+        box-sizing: border-box;
+        flex:1;
+
+    }
+    .grayBox_sh .grayBox_img img{
+        width:calc(100% / 2);
+        height:50%;
+        object-fit: cover;
+    }
+
+    
+    .inner {
+        max-width: 75rem;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .content_ci {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .grayBox_sh .info p {
+        width: 50rem;
+        margin: 0 auto;
+        font-size: 1.7rem;
+        line-height: 3.6rem;
+        font-weight: 400;
+    }
+
+    .content_ci .grayBox_sh .info::before {
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .grayBox_sh .grayBox_ul li img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .grayBox_sh .grayBox_ul .list2,.grayBox_sh .grayBox_ul .list3,.grayBox_sh .grayBox_ul .list4 {
+
+       flex:1;
+    } 
+
+    .content_ch .grayBox_sh .info::before {
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .grayBox_sh .grayBox_ul {
+        width: 65rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .content_ch .grayBox_sh .info::before {
+        top: -30.5rem;
+        width: 100%;
+        height: calc(100% + 30.5rem);
+        background-color: #f5f8f9;
+    }
+
+    .content_map .grayBox_sh .grayBox_img {
+        width: 100%;
+        margin: 0 auto;
+        /* justify-content: space-evenly; */
+    }
+
+
+    .content_map .grayBox_wrap .grayBox_1,
+    .content_map .grayBox_wrap .grayBox_2,
+    .content_map .grayBox_wrap .grayBox_3 {width:calc(100% / 4)}
+
+    .content_map .grayBox_wrap .grayBox_4 {display: block;}
+
+    .content_map .grayBox_wrap .grayBoxd {
+        padding: 4.2% 2.7%;
+        flex-direction: column;
+    }
+
+    .content_map .grayBox_wrap .grayBoxd p {
+        display: inline-block;
+        font-size: 1.8rem;
+        margin-left: 0;
+        line-height: 2.8rem;
+        text-align: center;
+        letter-spacing: -0.25rem;
+        font-weight: 400;
+    }
+}
+/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/ 
+  @media all and (max-width:550px) {
+    .inner {
+        max-width: 90rem;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .grayBox_sh .info p {
+        width: 60rem;
+        margin: 0 auto;
+        font-size: 1.4rem;
+        line-height: 3rem;
+        font-weight: 400;
+    }
+
+
+    .grayBox_sh .grayBox_ul .list1 img {
+        width:100%;
+    }
+    .grayBox_sh .grayBox_ul {
+        width: 55rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .content_ch .grayBox_sh .info::before {
+        top: -30.5rem;
+        width: 98%;
+        height: calc(100% + 30.5rem);
+        left:50%;
+        transform: translateX(-50%);
+        background-color: #f5f8f9;
+    }
+
+    .content_ch .grayBox_sh .info::before {
+        top: -27.5rem;
+        width: 98%;
+        height: calc(100% + 27.5rem);
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f5f8f9;
+    }
+  }
+  /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/ 
+  @media all and (max-width:460px) {
+    .grayBox_sh .info p {
+        width: 53rem;
+        margin: 0 auto;
+        font-size: 1.8rem;
+        line-height: 3.6rem;
+        font-weight: 400;
+    }
+
+    .grayBox_sh .info p {
+        width: 61rem;
+        margin: 0 auto;
+        font-size: 1.8rem;
+        line-height: 3.6rem;
+        font-weight: 400;
+    }
+
+    .grayBox_sh .grayBox_ul {
+        width: 60rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .content_ch .grayBox_sh .info::before {
+        top: -25.5rem;
+        width: 100%;
+        height: calc(100% + 25.5rem);
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f5f8f9;
+    }
+  }
+
+   @media all and (max-width:360px) {
+    .grayBox_sh .info p {
+        width: 51rem;
+        margin: 0 auto;
+        font-size: 1.8rem;
+        line-height: 3.6rem;
+        font-weight: 400;
+    }
+
+   
+  }
