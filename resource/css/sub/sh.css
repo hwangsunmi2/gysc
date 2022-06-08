@@ -8,7 +8,7 @@
     display: block;
     text-align: center;
 }
-.grayBox_sh .info p {padding-top:8rem; padding-bottom:8rem;}
+.content_ci .grayBox_sh .info p {padding-top:8rem; padding-bottom:8rem;}
 .grayBox_sh .info::before {
     position: absolute;
     left: 0;
