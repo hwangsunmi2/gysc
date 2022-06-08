@@ -390,6 +390,7 @@
             }
         }
         .infoImg {
+            margin-left:4.9rem;
             vertical-align: top;
             a{
                 & + a {margin-left:1rem;}
@@ -638,5 +639,10 @@
     
 }
 @media (max-width: 1024px) {
-
+    .se1 {
+        height: auto;
+        .se1Wrap {
+            display:block;
+        }
+    }
 }
