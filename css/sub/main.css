@@ -524,7 +524,6 @@
 }
 
 .se3 .se3Wrap .infoImg {
-  margin-left: 4.9rem;
   vertical-align: top;
 }
 
@@ -784,9 +783,6 @@
 
 /* responsive */
 @media (max-width: 1024px) {
-  .se1 {
-    height: auto;
-  }
   .se1 .se1Wrap {
     display: block;
   }

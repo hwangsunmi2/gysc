@@ -11,9 +11,9 @@ $(document).ready(function () {
           init: true,
           // Optional parameters
           loop: false,
-          autoplay: {
-              delay: autoPlayDelay
-          },
+        //   autoplay: {
+        //       delay: autoPlayDelay
+        //   },
   
           navigation: {
               nextEl: '.se1Box1 .swiper-button-next',
