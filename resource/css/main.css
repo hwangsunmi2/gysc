@@ -799,17 +799,28 @@
 @media (max-width: 1024px) {
   .se1 {
     height: 100%;
+    padding-bottom: 10rem;
   }
   .se1 .se1Wrap {
     display: block;
     top: 5rem;
     -webkit-transform: inherit;
             transform: inherit;
+    margin: 0 2.4rem;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .se1 .se1Wrap .se1Box1 {
     position: relative;
+    width: 95%;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+  .se1 .se1Wrap .se1Box2 {
+    width: 95%;
+    margin-top: 1rem;
+    margin-left: 0;
   }
 }
