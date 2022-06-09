@@ -872,4 +872,7 @@
   .se2 .iconWrap .icon:nth-child(n+3) {
     border-top: 1px solid #ddd;
   }
+  .se3 {
+    padding: 50px 2.4rem;
+  }
 }
