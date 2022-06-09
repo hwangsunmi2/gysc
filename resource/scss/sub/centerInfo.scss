@@ -198,14 +198,14 @@
     /* 설립목적 */
     .est {
         position:relative;
-        margin-bottom:14rem;
+        margin-bottom:7rem;
         .top {
             position:relative;
             padding:5rem;
             width:100%;
             background: url(../../image/sub/est_1.jpg) no-repeat;
             height: 0;
-            padding-bottom:65.7%;
+            padding-bottom:55.7%;
             background-size: contain;
             background-position: top center;
             box-sizing: border-box;
@@ -1113,10 +1113,12 @@
             }
         }
         .est {
-            margin-bottom: 38rem;
+            margin-bottom: 7rem;
+            padding-top:39%;
             .top {
                 position: relative;
                 width:100%;
+                padding-bottom: 65.7%;
                 background-size: contain;
                 img {
                     position: absolute;
@@ -1127,11 +1129,16 @@
                 }
                 .right {
                     float:right;
+                    position: relative;
+                    top:calc(100% - 70rem);
+                    padding:20rem 0 0 0;
+                    width:calc(100% - 6rem);
                 }
             }
             .bottom {
                 width: 100%;
                 display:block;
+                bottom:-12%;
                 ul {
                     flex-flow: row wrap;
                     margin: 0 2.4rem;
@@ -1158,6 +1165,18 @@
 
 @media screen and(max-width:1200px) {
     .content {
+        .est{
+            padding-top:47%;
+            margin-bottom: 7rem;
+            .top{
+                .right{
+                    top:calc(100% - 71rem);
+                }
+            }
+            .bottom{
+                bottom:-17%;
+            }
+        }
         .introTitle {
             word-break: keep-all;
             line-height:5rem;
@@ -1293,6 +1312,21 @@
 }
 
 @media screen and(max-width:1024px) {
+    .content{
+        .est{
+            padding-top:70%;
+            margin-bottom: 15rem;
+            .top{
+                top: calc(100% - 76rem);
+                .right{
+                    top: calc(100% - 76rem);
+                }
+            }
+            .bottom{
+                bottom:-24%;
+            }
+        }
+    }
     .youthCouncil{
         &-top{
             .img-wrap{
@@ -1320,6 +1354,20 @@
 }
 
 @media screen and(max-width:720px){
+    .content{
+        .est{
+            padding-top:76%;
+            margin-bottom: 20rem;
+            .top{
+                .right{
+                    top: calc(100% - 77rem);
+                }
+            }
+            .bottom{
+                bottom:-26%;
+            }
+        }
+    }
     .youthCouncil{
         &-top{
             .img-wrap{

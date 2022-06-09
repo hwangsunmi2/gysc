@@ -225,7 +225,7 @@
 
 .content .est {
   position: relative;
-  margin-bottom: 14rem;
+  margin-bottom: 7rem;
 }
 
 .content .est .top {
@@ -234,7 +234,7 @@
   width: 100%;
   background: url(../../image/sub/est_1.jpg) no-repeat;
   height: 0;
-  padding-bottom: 65.7%;
+  padding-bottom: 55.7%;
   background-size: contain;
   background-position: top center;
   -webkit-box-sizing: border-box;
@@ -1177,11 +1177,13 @@
     width: inherit;
   }
   .content .est {
-    margin-bottom: 38rem;
+    margin-bottom: 7rem;
+    padding-top: 39%;
   }
   .content .est .top {
     position: relative;
     width: 100%;
+    padding-bottom: 65.7%;
     background-size: contain;
   }
   .content .est .top img {
@@ -1194,10 +1196,15 @@
   }
   .content .est .top .right {
     float: right;
+    position: relative;
+    top: calc(100% - 70rem);
+    padding: 20rem 0 0 0;
+    width: calc(100% - 6rem);
   }
   .content .est .bottom {
     width: 100%;
     display: block;
+    bottom: -12%;
   }
   .content .est .bottom ul {
     -webkit-box-orient: horizontal;
@@ -1220,6 +1227,16 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .content .est {
+    padding-top: 47%;
+    margin-bottom: 7rem;
+  }
+  .content .est .top .right {
+    top: calc(100% - 71rem);
+  }
+  .content .est .bottom {
+    bottom: -17%;
+  }
   .content .introTitle {
     word-break: keep-all;
     line-height: 5rem;
@@ -1296,6 +1313,19 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .content .est {
+    padding-top: 70%;
+    margin-bottom: 15rem;
+  }
+  .content .est .top {
+    top: calc(100% - 76rem);
+  }
+  .content .est .top .right {
+    top: calc(100% - 76rem);
+  }
+  .content .est .bottom {
+    bottom: -24%;
+  }
   .youthCouncil-top .img-wrap {
     width: 50%;
   }
@@ -1312,6 +1342,16 @@
 }
 
 @media screen and (max-width: 720px) {
+  .content .est {
+    padding-top: 76%;
+    margin-bottom: 20rem;
+  }
+  .content .est .top .right {
+    top: calc(100% - 77rem);
+  }
+  .content .est .bottom {
+    bottom: -26%;
+  }
   .youthCouncil-top .img-wrap {
     width: 20%;
     margin: 0 5%;
