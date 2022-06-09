@@ -307,6 +307,9 @@
         }
     } 
     .forumBoardList {
+        .title{
+            line-height: normal
+        }
         .itemBox{
             @include flex-column;
             padding-left: 6rem;

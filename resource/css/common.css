@@ -1330,7 +1330,10 @@ body.fixed {
   }
   .footer .banner_zone .zone {
     font-size: 2rem;
-    margin-top: 1rem;
+    height: 7.4rem;
+  }
+  .footer .banner_zone .swiper-container {
+    padding-right: 0.5rem;
   }
   .footer .banner_zone .swiper-container .swiper-wrapper .swiper-slide a img {
     height: 7.4rem;

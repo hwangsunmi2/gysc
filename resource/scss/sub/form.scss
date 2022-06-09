@@ -676,6 +676,7 @@
         .form{
             &-select{
                 justify-content: flex-end;
+                flex:none;
             }
         }
     }
@@ -708,6 +709,23 @@
                 width: 100%;
                 margin-bottom: 1rem;
             }
+        }
+    }
+    .search-box{
+        .form-group {
+            input{
+                &.date{
+                    width: 100%;
+                }
+            }
+        }
+    } 
+}
+
+@media screen and(max-width:360px){
+    .search-box{
+        .form-search{
+            width:100%;
         }
     }
 }

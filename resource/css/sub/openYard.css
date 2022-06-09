@@ -83,6 +83,7 @@
   .pressData__inner .year::before { display: none; }
   .pressData__inner .year-wrap { height: 5rem; }
   .pressData__inner::before { left: 3rem; }
+  .forumBoardList .title { line-height: normal; }
   .forumBoardList .itemBox { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding-left: 6rem; }
   .forumBoardList .left { width: 100%; }
   .forumBoardList .left .img { width: 100%; height: auto; padding: 0; }
