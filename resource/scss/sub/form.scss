@@ -676,6 +676,7 @@
         .form{
             &-select{
                 justify-content: flex-end;
+                flex:none;
             }
         }
     }

@@ -205,7 +205,7 @@
   .form-wrap.flex3 > div { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
   .form-wrap.flex3 > div > * { width: 100%; }
   .form-wrap.flex3 > span { -webkit-box-flex: 0; -ms-flex: none; flex: none; }
-  .search-box .form-select { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+  .search-box .form-select { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-flex: 0; -ms-flex: none; flex: none; }
   .security { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
   .search-plus .form-group { padding-top: 0; padding-bottom: 0; }
   .filter .checks { padding: 1rem 0; }
