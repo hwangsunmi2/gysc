@@ -170,6 +170,7 @@
   padding-bottom: 7.8rem;
   /* 센터소개 */
   /* 설립목적 */
+  /* 비전 및 목표 */
 }
 
 .content .introTitle {
@@ -225,14 +226,10 @@
 
 .content .est {
   position: relative;
-  margin-bottom: 14rem;
-}
-
-.content .est .top {
-  position: relative;
+  margin-bottom: 10rem;
   padding: 5rem;
-  width: 140rem;
-  height: 65.7rem;
+  width: 1401px;
+  height: 657px;
   background: url(../../image/sub/estBg.jpg) no-repeat;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -271,7 +268,7 @@
 
 .content .est .bottom {
   position: absolute;
-  bottom: -14rem;
+  bottom: -8rem;
   right: 0;
   width: 135rem;
   height: 22.5rem;
@@ -296,16 +293,7 @@
 }
 
 .content .est .bottom ul li + li + li {
-  position: relative;
-}
-
-.content .est .bottom ul li + li + li::before {
-  position: absolute;
-  left: 0;
-  width: 1px;
-  height: 16.4rem;
-  background-color: #eee;
-  content: '';
+  border-left: 1px solid #eee;
 }
 
 .content .est .bottom ul li:nth-child(1) {
@@ -314,7 +302,7 @@
 }
 
 .content .est .bottom ul li:nth-child(1) div {
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   font-size: 2rem;
   color: #fff;
   font-weight: 500;
@@ -347,7 +335,7 @@
 }
 
 .content .est .bottom ul li div {
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   font-size: 2rem;
   color: #000;
   font-weight: 600;
@@ -366,6 +354,10 @@
   font-size: 1.6rem;
   color: #555;
   line-height: 2.2rem;
+}
+
+.content .vision {
+  width: 100%;
 }
 
 /* 조직도 */
@@ -413,87 +405,7 @@
 ===========================================  responsive ==========================================
 ==================================================================================================*/
 @media screen and (max-width: 1400px) {
-  .content .grayBox {
-    padding: 5rem 2.4rem;
-  }
-  .content .grayBox img {
-    width: 55%;
-  }
-  .content .grayBox .info {
-    width: calc(100% - 85rem);
-  }
-  .content .grayBox .info img {
-    width: inherit;
-  }
-  .content .est {
-    margin-bottom: 38rem;
-  }
-  .content .est .top {
-    width: 100%;
-    padding: 5rem 2.4rem;
-    background-size: contain;
-  }
-  .content .est .top img {
-    position: absolute;
-    width: calc(100% - 90rem);
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    padding: 0 0 0 2rem;
-  }
-  .content .est .top .right {
-    position: absolute;
-    left: 60%;
-    -webkit-transform: translateX(-60%);
-            transform: translateX(-60%);
-  }
-  .content .est .bottom {
-    width: 100%;
-    display: block;
-  }
-  .content .est .bottom ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    margin: 0 2.4rem;
-  }
-  .content .est .bottom ul li {
-    width: 33.33%;
-  }
-  .content .vision-wrap {
-    overflow: auto;
-    border: 1px solid blue;
-    padding: 0 2.4rem;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .content .vision-wrap .vision {
-    margin: 0 2.4rem;
-    border: 1px solid red;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .content .introTitle {
-    word-break: keep-all;
-    line-height: 5rem;
-  }
-  .content .introTitle span {
-    display: block;
-  }
   .content .grayBox img {
     width: 100%;
-  }
-  .content .grayBox .info {
-    display: block;
-    width: 100%;
-    margin-top: 5rem;
-    margin-left: 0;
-  }
-  .content .grayBox .info img {
-    width: 10%;
-    padding-left: 0.5rem;
-    vertical-align: middle;
   }
 }
