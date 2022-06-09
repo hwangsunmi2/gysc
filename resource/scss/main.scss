@@ -664,8 +664,6 @@
             .se1Box1 {
                 position: relative;
                 width:95%;
-                left:50%;
-                transform: translateX(-50%);
             }
             .se1Box2 {
                 width:95%;
@@ -674,4 +672,18 @@
             }
         }
     }
+
+
+    .se2 {
+        padding:5rem 2.4rem;
+        .iconWrap {
+            flex-flow:row wrap;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            .icon {
+                width:50%
+            }
+        }
+    }
+    
 }

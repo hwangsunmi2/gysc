@@ -814,13 +814,24 @@
   .se1 .se1Wrap .se1Box1 {
     position: relative;
     width: 95%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
   }
   .se1 .se1Wrap .se1Box2 {
     width: 95%;
     margin-top: 1rem;
     margin-left: 0;
+  }
+  .se2 {
+    padding: 5rem 2.4rem;
+  }
+  .se2 .iconWrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  .se2 .iconWrap .icon {
+    width: 50%;
   }
 }

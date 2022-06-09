@@ -71,10 +71,10 @@ $(document).ready(function () {
 
 function se1Box2_Swiper(){
 	var se1Box2Swiper = new Swiper(".se1Box2 .mySwiper", {
-		autoplay: {
-			delay: 3000,
-			disableOnInteraction: false
-		},
+		// autoplay: {
+		// 	delay: 3000,
+		// 	disableOnInteraction: false
+		// },
 		pagination: {
 			el: ".se1Box2 .swiper-pagination",
 			type: "fraction",
