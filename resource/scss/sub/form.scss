@@ -711,4 +711,13 @@
             }
         }
     }
+    .search-box{
+        .form-group {
+            input{
+                &.date{
+                    width: 100%;
+                }
+            }
+        }
+    } 
 }
