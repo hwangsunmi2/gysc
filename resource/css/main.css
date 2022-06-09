@@ -327,7 +327,7 @@
   position: relative;
   overflow: hidden;
   width: 16.6%;
-  height: 190px;
+  height: 19rem;
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -828,10 +828,51 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
   }
   .se2 .iconWrap .icon {
     width: 50%;
+    height: 25rem;
+    border-left: 1px solid #ddd;
+  }
+  .se2 .iconWrap .icon p {
+    font-size: 2.4rem;
+  }
+  .se2 .iconWrap .icon .seBox {
+    height: 25rem;
+  }
+  .se2 .iconWrap .icon .seBox .se2_1 {
+    width: 12.4rem;
+    height: 12.4rem;
+  }
+  .se2 .iconWrap .icon .seBox .se2_2 {
+    width: 12.4rem;
+    height: 12.4rem;
+  }
+  .se2 .iconWrap .icon .seBox .se2_3 {
+    width: 12.4rem;
+    height: 12.4rem;
+  }
+  .se2 .iconWrap .icon .seBox .se2_4 {
+    width: 12.4rem;
+    height: 12.4rem;
+  }
+  .se2 .iconWrap .icon .seBox .se2_5 {
+    width: 12.4rem;
+    height: 12.4rem;
+  }
+  .se2 .iconWrap .icon .seBox .se2_6 {
+    width: 12.4rem;
+    height: 12.4rem;
+  }
+  .se2 .iconWrap .icon + .icon {
+    border-left: 1px solid #ddd !important;
+  }
+  .se2 .iconWrap .icon:nth-child(n+3) {
+    border-top: 1px solid #ddd;
+  }
+  .se3 {
+    padding: 50px 2.4rem;
   }
 }
