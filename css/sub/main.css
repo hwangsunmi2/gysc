@@ -524,6 +524,7 @@
 }
 
 .se3 .se3Wrap .infoImg {
+  margin-left: 4.9rem;
   vertical-align: top;
 }
 
@@ -551,6 +552,7 @@
 
 .se4Wrap .se4Cont {
   padding: 3rem;
+  margin-top: -2px;
   letter-spacing: -0.5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -585,7 +587,7 @@
   width: 82.3rem;
   height: 9.3rem;
   background-color: #f2f2f2;
-  margin-bottom: 3.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .se4Wrap .activityInfo .searchBox dl {
@@ -604,7 +606,18 @@
 }
 
 .se4Wrap .activityInfo .searchBox dl dt.dt {
+  position: relative;
   margin-left: 3rem;
+}
+
+.se4Wrap .activityInfo .searchBox dl dt.dt::before {
+  position: absolute;
+  top: -2.9rem;
+  left: -3rem;
+  width: 1px;
+  height: 9.8rem;
+  background-color: #fff;
+  content: '';
 }
 
 .se4Wrap .activityInfo .searchBox dl dd.date {
@@ -653,6 +666,7 @@
 
 .se4Wrap .activityInfo .se4Box .swiper {
   position: relative;
+  padding-left: 1px;
   width: 100%;
   height: 100%;
 }
@@ -681,7 +695,7 @@
 .se4Wrap .activityInfo .se4Box .se4_btn {
   position: relative;
   float: right;
-  top: -17.7rem;
+  top: -15.7rem;
   right: 0;
   width: 5rem;
   height: 1.4rem;
@@ -784,6 +798,7 @@
 /* responsive */
 @media (max-width: 1024px) {
   .se1 .se1Wrap {
-    display: block;
+    -webkit-transform: inherit;
+            transform: inherit;
   }
 }

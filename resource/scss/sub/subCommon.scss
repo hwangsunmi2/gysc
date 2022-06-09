@@ -155,6 +155,7 @@ button, select, input{
             size:2rem;
             weight:500;
         }
+        line-height: normal;
         margin-bottom: 5rem;
     }
     &-tab{
@@ -324,6 +325,18 @@ dl{
             }
         }
     }
+    .top{
+        &-des{
+            &.online{
+                background-position: center bottom;
+                padding-bottom: 31rem;
+            }
+            &.program{
+                background-position: center bottom;
+                padding-bottom: 31rem;
+            }
+        }
+    }
 }
 
 @media screen and(max-width:1200px){
@@ -353,11 +366,11 @@ dl{
             padding:3rem;
         }
         &.program{
-            background-position: right 4.3rem bottom;
+            padding-bottom: 19rem;
             background-size: 35.3rem 19.9rem;
         }
         &.online{
-            background-position: right 3.3rem bottom;
+            padding-bottom: 22rem;
             background-size: 36rem 23rem;
         }
         dl{
@@ -389,9 +402,9 @@ dl{
         }
     }
     .top-des{
-        &.program, &.online{
-            background-image: none;
-        }
+        // &.program, &.online{
+        //     background-image: none;
+        // }
         &.visitProgram{
             padding-top: 22rem;
             padding-left: 0;
