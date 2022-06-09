@@ -711,4 +711,21 @@
             }
         }
     }
+    .search-box{
+        .form-group {
+            input{
+                &.date{
+                    width: 100%;
+                }
+            }
+        }
+    } 
+}
+
+@media screen and(max-width:360px){
+    .search-box{
+        .form-search{
+            width:100%;
+        }
+    }
 }

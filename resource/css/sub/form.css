@@ -212,4 +212,7 @@
   .filter .checks input[type="radio"] + label { width: 100%; margin: .5rem 0; } }
 
 @media screen and (max-width: 500px) { td > .d-flex:not(.flex3) { -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 1rem 0; }
-  td > .d-flex:not(.flex3) > p { width: 100%; margin-bottom: 1rem; } }
+  td > .d-flex:not(.flex3) > p { width: 100%; margin-bottom: 1rem; }
+  .search-box .form-group input.date { width: 100%; } }
+
+@media screen and (max-width: 360px) { .search-box .form-search { width: 100%; } }

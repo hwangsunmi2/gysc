@@ -203,8 +203,9 @@
             position:relative;
             padding:5rem;
             width:140rem;
-            height:65.7rem;
-            background: url(../../image/sub/estBg.jpg) no-repeat;
+            background: url(../../image/sub/est_1.jpg) no-repeat;
+            background-size: contain;
+            background-position: center;
             box-sizing: border-box;
             img {
                 display: inline-block;
@@ -234,10 +235,8 @@
             }
         }
         .bottom {
-            position:absolute;
-            bottom: -14rem;
-            right: 0;
-            width:135rem;
+           
+            width:140rem;
             height:22.5rem;
             background-color: #fff;
             ul {
