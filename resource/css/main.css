@@ -798,9 +798,18 @@
 /* responsive */
 @media (max-width: 1024px) {
   .se1 {
-    height: auto;
+    height: 100%;
   }
   .se1 .se1Wrap {
     display: block;
+    top: 5rem;
+    -webkit-transform: inherit;
+            transform: inherit;
+  }
+  .se1 .se1Wrap .se1Box1 {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
