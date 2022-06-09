@@ -415,6 +415,7 @@
     }
     .se4Cont{
         padding:3rem;
+        margin-top:-2px;
         letter-spacing: -0.5px;
         box-sizing: border-box;
         border:1px solid #e9e9e9;
@@ -444,7 +445,7 @@
             width:82.3rem;
             height:9.3rem;
             background-color: #f2f2f2;
-            margin-bottom: 3.4rem;
+            margin-bottom: 1.5rem;
             dl {
                 display: flex;
                 padding:2.9rem 2.7rem;
@@ -456,7 +457,17 @@
                     font-size:1.8rem;
                     line-height: 4rem;
                     &.dt {
+                        position:relative;
                         margin-left:3rem;
+                        &::before{
+                            position:absolute;
+                            top:-2.9rem;
+                            left:-3rem;
+                            width:1px;
+                            height:9.8rem;
+                            background-color: #fff;
+                            content:'';
+                        }
                     }   
                 }
                 dd {
@@ -506,6 +517,7 @@
         .se4Box{
             .swiper {
                 position:relative;
+                padding-left:1px;
                 width: 100%;
                 height: 100%;
                 .swiper-slide {
@@ -535,7 +547,7 @@
             .se4_btn{
                 position:relative;
                 float:right;
-                top: -17.7rem;
+                top: -15.7rem;
                 right:0;
                 width:5rem;
                 height:1.4rem;
