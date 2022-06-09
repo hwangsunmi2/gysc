@@ -1332,6 +1332,10 @@ body.fixed {
     font-size: 2rem;
     margin-top: 1rem;
   }
+  .footer .banner_zone .swiper-container .swiper-wrapper .swiper-slide a img {
+    height: 7.4rem;
+    width: 100%;
+  }
   .footer .footerLogo {
     display: none;
   }
