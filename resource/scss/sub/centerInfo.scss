@@ -204,8 +204,9 @@
             padding:5rem;
             width:140rem;
             background: url(../../image/sub/est_1.jpg) no-repeat;
-            background-size: contain;
-            background-position: center;
+            height:65.7rem;
+            background-size: 100%;
+            background-position: top center;
             box-sizing: border-box;
             img {
                 display: inline-block;
@@ -213,8 +214,8 @@
             }
             .right {
                 display: inline-block;
-                margin-left:12rem;
-                width: calc(100% - 680px);
+                float: right;
+                width: calc(100% - 65.8rem);
                 vertical-align: top;
                 div {
                     padding-bottom:2.5rem;
@@ -235,8 +236,10 @@
             }
         }
         .bottom {
-           
-            width:140rem;
+            position:absolute;
+            left:5.2rem;
+            bottom:-15%;
+            width:135rem;
             height:22.5rem;
             background-color: #fff;
             ul {
@@ -1122,9 +1125,7 @@
                     padding: 0 0 0 2rem;
                 }
                 .right {
-                    position:absolute;
-                    left:60%;
-                    transform: translateX(-60%);
+                    float:right;
                 }
             }
             .bottom {
