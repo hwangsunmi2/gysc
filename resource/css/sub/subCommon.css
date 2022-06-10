@@ -111,7 +111,7 @@ dl > div { display: -webkit-box; display: flex; display: -ms-flexbox; display: f
 /*===================================================================================================
 ===========================================  responsive ==========================================
 ==================================================================================================*/
-@media screen and (max-width: 1400px) { .sub-container__inner { padding: 0 2.4rem; margin-bottom: 5rem; -webkit-box-sizing: border-box; box-sizing: border-box; }
+@media screen and (max-width: 1400px) { .sub-container__inner { padding: 0 2.4rem; -webkit-box-sizing: border-box; box-sizing: border-box; }
   .top-des.online { background-position: center bottom; padding-bottom: 31rem; }
   .top-des.program { background-position: center bottom; padding-bottom: 31rem; } }
 
