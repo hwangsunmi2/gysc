@@ -868,6 +868,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     width: calc(100% - 14.2rem);
+    line-height: 100%;
   }
   .se3 .se3Wrap .mainBoard .tab_wrap .tab_cont .more {
     display: none;
