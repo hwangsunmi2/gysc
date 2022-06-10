@@ -1062,6 +1062,7 @@
                         img{
                             width:113.1rem;
                             height:66.1rem;
+                            padding-bottom: 2.4rem;
                         }
                     }
                 }
@@ -1252,7 +1253,24 @@
                         .vision_right{
                             width:80%;
                             overflow-x: scroll;
-    
+                         
+
+                            &::-webkit-scrollbar{
+
+                                background: #eee;
+                                height: 0.8rem;
+                                border-radius: 10rem;
+                            }
+
+                            &::-webkit-scrollbar-thumb{
+
+                                background: #aaa;
+                                border-radius: 10rem;
+                            }
+
+                            &::-webkit-scrollbar-track{
+                                border-radius: 10rem;
+                            }
                         }
                     }
                 }
@@ -1716,7 +1734,7 @@
                 .vision{
                     &_bottom{
                         .vision_left{
-                            margin:5rem 0;
+                            margin:0 5rem;
                         }
                     }
                 }
