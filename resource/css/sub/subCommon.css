@@ -72,7 +72,7 @@ button, select, input { font-family: 'notokr', sans-serif; }
 
 .text-notice { background: #f5f8f9; }
 
-.text-notice__inner { margin-bottom: 5rem; padding: 5rem 0; font-size: 2.2rem; font-weight: 500; line-height: 4rem; text-align: center; }
+.text-notice__inner { margin-bottom: 5rem; padding: 4rem 0; font-size: 2.2rem; font-weight: 400; line-height: 4rem; text-align: center; }
 
 dl { font-size: 1.8rem; }
 
