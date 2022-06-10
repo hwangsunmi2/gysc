@@ -768,11 +768,21 @@
             .se1Box1 {
                 position: relative;
                 width:95%;
+                .swiper {
+                    img {
+                        width:100%;
+                    }
+                }
             }
             .se1Box2 {
                 width:95%;
                 margin-top:1rem;
                 margin-left: 0;
+                .swiper {
+                    img {
+                        width:100%;
+                    }
+                }
             }
         }
     }
