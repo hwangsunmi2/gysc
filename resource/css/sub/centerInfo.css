@@ -1127,6 +1127,7 @@
 .content_vision .vision-wrap .vision_bottom {
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 8rem;
   display: -webkit-box;
   display: flex;
   display: -ms-flexbox;
@@ -1139,6 +1140,7 @@
 .content_vision .vision-wrap .vision_bottom .vision_left img {
   width: 10.3rem;
   height: 66rem;
+  margin: 0 2rem;
 }
 
 .content_vision .vision-wrap .vision_bottom .vision_right {
@@ -1277,6 +1279,7 @@
     margin: 0 auto;
   }
   .content_vision .vision-wrap .vision_bottom {
+    padding-bottom: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -1587,9 +1590,6 @@
   }
   .content_vision .vision-wrap .vision_bottom .vision_right {
     margin: 0;
-  }
-  .content_vision .vision-wrap .vision_bottom .vision_right img {
-    width: calc(100% - -48rem);
   }
 }
 

@@ -1048,6 +1048,7 @@
                 &_bottom{
                     width: 100%;
                     margin:0 auto;
+                    padding-bottom:8rem;
                     @include display-flex;
                     @include justify-center;
                     .vision_left{
@@ -1055,6 +1056,7 @@
                            
                             width:10.3rem;
                             height:66rem;
+                            margin:0 2rem;
                        }
 
                     }
@@ -1247,7 +1249,7 @@
                     
     
                     &_bottom{
-
+                        padding-bottom: 0;
                         justify-content:space-around;
                         .vision_left{
                             
@@ -1745,9 +1747,7 @@
 
                         .vision_right{
                             margin:0;
-                            img{
-                                width: calc(100% - -48rem);
-                            }
+                            
                         }
                     }
                 }
