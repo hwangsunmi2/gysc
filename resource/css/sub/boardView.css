@@ -36,11 +36,11 @@
 
 .board-bottom .button-wrap { -webkit-box-flex: 0; -ms-flex: none; flex: none; margin-top: 5rem; text-align: center; }
 
-.board-bottom button { width: 16.4rem; height: 6rem; font-size: 1.8rem; font-weight: 600; color: #005aab; border: 1px solid #005aab; background: #ffffff; letter-spacing: -1px; }
+.board-bottom button { width: 16.4rem; height: 6rem; font-size: 1.8rem; font-weight: 500; color: #005aab; border: 1px solid #005aab; background: #ffffff; letter-spacing: -1px; }
 
 .board-prevnext { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
-.board-prevnext .badge { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 11.6rem; height: 5rem; margin-right: 3rem; font-size: 1.8rem; color: #555555; border-radius: .3rem; -webkit-box-flex: 0; -ms-flex: none; flex: none; }
+.board-prevnext .badge { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 11.6rem; height: 5rem; margin-right: 3rem; font-size: 1.8rem; font-weight: 400; color: #555555; border-radius: .3rem; -webkit-box-flex: 0; -ms-flex: none; flex: none; }
 
 .board-prevnext .next .badge { background: #e9e9e9; }
 

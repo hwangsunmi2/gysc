@@ -46,7 +46,7 @@ button, select, input { font-family: 'notokr', sans-serif; }
 
 .sub-title2 { margin-bottom: 3rem; font-size: 2.4rem; font-weight: 600; }
 
-.sub-title2__color--blue { margin-bottom: 3rem; font-size: 2.4rem; font-weight: 600; color: #005aab; }
+.sub-title2__color--blue { margin-bottom: 3rem; font-size: 3rem; font-weight: 600; color: #005aab; }
 
 .sub-title3 { margin-bottom: 3rem; font-size: 2.2rem; font-weight: 600; text-align: left; }
 
@@ -56,9 +56,9 @@ button, select, input { font-family: 'notokr', sans-serif; }
 
 .sub-tab ul { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 0; }
 
-.sub-tab ul li.on a { color: #005aab; }
+.sub-tab ul li.on a { color: #005aab; font-weight: 600; }
 
-.sub-tab ul li a { padding: 0 2.5rem; color: #747478; font-size: 2.2rem; font-weight: 500; }
+.sub-tab ul li a { padding: 0 5rem; color: #747478; font-size: 2.2rem; font-weight: 500; }
 
 .sub-tab ul li + li { position: relative; }
 
@@ -72,7 +72,7 @@ button, select, input { font-family: 'notokr', sans-serif; }
 
 .text-notice { background: #f5f8f9; }
 
-.text-notice__inner { margin-bottom: 5rem; padding: 5rem 0; font-size: 2.2rem; font-weight: 500; line-height: 4rem; text-align: center; }
+.text-notice__inner { margin-bottom: 5rem; padding: 4rem 0; font-size: 2.2rem; font-weight: 400; line-height: 4rem; text-align: center; }
 
 dl { font-size: 1.8rem; }
 
@@ -86,7 +86,9 @@ dl > div { display: -webkit-box; display: flex; display: -ms-flexbox; display: f
 
 .top-des.visitProgram { padding-left: 47.5rem; background-image: url(../../image/sub/bg-program.png); background-position: left 9.6rem center; }
 
-.top-des.visitProgram .top-des__inner { padding-left: 0; }
+.top-des.visitProgram .top-des__inner { padding-top: 6rem; padding-bottom: 6rem; padding-left: 0; }
+
+.top-des.visitProgram .top-des__content p { font-weight: 400; }
 
 .top-des.online { background-image: url(../../image/sub/bg-online.png); background-position: right 13.4rem center; }
 
@@ -127,5 +129,6 @@ dl > div { display: -webkit-box; display: flex; display: -ms-flexbox; display: f
 @media screen and (max-width: 720px) { .sub-visual { height: 19.2rem; padding: 0 2.4rem; font-size: 4rem; background-position: right center; background-size: cover; }
   .sub-visual.businessInfo { background-image: url(../../image/sub/sub-visual__mobile.jpg); }
   .sub-container__inner { padding: 0 2.4rem; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  .sub-tab ul li a { padding: 0 2.5rem; }
   .top-des.visitProgram { padding-top: 22rem; padding-left: 0; background-size: 28.5rem 18.6rem; background-position: center top 4rem; }
   .top-des.visitProgram .top-des__inner { padding-left: 6rem; } }

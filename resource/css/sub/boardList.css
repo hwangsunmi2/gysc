@@ -52,7 +52,7 @@
 
 .board-list.hor2 .info .tit { margin-bottom: 0rem; font-size: 2.2rem; }
 
-.board-list.hor2 .info .button-wrap .button-viewer { width: 12rem; height: 5rem; background: #555555; color: #ffffff; font-size: 1.8rem; font-weight: 300; }
+.board-list.hor2 .info .button-wrap .button-viewer { width: 12rem; height: 5rem; background: #555555; color: #ffffff; border: 0; font-size: 1.8rem; font-weight: 300; }
 
 .board-list.hor2 .button-wrap { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
 
@@ -82,7 +82,7 @@
 
 .board-list.hor3 .info .tit { height: 7.2rem; margin-bottom: 0rem; font-size: 2.2rem; line-height: 3.6rem; -webkit-line-clamp: 2; }
 
-.board-list.hor3 .info .button-wrap .button-viewer { width: 12rem; height: 5rem; background: #555555; color: #ffffff; font-size: 1.8rem; font-weight: 300; }
+.board-list.hor3 .info .button-wrap .button-viewer { width: 12rem; height: 5rem; background: #555555; color: #ffffff; border: 0; font-size: 1.8rem; font-weight: 300; }
 
 .board-list.hor3 .button-wrap { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
 
