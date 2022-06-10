@@ -1048,20 +1048,26 @@
                 &_bottom{
                     width: 100%;
                     margin:0 auto;
+                    padding-bottom:8rem;
                     @include display-flex;
                     @include justify-center;
                     .vision_left{
                        img{
-                           width:10.3rem;
-                           height:66rem;
+                           
+                            width:10.3rem;
+                            height:66rem;
+                            margin:0 2rem;
                        }
 
                     }
                     .vision_right{
                         width:90%;
                         img{
-                            width:113.1rem;
-                            height:66.1rem;
+                            
+                            padding-bottom: 2.4rem;
+                             width:113.1rem;
+                             height:66.1rem;
+                            padding-bottom: 2.4rem;
                         }
                     }
                 }
@@ -1195,7 +1201,7 @@
                 }
                 img {
                     position: absolute;
-                    width: calc(100% - 90rem);
+                    
                     top: 50%;
                     transform: translateY(-50%);
                     padding: 0 0 0 2rem;
@@ -1243,7 +1249,7 @@
                     
     
                     &_bottom{
-
+                        padding-bottom: 0;
                         justify-content:space-around;
                         .vision_left{
                             
@@ -1252,7 +1258,24 @@
                         .vision_right{
                             width:80%;
                             overflow-x: scroll;
-    
+                         
+
+                            &::-webkit-scrollbar{
+
+                                background: #eee;
+                                height: 0.8rem;
+                                border-radius: 10rem;
+                            }
+
+                            &::-webkit-scrollbar-thumb{
+
+                                background: #aaa;
+                                border-radius: 10rem;
+                            }
+
+                            &::-webkit-scrollbar-track{
+                                border-radius: 10rem;
+                            }
                         }
                     }
                 }
@@ -1716,7 +1739,15 @@
                 .vision{
                     &_bottom{
                         .vision_left{
-                            margin:5rem 0;
+                            margin:0;
+                            img{
+                                
+                            }
+                        }
+
+                        .vision_right{
+                            margin:0;
+                            
                         }
                     }
                 }
@@ -1726,6 +1757,7 @@
 }
 
 @media screen and(max-width:360px) {
+    
     .grayBox {
         &_sh {
             .info {
