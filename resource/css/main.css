@@ -897,10 +897,16 @@
     position: relative;
     width: 95%;
   }
+  .se1 .se1Wrap .se1Box1 .swiper img {
+    width: 100%;
+  }
   .se1 .se1Wrap .se1Box2 {
     width: 95%;
     margin-top: 1rem;
     margin-left: 0;
+  }
+  .se1 .se1Wrap .se1Box2 .swiper img {
+    width: 100%;
   }
   .se2 {
     padding: 5rem 2.4rem;
