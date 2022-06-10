@@ -142,26 +142,26 @@ function footer_Swiper(){
 
 // 아이폰 모바일 viewport 수정
 
-function doOnOrientationChange() {  
-  var viewportmeta = document.querySelector('meta[name="viewport"]');
-  switch(window.orientation) 
-  {  
-    case -90:
-    case 90:
-      alert('landscape'); // Just for debug obviously
-      viewportmeta.content = 'initial-scale=0.6';
-      break; 
-    default:
-      alert('portrait'); // Just for debug obviously
-      viewportmeta.content = 'initial-scale=0.8';
-      break; 
-  }
-}
+// function doOnOrientationChange() {  
+//   var viewportmeta = document.querySelector('meta[name="viewport"]');
+//   switch(window.orientation) 
+//   {  
+//     case -90:
+//     case 90:
+//       alert('landscape'); // Just for debug obviously
+//       viewportmeta.content = 'initial-scale=0.6';
+//       break; 
+//     default:
+//       alert('portrait'); // Just for debug obviously
+//       viewportmeta.content = 'initial-scale=0.8';
+//       break; 
+//   }
+// }
 
-// Only bind the event on iPhone and iPad so we do not try and do this on any other device.
-if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
-  window.addEventListener('orientationchange', doOnOrientationChange);
-  // Initial execution if needed
-  doOnOrientationChange();
-}
+// // Only bind the event on iPhone and iPad so we do not try and do this on any other device.
+// if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+//   window.addEventListener('orientationchange', doOnOrientationChange);
+//   // Initial execution if needed
+//   doOnOrientationChange();
+// }
 
