@@ -116,7 +116,7 @@ dl > div { display: -webkit-box; display: flex; display: -ms-flexbox; display: f
   .top-des.program { background-position: center bottom; padding-bottom: 31rem; } }
 
 @media screen and (max-width: 1200px) { .sub-tab__inner { overflow-x: scroll; }
-  .sub-tab ul { width: auto; }
+  .sub-tab ul { width: 100%; padding: 0 5rem; }
   .sub-tab ul li { -webkit-box-flex: 0; -ms-flex: none; flex: none; } }
 
 @media screen and (max-width: 1024px) { .border-box__inner { padding: 5rem 3rem; }
@@ -128,7 +128,9 @@ dl > div { display: -webkit-box; display: flex; display: -ms-flexbox; display: f
 
 @media screen and (max-width: 720px) { .sub-visual { height: 19.2rem; padding: 0 2.4rem; font-size: 4rem; background-position: right center; background-size: cover; }
   .sub-visual.businessInfo { background-image: url(../../image/sub/sub-visual__mobile.jpg); }
+  .sub-visual__inner { font-size: 4rem; }
   .sub-container__inner { padding: 0 2.4rem; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  .sub-tab ul { padding: 0; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
   .sub-tab ul li a { padding: 0 2.5rem; }
   .top-des.visitProgram { padding-top: 22rem; padding-left: 0; background-size: 28.5rem 18.6rem; background-position: center top 4rem; }
   .top-des.visitProgram .top-des__inner { padding-left: 6rem; } }

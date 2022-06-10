@@ -355,7 +355,8 @@ dl{
             overflow-x: scroll;
         }
         ul{
-            width: auto;
+            width: 100%;
+            padding:0 5rem;
             //justify-content: flex-start;
             li{
                 flex:none;
@@ -403,6 +404,9 @@ dl{
             &.businessInfo{
                 background-image: url(../../image/sub/sub-visual__mobile.jpg);    
             }
+            &__inner{
+                font-size: 4rem;
+            }
         }
         &-container{
             &__inner{
@@ -412,6 +416,8 @@ dl{
         }
         &-tab{
             ul{
+                padding:0;
+                justify-content: flex-start;
                 li{
                     a{
                         padding: 0 2.5rem;
