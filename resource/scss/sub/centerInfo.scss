@@ -1021,7 +1021,41 @@
             }
         }
     }
+    &_vision{
+        .vision-wrap{
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+            .vision{
+                
+                &_top{
+                    width:100%;
+                    margin:0 auto;
+                   
+                    img{
+                        max-width:100%;
+                    }
 
+                }
+
+                &_bottom{
+                    width: 100%;
+                    margin:0 auto;
+                    @include display-flex;
+                    @include justify-center;
+                    .vision_left{
+                       
+
+                    }
+                    .vision_right{
+                        width:90%;
+
+                    }
+                }
+            }
+        }
+    }
     .grayBox_sh {
 
         .grayBox_img {
@@ -1087,6 +1121,29 @@
 
 @media screen and(max-width:1400px) {
     .content {
+        &_vision{
+            .vision-wrap{
+                img{
+                    display: block;
+                    margin: 0 auto;
+                }
+                .vision{
+                    
+    
+                    &_bottom{
+                        @include justify-center;
+                        .vision_left{
+                            
+    
+                        }
+                        .vision_right{
+                            width:90%;
+    
+                        }
+                    }
+                }
+            }
+        }
         &_ci{
             .grayBox{
                 &_sh{
@@ -1154,7 +1211,7 @@
             box-sizing: border-box;
            
             .vision {
-                margin: 0 2.4rem;
+                //margin: 0 2.4rem;
             }
         }
         
@@ -1165,6 +1222,31 @@
 
 @media screen and(max-width:1200px) {
     .content {
+        &_vision{
+            .vision-wrap{
+                img{
+                    display: block;
+                    margin: 0 auto;
+                }
+                .vision{
+                    
+    
+                    &_bottom{
+
+                        justify-content:space-around;
+                        .vision_left{
+                            
+    
+                        }
+                        .vision_right{
+                            width:80%;
+                            overflow-x: scroll;
+    
+                        }
+                    }
+                }
+            }
+        }
         .est{
             padding-top:47%;
             margin-bottom: 7rem;
@@ -1313,6 +1395,26 @@
 
 @media screen and(max-width:1024px) {
     .content{
+        &_vision{
+            .vision-wrap{
+                img{
+                    display: block;
+                    margin: 0 auto;
+                }
+                .vision{
+                    
+    
+                    &_bottom{
+
+                        justify-content:space-around;
+
+                        .vision_right{
+                            width:80%;
+                        }
+                    }
+                }
+            }
+        }
         .est{
             padding-top:70%;
             margin-bottom: 15rem;

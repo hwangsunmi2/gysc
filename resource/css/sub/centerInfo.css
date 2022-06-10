@@ -1110,6 +1110,36 @@
   margin: 0 0.1rem;
 }
 
+.content_vision .vision-wrap img {
+  display: block;
+  margin: 0 auto;
+}
+
+.content_vision .vision-wrap .vision_top {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content_vision .vision-wrap .vision_top img {
+  max-width: 100%;
+}
+
+.content_vision .vision-wrap .vision_bottom {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.content_vision .vision-wrap .vision_bottom .vision_right {
+  width: 90%;
+}
+
 .content .grayBox_sh .grayBox_img img {
   width: 100%;
   max-width: 100%;
@@ -1161,6 +1191,18 @@
 ===========================================  responsive ==========================================
 ==================================================================================================*/
 @media screen and (max-width: 1400px) {
+  .content_vision .vision-wrap img {
+    display: block;
+    margin: 0 auto;
+  }
+  .content_vision .vision-wrap .vision_bottom {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .content_vision .vision-wrap .vision_bottom .vision_right {
+    width: 90%;
+  }
   .content_ci .grayBox_sh .grayBox_img img {
     width: 48%;
   }
@@ -1221,12 +1263,21 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .content .vision-wrap .vision {
-    margin: 0 2.4rem;
-  }
 }
 
 @media screen and (max-width: 1200px) {
+  .content_vision .vision-wrap img {
+    display: block;
+    margin: 0 auto;
+  }
+  .content_vision .vision-wrap .vision_bottom {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .content_vision .vision-wrap .vision_bottom .vision_right {
+    width: 80%;
+    overflow-x: scroll;
+  }
   .content .est {
     padding-top: 47%;
     margin-bottom: 7rem;
@@ -1313,6 +1364,17 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .content_vision .vision-wrap img {
+    display: block;
+    margin: 0 auto;
+  }
+  .content_vision .vision-wrap .vision_bottom {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .content_vision .vision-wrap .vision_bottom .vision_right {
+    width: 80%;
+  }
   .content .est {
     padding-top: 70%;
     margin-bottom: 15rem;
