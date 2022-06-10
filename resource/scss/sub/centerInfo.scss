@@ -1052,16 +1052,19 @@
                     @include justify-center;
                     .vision_left{
                        img{
-                           width:10.3rem;
-                        //    height:66rem;
+                           
+                            width:10.3rem;
+                            height:66rem;
                        }
 
                     }
                     .vision_right{
                         width:90%;
                         img{
-                            width:113.1rem;
-                            // height:66.1rem;
+                            
+                            padding-bottom: 2.4rem;
+                             width:113.1rem;
+                             height:66.1rem;
                             padding-bottom: 2.4rem;
                         }
                     }
@@ -1196,7 +1199,7 @@
                 }
                 img {
                     position: absolute;
-                    width: calc(100% - 90rem);
+                    
                     top: 50%;
                     transform: translateY(-50%);
                     padding: 0 0 0 2rem;
@@ -1734,7 +1737,17 @@
                 .vision{
                     &_bottom{
                         .vision_left{
-                            margin:0 5rem;
+                            margin:0;
+                            img{
+                                
+                            }
+                        }
+
+                        .vision_right{
+                            margin:0;
+                            img{
+                                width: calc(100% - -48rem);
+                            }
                         }
                     }
                 }
@@ -1744,6 +1757,7 @@
 }
 
 @media screen and(max-width:360px) {
+    
     .grayBox {
         &_sh {
             .info {
