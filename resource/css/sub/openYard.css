@@ -42,7 +42,7 @@
 
 .forumBoardList .box::before { position: absolute; top: 0; left: 0; width: 100%; height: calc(100% + 1.7rem); background: #f6f6f6; content: ""; z-index: -1; }
 
-.forumBoardList .title { display: block; font-size: 2rem; font-weight: 600; color: #000; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.forumBoardList .title { display: block; font-size: 2rem; font-weight: 600; color: #000; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: normal; }
 
 .forumBoardList .con { overflow: hidden; text-overflow: ellipsis; line-height: 3.2rem; height: 9.6rem; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; height: 9rem; margin-top: 1.5rem; color: #555; line-height: 3rem; font-size: 1.8rem; font-weight: 500; color: #555; }
 
