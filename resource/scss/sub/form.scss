@@ -588,7 +588,18 @@
         tr{
             border-bottom: 1px solid #eeeeee;
             &:last-child{
+                position: relative;
                 border-bottom: 1px solid;
+                &::after{
+                    position: absolute;
+                    left: 0%;
+                    top: 6rem;
+                    width: 100%;
+                    height: 10rem;
+                    background: url(../../image/sub/bg-gradient.png) no-repeat center top;
+                    z-index: -1;
+                    content:"";
+                }
             }
         }
         
@@ -598,6 +609,9 @@
         tr{
             &:last-child{
                 border-bottom: 1px solid #eeeeee;
+                &::after{
+                    display: none;
+                }
             }
         }
     }
