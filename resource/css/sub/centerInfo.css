@@ -225,16 +225,18 @@
 
 .content .est {
   position: relative;
-  margin-bottom: 14rem;
+  margin-bottom: 7rem;
 }
 
 .content .est .top {
   position: relative;
   padding: 5rem;
-  width: 140rem;
+  width: 100%;
   background: url(../../image/sub/est_1.jpg) no-repeat;
+  height: 0;
+  padding-bottom: 55.7%;
   background-size: contain;
-  background-position: center;
+  background-position: top center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -246,8 +248,8 @@
 
 .content .est .top .right {
   display: inline-block;
-  margin-left: 12rem;
-  width: calc(100% - 680px);
+  float: right;
+  width: calc(100% - 65.8rem);
   vertical-align: top;
 }
 
@@ -271,8 +273,12 @@
 }
 
 .content .est .bottom {
-  width: 140rem;
-  height: 22.5rem;
+  position: absolute;
+  left: 5.2rem;
+  bottom: -10%;
+  width: 135rem;
+  -webkit-transform: translateY(-33%);
+          transform: translateY(-33%);
   background-color: #fff;
 }
 
@@ -308,7 +314,6 @@
 
 .content .est .bottom ul li:nth-child(1) {
   background: #005aab url(../../image/sub/estIcon1.png) no-repeat 90% 90%;
-  height: 22.5rem;
 }
 
 .content .est .bottom ul li:nth-child(1) div {
@@ -1172,11 +1177,13 @@
     width: inherit;
   }
   .content .est {
-    margin-bottom: 38rem;
+    margin-bottom: 7rem;
+    padding-top: 39%;
   }
   .content .est .top {
+    position: relative;
     width: 100%;
-    padding: 5rem 2.4rem;
+    padding-bottom: 65.7%;
     background-size: contain;
   }
   .content .est .top img {
@@ -1188,14 +1195,16 @@
     padding: 0 0 0 2rem;
   }
   .content .est .top .right {
-    position: absolute;
-    left: 60%;
-    -webkit-transform: translateX(-60%);
-            transform: translateX(-60%);
+    float: right;
+    position: relative;
+    top: calc(100% - 70rem);
+    padding: 20rem 0 0 0;
+    width: calc(100% - 6rem);
   }
   .content .est .bottom {
     width: 100%;
     display: block;
+    bottom: -12%;
   }
   .content .est .bottom ul {
     -webkit-box-orient: horizontal;
@@ -1218,6 +1227,16 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .content .est {
+    padding-top: 47%;
+    margin-bottom: 7rem;
+  }
+  .content .est .top .right {
+    top: calc(100% - 71rem);
+  }
+  .content .est .bottom {
+    bottom: -17%;
+  }
   .content .introTitle {
     word-break: keep-all;
     line-height: 5rem;
@@ -1294,6 +1313,19 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .content .est {
+    padding-top: 70%;
+    margin-bottom: 15rem;
+  }
+  .content .est .top {
+    top: calc(100% - 76rem);
+  }
+  .content .est .top .right {
+    top: calc(100% - 76rem);
+  }
+  .content .est .bottom {
+    bottom: -24%;
+  }
   .youthCouncil-top .img-wrap {
     width: 50%;
   }
@@ -1310,6 +1342,16 @@
 }
 
 @media screen and (max-width: 720px) {
+  .content .est {
+    padding-top: 76%;
+    margin-bottom: 20rem;
+  }
+  .content .est .top .right {
+    top: calc(100% - 77rem);
+  }
+  .content .est .bottom {
+    bottom: -26%;
+  }
   .youthCouncil-top .img-wrap {
     width: 20%;
     margin: 0 5%;
