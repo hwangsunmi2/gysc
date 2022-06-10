@@ -36,7 +36,7 @@
 
 .board-bottom .button-wrap { -webkit-box-flex: 0; -ms-flex: none; flex: none; margin-top: 5rem; text-align: center; }
 
-.board-bottom button { width: 16.4rem; height: 6rem; font-size: 1.8rem; font-weight: 600; color: #005aab; border: 1px solid #005aab; background: #ffffff; letter-spacing: -1px; }
+.board-bottom button { width: 16.4rem; height: 6rem; font-size: 1.8rem; font-weight: 500; color: #005aab; border: 1px solid #005aab; background: #ffffff; letter-spacing: -1px; }
 
 .board-prevnext { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
