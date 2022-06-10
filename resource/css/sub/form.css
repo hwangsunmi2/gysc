@@ -127,7 +127,7 @@
 
 .form-search input { width: calc(100% - 4.5rem); height: 100%; padding-left: 2rem; border: none; font-size: 1.6rem; color: #777777; text-indent: 0; }
 
-.form-search button { position: absolute; top: 0; right: 0; width: 4.5rem; height: 100%; border-left: 1px solid #cccccc; background: url(../image/icon/icon-search.png) no-repeat center; background-size: 2rem; }
+.form-search button { position: absolute; top: 0; right: 0; width: 4.5rem; height: 100%; background: url(../image/icon/icon-search.png) no-repeat center; background-size: 2rem; }
 
 /* radiobox */
 .checks { position: relative; }
