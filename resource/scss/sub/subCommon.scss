@@ -134,7 +134,7 @@ button, select, input{
                 &--blue{
                     margin-bottom: 3rem; 
                     font : {
-                        size: 2.4rem; 
+                        size: 3rem; 
                         weight: 600;
                     }
                     color:#005aab;
@@ -260,8 +260,17 @@ dl{
         padding-left: 47.5rem;
         background-image: url(../../image/sub/bg-program.png);   
         background-position: left 9.6rem center;
-        .top-des__inner{
-            padding-left: 0;
+        .top-des{
+            &__inner{
+                padding-top: 6rem;
+                padding-bottom: 6rem;
+                padding-left: 0;
+            }
+            &__content{
+                p{
+                    font-weight: 400;
+                }
+            }
         }
     }
     &.online{

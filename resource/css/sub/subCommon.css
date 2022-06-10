@@ -46,7 +46,7 @@ button, select, input { font-family: 'notokr', sans-serif; }
 
 .sub-title2 { margin-bottom: 3rem; font-size: 2.4rem; font-weight: 600; }
 
-.sub-title2__color--blue { margin-bottom: 3rem; font-size: 2.4rem; font-weight: 600; color: #005aab; }
+.sub-title2__color--blue { margin-bottom: 3rem; font-size: 3rem; font-weight: 600; color: #005aab; }
 
 .sub-title3 { margin-bottom: 3rem; font-size: 2.2rem; font-weight: 600; text-align: left; }
 
@@ -86,7 +86,9 @@ dl > div { display: -webkit-box; display: flex; display: -ms-flexbox; display: f
 
 .top-des.visitProgram { padding-left: 47.5rem; background-image: url(../../image/sub/bg-program.png); background-position: left 9.6rem center; }
 
-.top-des.visitProgram .top-des__inner { padding-left: 0; }
+.top-des.visitProgram .top-des__inner { padding-top: 6rem; padding-bottom: 6rem; padding-left: 0; }
+
+.top-des.visitProgram .top-des__content p { font-weight: 400; }
 
 .top-des.online { background-image: url(../../image/sub/bg-online.png); background-position: right 13.4rem center; }
 
