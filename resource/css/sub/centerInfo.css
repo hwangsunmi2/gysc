@@ -167,7 +167,6 @@
 }
 
 .content {
-  padding-bottom: 7.8rem;
   /* 센터소개 */
   /* 설립목적 */
 }
@@ -225,17 +224,22 @@
 
 .content .est {
   position: relative;
-  margin-bottom: 7rem;
 }
 
 .content .est .top {
-  position: relative;
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  height: 65.7rem;
   padding: 5rem;
   width: 100%;
   background: url(../../image/sub/est_1.jpg) no-repeat;
-  height: 0;
-  padding-bottom: 55.7%;
-  background-size: contain;
+  background-size: cover;
   background-position: top center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -248,7 +252,6 @@
 
 .content .est .top .right {
   display: inline-block;
-  float: right;
   width: calc(100% - 65.8rem);
   vertical-align: top;
 }
@@ -273,12 +276,8 @@
 }
 
 .content .est .bottom {
-  position: absolute;
-  left: 5.2rem;
-  bottom: -10%;
-  width: 135rem;
-  -webkit-transform: translateY(-33%);
-          transform: translateY(-33%);
+  margin-top: -14.4rem;
+  margin-left: 5rem;
   background-color: #fff;
 }
 
@@ -297,6 +296,7 @@
   width: 16.66%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-size: 3.8rem 3.4rem !important;
 }
 
 .content .est .bottom ul li + li + li {
@@ -1136,8 +1136,18 @@
   justify-content: center;
 }
 
+.content_vision .vision-wrap .vision_bottom .vision_left img {
+  width: 10.3rem;
+  height: 66rem;
+}
+
 .content_vision .vision-wrap .vision_bottom .vision_right {
   width: 90%;
+}
+
+.content_vision .vision-wrap .vision_bottom .vision_right img {
+  width: 113.1rem;
+  height: 66.1rem;
 }
 
 .content .grayBox_sh .grayBox_img img {
@@ -1191,6 +1201,9 @@
 ===========================================  responsive ==========================================
 ==================================================================================================*/
 @media screen and (max-width: 1400px) {
+  .content_vision .vision-wrap {
+    padding: 0 2.4rem 7rem 0;
+  }
   .content_vision .vision-wrap img {
     display: block;
     margin: 0 auto;
@@ -1218,15 +1231,15 @@
   .content .grayBox .info img {
     width: inherit;
   }
-  .content .est {
-    margin-bottom: 7rem;
-    padding-top: 39%;
-  }
   .content .est .top {
-    position: relative;
     width: 100%;
-    padding-bottom: 65.7%;
+    height: auto;
+    padding: 0 0 50% 0;
     background-size: contain;
+    background-position: bottom center;
+  }
+  .content .est .top .right {
+    width: 100%;
   }
   .content .est .top img {
     position: absolute;
@@ -1236,30 +1249,22 @@
             transform: translateY(-50%);
     padding: 0 0 0 2rem;
   }
-  .content .est .top .right {
-    float: right;
-    position: relative;
-    top: calc(100% - 70rem);
-    padding: 20rem 0 0 0;
-    width: calc(100% - 6rem);
-  }
   .content .est .bottom {
     width: 100%;
     display: block;
     bottom: -12%;
+    margin-left: 0;
   }
   .content .est .bottom ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    margin: 0 2.4rem;
   }
   .content .est .bottom ul li {
     width: 33.33%;
   }
   .content .vision-wrap {
-    padding: 0 2.4rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
@@ -1277,16 +1282,6 @@
   .content_vision .vision-wrap .vision_bottom .vision_right {
     width: 80%;
     overflow-x: scroll;
-  }
-  .content .est {
-    padding-top: 47%;
-    margin-bottom: 7rem;
-  }
-  .content .est .top .right {
-    top: calc(100% - 71rem);
-  }
-  .content .est .bottom {
-    bottom: -17%;
   }
   .content .introTitle {
     word-break: keep-all;
@@ -1375,10 +1370,6 @@
   .content_vision .vision-wrap .vision_bottom .vision_right {
     width: 80%;
   }
-  .content .est {
-    padding-top: 70%;
-    margin-bottom: 15rem;
-  }
   .content .est .top {
     top: calc(100% - 76rem);
   }
@@ -1404,15 +1395,12 @@
 }
 
 @media screen and (max-width: 720px) {
-  .content .est {
-    padding-top: 76%;
-    margin-bottom: 20rem;
-  }
   .content .est .top .right {
     top: calc(100% - 77rem);
   }
   .content .est .bottom {
     bottom: -26%;
+    margin-top: -7rem;
   }
   .youthCouncil-top .img-wrap {
     width: 20%;
@@ -1580,6 +1568,9 @@
   .content_map .grayBox_wrap .grayBox_4 p {
     text-align: left;
     margin-left: 2rem;
+  }
+  .content_vision .vision-wrap .vision_bottom .vision_left {
+    margin: 5rem 0;
   }
 }
 

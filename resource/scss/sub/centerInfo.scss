@@ -150,7 +150,7 @@
 
 
 .content {
-    padding-bottom:7.8rem;
+    //padding-bottom:7.8rem;
     /* 센터소개 */
     .introTitle {
         font-weight:600;
@@ -198,15 +198,18 @@
     /* 설립목적 */
     .est {
         position:relative;
-        margin-bottom:7rem;
+        //margin-bottom:7rem;
         .top {
-            position:relative;
+            @include display-flex;
+            flex-direction: row-reverse;
+            //position:relative;
+            height: 65.7rem;
             padding:5rem;
             width:100%;
             background: url(../../image/sub/est_1.jpg) no-repeat;
-            height: 0;
-            padding-bottom:55.7%;
-            background-size: contain;
+            // height: 0;
+            // padding-bottom:55.7%;
+            background-size: cover;
             background-position: top center;
             box-sizing: border-box;
             img {
@@ -215,7 +218,7 @@
             }
             .right {
                 display: inline-block;
-                float: right;
+                //float: right;
                 width: calc(100% - 65.8rem);
                 vertical-align: top;
                 div {
@@ -237,11 +240,13 @@
             }
         }
         .bottom {
-            position:absolute;
-            left:5.2rem;
-            bottom:-10%;
-            width:135rem;
-            transform: translateY(-33%);
+            margin-top: -14.4rem;
+            //transform: translateY(-14.4rem);
+            // left:5.2rem;
+            // bottom:-5rem;
+            // width:135rem;
+            // transform: translateY(-33%);
+            margin-left:5rem;
             background-color: #fff;
             ul {
                 display: flex;
@@ -251,6 +256,7 @@
                     padding:4rem 3rem;
                     width:16.66%;
                     box-sizing:border-box;
+                    background-size: 3.8rem 3.4rem !important;
                     &+li {
                         &+li {
                             position:relative;
@@ -1045,12 +1051,18 @@
                     @include display-flex;
                     @include justify-center;
                     .vision_left{
-                       
+                       img{
+                           width:10.3rem;
+                           height:66rem;
+                       }
 
                     }
                     .vision_right{
                         width:90%;
-
+                        img{
+                            width:113.1rem;
+                            height:66.1rem;
+                        }
                     }
                 }
             }
@@ -1123,6 +1135,7 @@
     .content {
         &_vision{
             .vision-wrap{
+                padding: 0 2.4rem 7rem 0;
                 img{
                     display: block;
                     margin: 0 auto;
@@ -1170,13 +1183,16 @@
             }
         }
         .est {
-            margin-bottom: 7rem;
-            padding-top:39%;
+
             .top {
-                position: relative;
                 width:100%;
-                padding-bottom: 65.7%;
+                height: auto;
+                padding:0 0 50% 0;
                 background-size: contain;
+                background-position: bottom center;
+                .right{
+                    width:100%;
+                }
                 img {
                     position: absolute;
                     width: calc(100% - 90rem);
@@ -1184,21 +1200,16 @@
                     transform: translateY(-50%);
                     padding: 0 0 0 2rem;
                 }
-                .right {
-                    float:right;
-                    position: relative;
-                    top:calc(100% - 70rem);
-                    padding:20rem 0 0 0;
-                    width:calc(100% - 6rem);
-                }
+                
             }
             .bottom {
                 width: 100%;
                 display:block;
                 bottom:-12%;
+                margin-left:0;
                 ul {
                     flex-flow: row wrap;
-                    margin: 0 2.4rem;
+                    
                     li {
                         width: 33.33%;
                     }
@@ -1207,7 +1218,7 @@
         }
 
         .vision-wrap {
-            padding: 0 2.4rem;
+            
             box-sizing: border-box;
            
             .vision {
@@ -1247,18 +1258,7 @@
                 }
             }
         }
-        .est{
-            padding-top:47%;
-            margin-bottom: 7rem;
-            .top{
-                .right{
-                    top:calc(100% - 71rem);
-                }
-            }
-            .bottom{
-                bottom:-17%;
-            }
-        }
+        
         .introTitle {
             word-break: keep-all;
             line-height:5rem;
@@ -1416,8 +1416,7 @@
             }
         }
         .est{
-            padding-top:70%;
-            margin-bottom: 15rem;
+
             .top{
                 top: calc(100% - 76rem);
                 .right{
@@ -1458,8 +1457,7 @@
 @media screen and(max-width:720px){
     .content{
         .est{
-            padding-top:76%;
-            margin-bottom: 20rem;
+
             .top{
                 .right{
                     top: calc(100% - 77rem);
@@ -1467,6 +1465,7 @@
             }
             .bottom{
                 bottom:-26%;
+                margin-top:-7rem;
             }
         }
     }
@@ -1708,6 +1707,18 @@
                     }
 
                    
+                }
+            }
+        }
+
+        &_vision{
+            .vision-wrap{
+                .vision{
+                    &_bottom{
+                        .vision_left{
+                            margin:5rem 0;
+                        }
+                    }
                 }
             }
         }
