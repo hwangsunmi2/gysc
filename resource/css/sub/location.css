@@ -35,5 +35,6 @@
 /*===================================================================================================
 ===========================================  responsive ==========================================
 ==================================================================================================*/
-@media screen and (max-width: 720px) { .breadcrumbs .container .home { display: none; }
+@media screen and (max-width: 720px) { .breadcrumbs { height: 6rem; }
+  .breadcrumbs .container .home { display: none; }
   .breadcrumbs .category > li { max-width: none; } }
