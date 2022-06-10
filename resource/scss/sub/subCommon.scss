@@ -173,10 +173,11 @@ button, select, input{
                 &.on{
                     a{
                         color:#005aab;
+                        font-weight: 600;
                     }
                 }
                 a{
-                    padding:0 2.5rem;
+                    padding:0 5rem;
                     color:#747478;
                     font: {
                         size:2.2rem;
@@ -398,6 +399,15 @@ dl{
             &__inner{
                 padding: 0 2.4rem;
                 box-sizing: border-box;
+            }
+        }
+        &-tab{
+            ul{
+                li{
+                    a{
+                        padding: 0 2.5rem;
+                    }
+                }
             }
         }
     }

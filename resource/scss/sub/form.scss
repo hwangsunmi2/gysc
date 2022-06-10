@@ -603,9 +603,12 @@
     }
     .search-plus{
         .button-last{
-            background: linear-gradient(rgba(0,0,0,.08), #ffffff, #ffffff);
+            position: relative;
+            //background: linear-gradient(rgba(0,0,0,.08), #ffffff, #ffffff);
+            background: url(../../image/sub/bg-gradient.png) no-repeat center top ;
             padding-top: 3rem;
             border-top: 1px solid #000000;
+            
         }
     }
 }

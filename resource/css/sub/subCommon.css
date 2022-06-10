@@ -56,9 +56,9 @@ button, select, input { font-family: 'notokr', sans-serif; }
 
 .sub-tab ul { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 0; }
 
-.sub-tab ul li.on a { color: #005aab; }
+.sub-tab ul li.on a { color: #005aab; font-weight: 600; }
 
-.sub-tab ul li a { padding: 0 2.5rem; color: #747478; font-size: 2.2rem; font-weight: 500; }
+.sub-tab ul li a { padding: 0 5rem; color: #747478; font-size: 2.2rem; font-weight: 500; }
 
 .sub-tab ul li + li { position: relative; }
 
@@ -127,5 +127,6 @@ dl > div { display: -webkit-box; display: flex; display: -ms-flexbox; display: f
 @media screen and (max-width: 720px) { .sub-visual { height: 19.2rem; padding: 0 2.4rem; font-size: 4rem; background-position: right center; background-size: cover; }
   .sub-visual.businessInfo { background-image: url(../../image/sub/sub-visual__mobile.jpg); }
   .sub-container__inner { padding: 0 2.4rem; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  .sub-tab ul li a { padding: 0 2.5rem; }
   .top-des.visitProgram { padding-top: 22rem; padding-left: 0; background-size: 28.5rem 18.6rem; background-position: center top 4rem; }
   .top-des.visitProgram .top-des__inner { padding-left: 6rem; } }
