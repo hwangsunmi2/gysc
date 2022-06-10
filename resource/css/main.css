@@ -535,8 +535,8 @@
 /* //se3 */
 /* se4 */
 .se4Wrap {
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -590,27 +590,34 @@
   margin-bottom: 1.5rem;
 }
 
-.se4Wrap .activityInfo .searchBox dl {
+.se4Wrap .activityInfo .searchBox form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2.9rem 2.7rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  padding-left: 2.2rem;
 }
 
-.se4Wrap .activityInfo .searchBox dl dt {
+.se4Wrap .activityInfo .searchBox form dl {
+  display: inline-block;
+  padding: 2.9rem 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: top;
+}
+
+.se4Wrap .activityInfo .searchBox form dl dt {
+  display: inline-block;
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 4rem;
 }
 
-.se4Wrap .activityInfo .searchBox dl dt.dt {
+.se4Wrap .activityInfo .searchBox form dl dt.dt {
   position: relative;
   margin-left: 3rem;
 }
 
-.se4Wrap .activityInfo .searchBox dl dt.dt::before {
+.se4Wrap .activityInfo .searchBox form dl dt.dt::before {
   position: absolute;
   top: -2.9rem;
   left: -3rem;
@@ -620,23 +627,28 @@
   content: '';
 }
 
-.se4Wrap .activityInfo .searchBox dl dd.date {
+.se4Wrap .activityInfo .searchBox form dl dd {
+  display: inline-block;
+}
+
+.se4Wrap .activityInfo .searchBox form dl dd.date {
+  display: inline-block;
   padding: 0 3rem 0 0.6rem;
 }
 
-.se4Wrap .activityInfo .searchBox dl dd.btn {
+.se4Wrap .activityInfo .searchBox form dl dd.btn {
   width: 3.8rem;
   height: 3.8rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.se4Wrap .activityInfo .searchBox dl .hipen {
+.se4Wrap .activityInfo .searchBox form dl .hipen {
   padding: 0 1.2rem;
   font-size: 2rem;
 }
 
-.se4Wrap .activityInfo .searchBox dl input {
+.se4Wrap .activityInfo .searchBox form dl input {
   position: relative;
   width: 18rem;
   height: 4rem;
@@ -646,14 +658,14 @@
   background-color: #fff;
 }
 
-.se4Wrap .activityInfo .searchBox dl input.search {
+.se4Wrap .activityInfo .searchBox form dl input.search {
   width: 3.8rem;
   height: 3.8rem;
   background: url(../../resource/image/common/icon/icon_search_b.png) no-repeat center center;
   border: 0;
 }
 
-.se4Wrap .activityInfo .searchBox dl .part select {
+.se4Wrap .activityInfo .searchBox form dl .part select {
   margin: 0 0.5rem;
   width: 18rem;
   height: 4rem;
@@ -666,7 +678,6 @@
 
 .se4Wrap .activityInfo .se4Box .swiper {
   position: relative;
-  padding-left: 1px;
   width: 100%;
   height: 100%;
 }
@@ -689,7 +700,7 @@
 
 .se4Wrap .activityInfo .se4Box .swiper .swiper-slide {
   display: block;
-  width: 39.6rem !important;
+  width: 39.6rem;
 }
 
 .se4Wrap .activityInfo .se4Box .se4_btn {
@@ -796,6 +807,76 @@
 }
 
 /* responsive */
+@media screen and (max-width: 1600px) {
+  .se3 .se3Wrap .mainBoard {
+    overflow: hidden;
+    width: calc(100% - 59rem);
+  }
+  .se3 .se3Wrap .mainBoard .tab_wrap .tab_cont {
+    width: 100%;
+  }
+  .se4Wrap .activityInfo {
+    width: 60%;
+  }
+  .se4Wrap .activityInfo .searchBox {
+    width: 100%;
+  }
+  .se4Wrap .activityInfo .searchBox form {
+    display: block;
+  }
+  .se4Wrap .activityInfo .searchBox dl {
+    padding: 0.1rem 2.7rem 0.1rem 0 !important;
+    display: block !important;
+  }
+  .se4Wrap .activityInfo .searchBox dl dt:nth-child(1) {
+    display: inline-block;
+  }
+  .se4Wrap .activityInfo .searchBox dl dt.dt {
+    margin-left: 0 !important;
+    width: 45px;
+  }
+  .se4Wrap .activityInfo .searchBox dl dd.date {
+    display: inline-block;
+  }
+  .se4Wrap .activityInfo .se4Box .se4Info img {
+    width: 100%;
+  }
+  .se4Wrap .videoMaterial {
+    width: 40%;
+  }
+  .se4Wrap .videoMaterial .vedio img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .se3 .se3Wrap {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .se3 .se3Wrap .mainBoard {
+    overflow: hidden;
+    width: calc(100% - 55rem);
+  }
+  .se3 .se3Wrap .mainBoard .tab_wrap h4 {
+    width: 33.19%;
+  }
+  .se3 .se3Wrap .mainBoard .tab_wrap .tab_cont ul li a {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: calc(100% - 14.2rem);
+  }
+  .se3 .se3Wrap .mainBoard .tab_wrap .tab_cont .more {
+    display: none;
+  }
+  .se3 .se3Wrap .infoImg {
+    margin-left: 2rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .se1 {
     height: 100%;
@@ -830,6 +911,7 @@
             flex-flow: row wrap;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+    border-left: 0;
   }
   .se2 .iconWrap .icon {
     width: 50%;
@@ -874,5 +956,156 @@
   }
   .se3 {
     padding: 50px 2.4rem;
+  }
+  .se3 .se3Wrap {
+    display: block;
+  }
+  .se3 .se3Wrap .mainBoard {
+    width: 100%;
+    height: 39rem;
+  }
+  .se3 .se3Wrap .mainBoard .tab_wrap h4 {
+    width: 33.25%;
+    height: 7rem;
+    line-height: 7rem;
+    font-size: 2.2rem;
+  }
+  .se3 .se3Wrap .mainBoard .tab_wrap .tab_cont {
+    top: 7rem;
+  }
+  .se3 .se3Wrap .mainBoard .tab_wrap .tab_cont ul li a {
+    width: 100%;
+    font-size: 2.2rem;
+  }
+  .se3 .se3Wrap .mainBoard .tab_wrap .tab_cont ul li em {
+    display: none;
+  }
+  .se3 .se3Wrap .infoImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 2.5rem;
+    margin-left: 0;
+  }
+  .se3 .se3Wrap .infoImg a {
+    width: 50%;
+  }
+  .se3 .se3Wrap .infoImg a img {
+    width: 100%;
+  }
+  .se3 .se3Wrap .infoImg a + a {
+    margin-left: 2.5rem;
+  }
+  .se4 {
+    padding: 0 2.4rem;
+  }
+  .se4 .se4Wrap {
+    display: block;
+    margin-bottom: 5rem;
+  }
+  .se4 .se4Wrap h3 {
+    font-size: 2.6rem;
+  }
+  .se4 .se4Wrap .activityInfo {
+    width: 100%;
+    padding-bottom: 5rem;
+  }
+  .se4 .se4Wrap .activityInfo .searchBox {
+    height: 23rem;
+  }
+  .se4 .se4Wrap .activityInfo .searchBox form {
+    padding-left: 0;
+  }
+  .se4 .se4Wrap .activityInfo .searchBox form dl {
+    padding: 3rem 4rem !important;
+  }
+  .se4 .se4Wrap .activityInfo .searchBox form dl + dl {
+    border-top: 2px solid #fff;
+  }
+  .se4 .se4Wrap .activityInfo .searchBox form dl input {
+    width: 47%;
+    height: 5.3rem;
+  }
+  .se4 .se4Wrap .activityInfo .searchBox form dl input.search {
+    width: 5.3rem;
+    height: 5.3rem;
+    background-size: contain;
+  }
+  .se4 .se4Wrap .activityInfo .searchBox form dl .part {
+    width: calc(100% - 13rem);
+  }
+  .se4 .se4Wrap .activityInfo .searchBox form dl .part select {
+    width: 100%;
+    height: 5.3rem;
+    margin-right: 0.5rem;
+  }
+  .se4 .se4Wrap .activityInfo .searchBox form dl dt {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+  }
+  .se4 .se4Wrap .activityInfo .searchBox form dl dt.dt::before {
+    display: none;
+  }
+  .se4 .se4Wrap .activityInfo .searchBox form dl dd.date {
+    padding: 0;
+    padding-left: 1.5rem;
+    width: calc(100% - 7rem);
+  }
+  .se4 .se4Wrap .activityInfo .searchBox form dl dd.part {
+    padding-left: 0.5rem;
+  }
+  .se4 .se4Wrap .activityInfo .searchBox form dl dd.btn {
+    position: relative;
+    margin-left: 1rem;
+  }
+  .se4 .se4Wrap .se4Box .se4_btn {
+    top: -30rem;
+  }
+  .se4 .se4Wrap .se4Cont .tit {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .se4 .se4Wrap .se4Cont .txt p {
+    font-size: 1.8rem;
+  }
+  .se4 .se4Wrap .videoMaterial {
+    position: relative;
+    width: 100%;
+    padding: 5rem 0;
+    background-color: #f3f4f6;
+  }
+  .se4 .se4Wrap .videoMaterial::before {
+    position: absolute;
+    top: 0;
+    left: -2.4rem;
+    width: 2.4rem;
+    height: 100%;
+    background-color: #f3f4f6;
+    content: '';
+  }
+  .se4 .se4Wrap .videoMaterial::after {
+    position: absolute;
+    top: 0;
+    right: -2.4rem;
+    width: 2.4rem;
+    height: 100%;
+    background-color: #f3f4f6;
+    content: '';
+  }
+  .se4 .se4Wrap .videoMaterial .vedio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .se4 .se4Wrap .videoMaterial .vedio .vBox {
+    width: 70%;
+  }
+  .se4 .se4Wrap .videoMaterial .vedio .se4Cont {
+    background-color: #fff;
+  }
+  .se4 .se4Wrap .videoMaterial .vedio .se4Cont .txt p {
+    line-height: 2.8rem;
   }
 }
