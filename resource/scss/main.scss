@@ -735,6 +735,7 @@
                                     white-space: nowrap;
                                     text-overflow: ellipsis;
                                     width: calc(100% - 14.2rem);
+                                    line-height: 100%;
                                 }
                             }
                         }
@@ -1002,3 +1003,33 @@
         }
     }
 }
+
+
+@media (max-width: 900px) {
+    .se3 {
+        .se3Wrap {
+            .mainBoard {
+                .tab_wrap {
+                    h4 {
+                        width: 33.18%;
+                    }
+                }
+            }
+        }
+    }
+}  
+
+@media (max-width: 640px) {
+    .se3 {
+        .se3Wrap {
+            .mainBoard {
+                .tab_wrap {
+                    h4 {
+                        width: 33.1%;
+                    }
+                }
+            }
+        }
+    }
+}  
+
