@@ -211,6 +211,10 @@ select, input{
                     @include display-flex;
                     @include align-center;
                     position: relative;
+                    top: 0;
+                    left: 0;
+                    width:auto; 
+                    height:auto;
                     margin: .5rem 1.5rem;
                     cursor: pointer;
                     font : {
@@ -232,7 +236,7 @@ select, input{
                         vertical-align: middle;
                         border: 1px solid #cccccc;
                         border-radius: 0.3rem;
-                        
+                        flex:none;
                     }
                     // &+input{
                     //     &+label{
@@ -681,15 +685,22 @@ select, input{
             }
         }
         &-wrap{
-            &.flex3{
-                >div{
-                    flex:1;
-                    >*{
-                        width: 100%;
+            &.flex{
+                &2{
+                    select{
+                        flex:1;
                     }
                 }
-                >span{
-                    flex:none;
+                &3{
+                    >div{
+                        flex:1;
+                        >*{
+                            width: 100%;
+                        }
+                    }
+                    >span{
+                        flex:none;
+                    }
                 }
             }
         }
@@ -718,15 +729,63 @@ select, input{
             margin: .5rem 0;
         }
     }
+    .form-check.w-auto{
+        width:auto !important;
+    }
+    .filter{
+        .table{
+            td{
+                p{
+                    width: auto !important;
+                    flex:none; 
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+        .form{
+            &-wrap{
+                width: 100%;
+            }
+            &-select{
+                select{
+                    flex:1 !important;
+                    
+                }
+            }
+        }
+        .filter-program{
+            label{
+                flex:none;
+            }
+            .form-input{
+                width:100%;
+            }
+        }
+    }
 }
 @media screen and(max-width:720px){
-    
+    .filter{
+        .form-select{
+            select{
+                width:100%;
+                flex:none;
+            }
+        }
+        &-program{
+            flex-direction: column;
+            >div{
+                &+div{
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
 }
 @media screen and(max-width:500px){
     td{
         >.d-flex:not(.flex3){
-            flex-wrap: wrap;
-            padding: 1rem 0;
+            //flex-wrap: wrap;
+            //padding: 1rem 0;
             >p{
                 width: 100%;
                 margin-bottom: 1rem;

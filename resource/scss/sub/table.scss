@@ -316,6 +316,7 @@
                         padding-right: 2.8rem;
                         background: url(../../image/sub/icon-file.png) no-repeat right 0 center;
                         background-size: 1.8rem 1.4rem;
+                        line-height: normal;
                     }
                 }
                 
@@ -535,6 +536,11 @@
         overflow-x: scroll;   
         .table{
             width: 130rem;
+            td{
+                .table-wrap{
+                    overflow: unset;
+                }
+            }
         }
     }
     .search-plus{
@@ -568,7 +574,7 @@
                 &-wrap{
                     overflow-x: unset;
                     &::before{
-                        display: none;
+                        display: none !important;
                     }
                     table{
                         display: block;
@@ -610,7 +616,8 @@
                 }
             }
             .table{
-                width: 80rem;
+                width: 100rem;
+                table-layout: auto;
             }
         }
         &.table{
@@ -631,6 +638,23 @@
                 flex-wrap: wrap;
                 .form-group{
                     padding-bottom: 0;
+                }
+            }
+        }
+        &.mobile-table{
+            &__width{
+                &--100{
+                    .table{
+                        width:100%;
+                        .button-wrap{
+                            flex:none;
+                        }
+                        .file{
+                            .viewer-wrap{
+                                padding:1rem 0;
+                            }
+                        }
+                    }
                 }
             }
         }

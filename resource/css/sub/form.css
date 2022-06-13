@@ -77,9 +77,9 @@ select, input { border-radius: 0; }
 
 .form-check input[type='checkbox'] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
 
-.form-check input[type='checkbox'] + label { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; margin: .5rem 1.5rem; cursor: pointer; font-size: 1.8rem; font-weight: 400; letter-spacing: -1px; color: #555555; }
+.form-check input[type='checkbox'] + label { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; top: 0; left: 0; width: auto; height: auto; margin: .5rem 1.5rem; cursor: pointer; font-size: 1.8rem; font-weight: 400; letter-spacing: -1px; color: #555555; }
 
-.form-check input[type='checkbox'] + label::before { /* 가짜 체크박스 */ content: ' '; display: inline-block; width: 1.8rem; /* 체크박스의 너비를 지정 */ height: 1.8rem; /* 체크박스의 높이를 지정 */ margin: -.0rem .8rem 0 0; text-align: center; vertical-align: middle; border: 1px solid #cccccc; border-radius: 0.3rem; }
+.form-check input[type='checkbox'] + label::before { /* 가짜 체크박스 */ content: ' '; display: inline-block; width: 1.8rem; /* 체크박스의 너비를 지정 */ height: 1.8rem; /* 체크박스의 높이를 지정 */ margin: -.0rem .8rem 0 0; text-align: center; vertical-align: middle; border: 1px solid #cccccc; border-radius: 0.3rem; -webkit-box-flex: 0; -ms-flex: none; flex: none; }
 
 .form-check input[type='checkbox']:checked + label { color: #000; }
 
@@ -208,6 +208,7 @@ select, input { border-radius: 0; }
   .form-check { width: 100% !important; -webkit-box-flex: 0; -ms-flex: none; flex: none; margin: 1rem -1rem; }
   .form-select { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
   .form-select.w-xs select { width: 100%; }
+  .form-wrap.flex2 select { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
   .form-wrap.flex3 > div { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
   .form-wrap.flex3 > div > * { width: 100%; }
   .form-wrap.flex3 > span { -webkit-box-flex: 0; -ms-flex: none; flex: none; }
@@ -215,9 +216,18 @@ select, input { border-radius: 0; }
   .security { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
   .search-plus .form-group { padding-top: 0; padding-bottom: 0; }
   .filter .checks { padding: 1rem 0; }
-  .filter .checks input[type="radio"] + label { width: 100%; margin: .5rem 0; } }
+  .filter .checks input[type="radio"] + label { width: 100%; margin: .5rem 0; }
+  .form-check.w-auto { width: auto !important; }
+  .filter .table td p { width: auto !important; -webkit-box-flex: 0; -ms-flex: none; flex: none; margin-bottom: 0 !important; }
+  .filter .form-wrap { width: 100%; }
+  .filter .form-select select { -webkit-box-flex: 1 !important; -ms-flex: 1 !important; flex: 1 !important; }
+  .filter .filter-program label { -webkit-box-flex: 0; -ms-flex: none; flex: none; }
+  .filter .filter-program .form-input { width: 100%; } }
 
-@media screen and (max-width: 500px) { td > .d-flex:not(.flex3) { -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 1rem 0; }
-  td > .d-flex:not(.flex3) > p { width: 100%; margin-bottom: 1rem; }
+@media screen and (max-width: 720px) { .filter .form-select select { width: 100%; -webkit-box-flex: 0; -ms-flex: none; flex: none; }
+  .filter-program { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+  .filter-program > div + div { margin-top: 1rem; } }
+
+@media screen and (max-width: 500px) { td > .d-flex:not(.flex3) > p { width: 100%; margin-bottom: 1rem; }
   .search-box .form-group input.date { width: 100%; }
   .search-box .form-search { width: 100%; } }

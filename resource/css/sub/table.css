@@ -107,7 +107,7 @@
 
 .table-wrap.thin tbody td.file { display: table-cell; border: 0; border-right: 1px solid #efefef; }
 
-.table-wrap.thin tbody td.file a { display: inline-block; margin-right: 1rem; padding-right: 2.8rem; background: url(../../image/sub/icon-file.png) no-repeat right 0 center; background-size: 1.8rem 1.4rem; }
+.table-wrap.thin tbody td.file a { display: inline-block; margin-right: 1rem; padding-right: 2.8rem; background: url(../../image/sub/icon-file.png) no-repeat right 0 center; background-size: 1.8rem 1.4rem; line-height: normal; }
 
 .table-wrap.text-left td { font-weight: 400; text-align: left; color: #555555; }
 
@@ -181,6 +181,7 @@
 ==================================================================================================*/
 @media screen and (max-width: 1200px) { .table-wrap:not(.filter) { position: relative; overflow-x: scroll; }
   .table-wrap:not(.filter) .table { width: 130rem; }
+  .table-wrap:not(.filter) .table td .table-wrap { overflow: unset; }
   .search-plus .table { width: 100%; }
   .search-plus .table input { max-width: 100% !important; }
   .search-plus .form-check { margin-top: 0; margin-bottom: 0; } }
@@ -188,15 +189,18 @@
 @media screen and (max-width: 720px) { .table-wrap.ver .table { table-layout: fixed; }
   .table-wrap.ver .table colgroup col:nth-child(1) { width: 14rem !important; }
   .table-wrap.ver .table-wrap { overflow-x: unset; }
-  .table-wrap.ver .table-wrap::before { display: none; }
+  .table-wrap.ver .table-wrap::before { display: none !important; }
   .table-wrap.ver .table-wrap table { display: block; width: 100%; }
   .table-wrap.ver .table-wrap table tbody, .table-wrap.ver .table-wrap table tr, .table-wrap.ver .table-wrap table th, .table-wrap.ver .table-wrap table td { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; border-right: 0; }
   .table-wrap:not(.ver):not(.table-content) { position: relative; overflow-x: scroll; }
   .table-wrap:not(.ver):not(.table-content)::before { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: absolute; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.48); color: #ffffff; font-size: 2rem; content: "표를 밀어보세요"; z-index: 1; }
   .table-wrap:not(.ver):not(.table-content).scroll::before { display: none; }
-  .table-wrap:not(.ver):not(.table-content) .table { width: 80rem; }
+  .table-wrap:not(.ver):not(.table-content) .table { width: 100rem; table-layout: auto; }
   .table-wrap.table-auto table { width: 80rem; }
   .table-wrap.table-area .table { width: 130rem; }
   .table-wrap.filter .checks { padding: 1rem 0; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .table-wrap.filter .checks .form-group { padding-bottom: 0; }
+  .table-wrap.mobile-table__width--100 .table { width: 100%; }
+  .table-wrap.mobile-table__width--100 .table .button-wrap { -webkit-box-flex: 0; -ms-flex: none; flex: none; }
+  .table-wrap.mobile-table__width--100 .table .file .viewer-wrap { padding: 1rem 0; }
   .viewer-wrap ul li .button-viewer { -webkit-box-flex: 0; -ms-flex: none; flex: none; width: auto; } }
