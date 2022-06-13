@@ -53,3 +53,8 @@
 .button-down button a { color: #ffffff; }
 
 .button-down.w-640 button { width: 64rem; -webkit-box-flex: 0; -ms-flex: none; flex: none; }
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/
+@media screen and (max-width: 720px) { .button-down.w-640 button { width: auto; padding: 0 3rem; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; } }
