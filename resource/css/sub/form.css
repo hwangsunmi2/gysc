@@ -183,11 +183,11 @@ select, input { border-radius: 0; -webkit-box-shadow: none; box-shadow: none; }
 
 .filter .checks input[type="radio"] + label { font-weight: 400; margin-right: 3rem; -webkit-box-flex: 0; -ms-flex: none; flex: none; }
 
+.filter .checks.flex-wrap__none { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+
 .filter .table tr { border-bottom: 1px solid #eeeeee; }
 
 .filter .table tr:last-child { position: relative; border-bottom: 1px solid; }
-
-.filter .table tr:last-child::after { position: absolute; left: 0%; top: 6rem; width: 100%; height: 10rem; background: url(../../image/sub/bg-gradient.png) no-repeat center top; z-index: -1; content: ""; }
 
 .filter.expand tr:last-child { border-bottom: 1px solid #eeeeee; }
 
@@ -217,6 +217,7 @@ select, input { border-radius: 0; -webkit-box-shadow: none; box-shadow: none; }
   .search-plus .form-group { padding-top: 0; padding-bottom: 0; }
   .filter .checks { padding: 1rem 0; }
   .filter .checks input[type="radio"] + label { width: 100%; margin: .5rem 0; }
+  .filter .checks.flex-wrap__none { -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .form-check.w-auto { width: auto !important; }
   .filter .table td p { width: auto !important; -webkit-box-flex: 0; -ms-flex: none; flex: none; margin-bottom: 0 !important; }
   .filter .form-wrap { width: 100%; }

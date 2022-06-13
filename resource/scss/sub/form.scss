@@ -469,6 +469,7 @@ select, input{
             }
         }
     }
+    
 }
 
 
@@ -593,6 +594,9 @@ select, input{
             margin-right: 3rem;
             flex:none;
         }
+        &.flex-wrap__none{
+            flex-wrap: nowrap;
+        }
     }
     .table{
         tr{
@@ -600,16 +604,16 @@ select, input{
             &:last-child{
                 position: relative;
                 border-bottom: 1px solid;
-                &::after{
-                    position: absolute;
-                    left: 0%;
-                    top: 6rem;
-                    width: 100%;
-                    height: 10rem;
-                    background: url(../../image/sub/bg-gradient.png) no-repeat center top;
-                    z-index: -1;
-                    content:"";
-                }
+                // &::after{
+                //     position: absolute;
+                //     left: 0%;
+                //     top: 6rem;
+                //     width: 100%;
+                //     height: 10rem;
+                //     background: url(../../image/sub/bg-gradient.png) no-repeat center top;
+                //     z-index: -1;
+                //     content:"";
+                // }
             }
         }
         
@@ -728,6 +732,9 @@ select, input{
         input[type="radio"] + label{
             width: 100%;
             margin: .5rem 0;
+        }
+        &.flex-wrap__none{
+            flex-wrap: wrap;
         }
     }
     .form-check.w-auto{

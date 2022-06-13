@@ -399,6 +399,15 @@
         }
         text-align: right;
      }
+     &-des{
+        margin-top: 1rem;
+        font : {
+            size:1.6rem;
+            weight:500;
+        }
+        color:#555555;
+        text-align: right;
+     }
      &-title {
         margin-bottom: 3.5rem;
         font-size: 3.2rem;

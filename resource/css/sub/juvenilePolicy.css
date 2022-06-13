@@ -88,7 +88,9 @@
 
 .youthCouncil-bottom .progress__inner > div:nth-child(2) { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
 
-.youthCouncil-bottom .progress__inner > div:nth-child(2) .step-box { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-flow: row-reverse; flex-flow: row-reverse; background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='17'%3E%3Cpath fill-rule='evenodd' fill='rgb(222, 222, 222)' d='M-.001 8.386 15 .002l-.137 16.997L-.001 8.386Z'/%3E%3C/svg%3E"); }
+.youthCouncil-bottom .progress__inner > div:nth-child(2) .step-box { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-flow: row-reverse; flex-flow: row-reverse; }
+
+.youthCouncil-bottom .progress__inner > div:nth-child(2) .step-box::before { left: -.75rem; background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='17'%3E%3Cpath fill-rule='evenodd' fill='rgb(222, 222, 222)' d='M-.001 8.386 15 .002l-.137 16.997L-.001 8.386Z'/%3E%3C/svg%3E"); }
 
 .youthCouncil-bottom .progress__inner > div:nth-child(2) .step-box:nth-child(1) { background-image: none; }
 
@@ -106,13 +108,17 @@
 
 .youthCouncil-bottom .progress__inner > div:nth-child(2) .step-box:nth-child(4) .step-num__inner { background: #005aab; font-weight: 400; }
 
-.youthCouncil-bottom .step-box { width: calc(100% / 4); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='17'%3E%3Cpath fill-rule='evenodd' fill='rgb(222, 222, 222)' d='M15.001 8.614 0 16.998.137.001l14.864 8.613Z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right top 3.8rem; }
+.youthCouncil-bottom .progress__inner > div:nth-child(2) .step-box:nth-child(4)::before { display: none; }
+
+.youthCouncil-bottom .step-box { position: relative; width: calc(100% / 4); }
+
+.youthCouncil-bottom .step-box::before { position: absolute; top: 3.8rem; right: -.75rem; width: 1.5rem; height: 1.7rem; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='17'%3E%3Cpath fill-rule='evenodd' fill='rgb(222, 222, 222)' d='M15.001 8.614 0 16.998.137.001l14.864 8.613Z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-size: 100%; content: ""; }
 
 .youthCouncil-bottom .step-box:nth-child(2) .step-num::before { height: calc(100% / 5); }
 
 .youthCouncil-bottom .step-box:nth-child(3) .step-num::before { height: calc(100% / 4); }
 
-.youthCouncil-bottom .step-box:nth-child(4) { background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='15'%3E%3Cpath fill-rule='evenodd' fill='rgb(222, 222, 222)' d='M8.386 15.001.002 0l16.997.137-8.613 14.864Z'/%3E%3C/svg%3E"); background-position: bottom 3rem center; }
+.youthCouncil-bottom .step-box:nth-child(4)::before { position: absolute; top: auto; bottom: 3.8rem; right: 50%; left: auto; width: 1.5rem; height: 1.7rem; background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='15'%3E%3Cpath fill-rule='evenodd' fill='rgb(222, 222, 222)' d='M8.386 15.001.002 0l16.997.137-8.613 14.864Z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-size: 100%; -webkit-transform: translateX(1rem); transform: translateX(1rem); content: ""; }
 
 .youthCouncil-bottom .step-box:nth-child(4) .step-num::before { height: 50%; }
 
@@ -126,9 +132,7 @@
 
 .youthCouncil-bottom .step-des { text-align: center; font-size: 1.8rem; font-weight: 500; line-height: 2.4rem; }
 
-.youthCouncil-bottom .step-des a { position: relative; font-size: 1.6rem; font-weight: 500; color: #005aab; }
-
-.youthCouncil-bottom .step-des a::before { position: absolute; bottom: -.5rem; width: 100%; height: 1px; background: #005aab; content: ""; }
+.youthCouncil-bottom .step-des a { font-size: 1.6rem; font-weight: 500; color: #005aab; text-decoration: underline; -webkit-text-decoration-color: #005aab; text-decoration-color: #005aab; text-underline-position: under; word-break: break-all; }
 
 .youthReportPro .img-wrap img { display: block; margin: 0 auto; max-width: 100%; }
 
@@ -143,9 +147,10 @@
 
 @media screen and (max-width: 720px) { .youthCouncil-top .img-wrap { width: 20%; margin: 0 5%; }
   .youthCouncil-top .img-wrap img { width: 100%; }
-  .youthCouncil-top .button-wrap button { min-width: unset; max-width: none; }
+  .youthCouncil-top .button-wrap button { min-width: unset; max-width: none; padding: 1rem; height: auto; }
+  .youthCouncil-top .title { line-height: 4rem; }
   .youthCouncil-bottom > ul > li { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-  .youthCouncil-bottom .title { width: 100%; margin-left: 0; padding-right: 0rem; padding-bottom: 3rem; }
+  .youthCouncil-bottom .title { width: 100%; margin-left: 0; padding-right: 0rem; padding-bottom: 3rem; -webkit-box-sizing: border-box; box-sizing: border-box; }
   .youthCouncil-bottom .cont p { padding: 1rem; }
   .youthCouncil-bottom .cont.w-50 { width: 100%; }
   .youthCouncil-des { padding-right: 3rem; }
