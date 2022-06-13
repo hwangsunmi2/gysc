@@ -174,9 +174,23 @@
         }
     }
     .cho_place{
-        .form-select{
-            height: 100%;
-        }    
+        .form{
+            &-search{
+                height: 5rem;
+                input{
+                    height: 100%;
+                }
+                .btn-search{
+                    height:100%;
+                }
+            }
+            &-select{
+                height: 5rem;
+                select{
+                    height: 100%;
+                }
+            }
+        }     
     }
 }
 
