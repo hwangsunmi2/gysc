@@ -2,6 +2,7 @@
 
 select, input{
     border-radius: 0;
+    box-shadow: none;
 }
 
 /* select */
@@ -799,6 +800,12 @@ select, input{
                     &.date{
                         width: 100%;
                     }
+                }
+            }
+            &-select{
+                flex:1;
+                select{
+                    width:100%;
                 }
             }
             &-search{
