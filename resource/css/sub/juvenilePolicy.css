@@ -153,4 +153,5 @@
   .youthCouncil-des__box p { margin-top: 1rem; }
   .volunteer__inner ul li { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
   .volunteer__inner .type { margin-right: 0; margin-bottom: 3rem; }
-  .volunteer__inner .info { width: 100%; padding-top: 0; padding-bottom: 3rem; } }
+  .volunteer__inner .info { width: 100%; padding-top: 0; padding-bottom: 3rem; }
+  .youthReportPro .box-blue { padding: 5rem 3rem; } }
