@@ -202,7 +202,8 @@
   .table-wrap.table-area .table { width: 130rem; }
   .table-wrap.filter .checks { padding: 1rem 0; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .table-wrap.filter .checks .form-group { padding-bottom: 0; }
-  .table-wrap.mobile-table__width--100 .table { width: 100%; }
+  .table-wrap.mobile-table__width--100::before { display: none !important; }
+  .table-wrap.mobile-table__width--100 .table { width: 100% !important; }
   .table-wrap.mobile-table__width--100 .table .button-wrap { -webkit-box-flex: 0; -ms-flex: none; flex: none; }
   .table-wrap.mobile-table__width--100 .table .file .viewer-wrap { padding: 1rem 0; }
   .viewer-wrap ul li .button-viewer { -webkit-box-flex: 0; -ms-flex: none; flex: none; width: auto; } }

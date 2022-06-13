@@ -653,8 +653,12 @@
         &.mobile-table{
             &__width{
                 &--100{
+                    &::before{
+                        display: none !important;
+                    }
                     .table{
-                        width:100%;
+                        width:100% !important;
+                        
                         .button-wrap{
                             flex:none;
                         }
