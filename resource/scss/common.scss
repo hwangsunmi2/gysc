@@ -453,9 +453,9 @@ html {
     @include mobile-m{ //540px
         font-size:  calc(62.5% / 1.7);
     }
-    @include mobile-s{ //375px
-        font-size:  calc(62.5% / 2);
-    }
+    // @include mobile-s{ //375px
+    //     font-size:  calc(62.5% / 2);
+    // }
 }
 
 
