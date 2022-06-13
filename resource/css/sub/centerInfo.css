@@ -1594,6 +1594,9 @@
 }
 
 @media screen and (max-width: 360px) {
+  .content .est .bottom ul li:nth-child(4), .content .est .bottom ul li:nth-child(5), .content .est .bottom ul li:nth-child(6) {
+    background-position: 90% 70%;
+  }
   .grayBox_sh .info p {
     width: 51rem;
     margin: 0 auto;

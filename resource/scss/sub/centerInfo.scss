@@ -1757,7 +1757,19 @@
 }
 
 @media screen and(max-width:360px) {
-    
+    .content{
+        .est{
+            .bottom{
+                ul{
+                    li{
+                        &:nth-child(4),&:nth-child(5),&:nth-child(6){
+                            background-position: 90% 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .grayBox {
         &_sh {
             .info {
