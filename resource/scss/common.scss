@@ -886,6 +886,8 @@ body{
             padding: 3.1rem 2.4rem 2.8rem;
             border-bottom: 0;
             justify-content: flex-end;
+            &::before {display:none;}
+            &::after {display:none;}
             h1{
                 position: absolute;
                 left: 2.4rem;
