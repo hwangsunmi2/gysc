@@ -443,7 +443,10 @@ html {
     font-size: 62.5%; //1em = 10px로 설정
     font-weight: $font-weight__r;
     letter-spacing: -0.25px;
-    -webkit-text-size-adjust:none;
+    -webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라 신버전 */
+    -ms-text-size-adjust : none;  /* IE */
+    -moz-text-size-adjust : none;  /* 파이어폭스 */
+    -o-text-size-adjust : none;  /* 오페라 구버전 */
     @include mobile-l{ //720px
         font-size:  57.81%;
     }

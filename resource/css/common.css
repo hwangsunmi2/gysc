@@ -260,7 +260,7 @@
 .font_30 { font-size: 3rem; line-height: 3.2rem; }
 
 /* 공통 */
-html { font-size: 62.5%; font-weight: 300; letter-spacing: -0.25px; -webkit-text-size-adjust: none; }
+html { font-size: 62.5%; font-weight: 300; letter-spacing: -0.25px; -webkit-text-size-adjust: none; /* 크롬, 사파리, 오페라 신버전 */ -ms-text-size-adjust: none; /* IE */ -moz-text-size-adjust: none; /* 파이어폭스 */ -o-text-size-adjust: none; /* 오페라 구버전 */ }
 
 @media (max-width: 720px) { html { font-size: 57.81%; } }
 
