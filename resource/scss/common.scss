@@ -674,10 +674,12 @@ header {
         box-sizing: border-box;
         background-color:#f3f4f6;
         .inner {
-            display:flex;
+            @include display-flex;
+            width:100%;
         }
         .zone {
             padding-top: 3rem;
+            flex:none;
             width:15rem;
             height: 7.9rem;
             color: #005aab;

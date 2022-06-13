@@ -353,9 +353,9 @@ header { height: 18rem; background-color: #fff; overflow-x: clip; }
 
 .footer .banner_zone { padding: 30px 0; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #f3f4f6; }
 
-.footer .banner_zone .inner { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.footer .banner_zone .inner { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; width: 100%; }
 
-.footer .banner_zone .zone { padding-top: 3rem; width: 15rem; height: 7.9rem; color: #005aab; font-size: 1.8rem; font-weight: 500; vertical-align: top; -webkit-box-sizing: border-box; box-sizing: border-box; letter-spacing: -0.5px; }
+.footer .banner_zone .zone { padding-top: 3rem; -webkit-box-flex: 0; -ms-flex: none; flex: none; width: 15rem; height: 7.9rem; color: #005aab; font-size: 1.8rem; font-weight: 500; vertical-align: top; -webkit-box-sizing: border-box; box-sizing: border-box; letter-spacing: -0.5px; }
 
 .footer .banner_zone .swiper-container { width: calc(100% - 15rem); padding-left: 0.1rem; }
 
