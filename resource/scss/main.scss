@@ -798,10 +798,11 @@
             transform: inherit;
             margin: 0 2.4rem;
             overflow: hidden;
+            width:93%;
             box-sizing: border-box;
             .se1Box1 {
                 position: relative;
-                width:95%;
+                width:100%;
                 .swiper {
                     img {
                         width:100%;
@@ -809,13 +810,17 @@
                 }
             }
             .se1Box2 {
-                width:95%;
+                width:100%;
                 margin-top:1rem;
                 margin-left: 0;
                 .swiper {
                     img {
                         width:100%;
                     }
+                }
+                .box2_btn {
+                    //padding:2rem !important;
+                   
                 }
             }
         }
@@ -1075,5 +1080,19 @@
             }
         }
     }
+
+
+    .se4Wrap {
+        .videoMaterial {
+            .vedio {
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
 }  
 
+@media (max-width: 480px) {
+
+}
