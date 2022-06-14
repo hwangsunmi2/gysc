@@ -242,6 +242,7 @@
                 weight:600;
             }
             flex:none;
+            box-sizing: unset;
             &::before{
                 position:absolute;
                 top: 1.6rem;

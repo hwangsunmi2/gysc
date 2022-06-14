@@ -3,7 +3,7 @@
 /* tab */
 .tab {
     @include d-flex;
-
+    width:100%;
     li {
         @include d-flex;
         height: 7rem;
@@ -1151,10 +1151,6 @@
     
                     &_bottom{
                         @include justify-center;
-                        .vision_left{
-                            
-    
-                        }
                         .vision_right{
                             width:90%;
     
@@ -1223,13 +1219,9 @@
             }
         }
 
-        .vision-wrap {
-            
+        .vision-wrap {            
             box-sizing: border-box;
-           
-            .vision {
-                //margin: 0 2.4rem;
-            }
+
         }
         
     }
@@ -1246,15 +1238,9 @@
                     margin: 0 auto;
                 }
                 .vision{
-                    
-    
                     &_bottom{
                         padding-bottom: 0;
                         justify-content:space-around;
-                        .vision_left{
-                            
-    
-                        }
                         .vision_right{
                             width:80%;
                             overflow-x: scroll;
