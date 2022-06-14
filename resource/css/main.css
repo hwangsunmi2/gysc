@@ -850,8 +850,25 @@
 }
 
 @media (max-width: 1400px) {
+  .se1 .se1Wrap .se1Box1 {
+    height: 42rem;
+  }
+  .se1 .se1Wrap .se1Box1 .swiper .swiper-slide img {
+    position: absolute;
+    top: 0;
+    width: 96%;
+    height: 100%;
+  }
+  .se1 .se1Wrap .se1Box1 .swiper .box1_btn .swiper-progress-bar {
+    width: 30rem;
+    left: 10rem;
+  }
+  .se1 .se1Wrap .se1Box2 {
+    height: 42rem;
+  }
   .se1 .se1Wrap .se1Box2 .swiper .swiper-slide img {
     width: 95%;
+    height: 100%;
   }
   .se3 .se3Wrap {
     -webkit-box-pack: justify;
