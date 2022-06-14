@@ -263,6 +263,11 @@
         @include align-center;
         padding: 5rem 0;
         background: #ffeb00;
+        .button{
+            &-wrap{
+                width:100%;
+            }
+        }
         button{
             margin-top: 1rem;
             padding: 0;

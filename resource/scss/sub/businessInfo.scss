@@ -3,9 +3,9 @@
 
 .sub-visual{
     height: 24rem;
-    &.businessInfo{
-        background: url(../../image/sub/sub-visual__02.jpg)no-repeat center;
-    }
+    // &.businessInfo{
+    //     background: url(../../image/sub/sub-visual__02.jpg)no-repeat center;
+    // }
     &__inner{
         @include display-flex;
         @include align-center;
