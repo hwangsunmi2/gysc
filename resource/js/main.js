@@ -11,9 +11,9 @@ $(document).ready(function () {
           init: true,
           // Optional parameters
           loop: false,
-        //   autoplay: {
-        //       delay: autoPlayDelay
-        //   },
+          autoplay: {
+              delay: autoPlayDelay
+          },
   
           navigation: {
               nextEl: '.se1Box1 .swiper-button-next',
@@ -71,10 +71,10 @@ $(document).ready(function () {
 
 function se1Box2_Swiper(){
 	var se1Box2Swiper = new Swiper(".se1Box2 .mySwiper", {
-		// autoplay: {
-		// 	delay: 3000,
-		// 	disableOnInteraction: false
-		// },
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false
+		},
 		pagination: {
 			el: ".se1Box2 .swiper-pagination",
 			type: "fraction",
@@ -88,10 +88,10 @@ function se1Box2_Swiper(){
   
   function se4_Swiper(){
     var se4Swiper = new Swiper(".se4Box .mySwiper", {
-      // autoplay: {
-      //   delay: 3000,
-      //   disableOnInteraction: false
-      // },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
       spaceBetween: 30,
       slidesPerView: 2,
       loop: true,
