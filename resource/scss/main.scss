@@ -978,6 +978,7 @@
                                     height:5.3rem;
                                     background-size: contain;
                                 }
+                                background-size:auto;
                             }
                             .part {
                                 width: calc(100% - 13rem);
@@ -1139,5 +1140,19 @@
 }  
 
 @media (max-width: 480px) {
-
+    .se4 {
+        .se4Wrap {
+            .activityInfo {
+                .searchBox {
+                    form {
+                        dl {
+                            input {
+                                width: 44%;
+                            }    
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1075,6 +1075,7 @@
   .se4 .se4Wrap .activityInfo .searchBox form dl input {
     width: 47%;
     height: 5.3rem;
+    background-size: auto;
   }
   .se4 .se4Wrap .activityInfo .searchBox form dl input.search {
     width: 5.3rem;
@@ -1181,5 +1182,11 @@
   }
   .se4Wrap .videoMaterial .vedio img {
     height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .se4 .se4Wrap .activityInfo .searchBox form dl input {
+    width: 44%;
   }
 }
