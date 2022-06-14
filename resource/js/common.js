@@ -137,9 +137,7 @@ function footer_Swiper() {
 
 
 
-$(document).ready(function(e) {
-  $('img[usemap]').rwdImageMaps();
-  });
+
 
 
   

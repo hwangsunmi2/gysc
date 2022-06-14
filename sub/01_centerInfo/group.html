@@ -68,7 +68,15 @@
 
         document.onmousemove = getMousePosition; // 마우스가 움직이면 getMousePosition 함수 실행
         setInterval("moveImg()", 10); // moveImg 함수 반복 실행하여 이미지 움직이기
+
+
+        // 이미지맵 반응형
+        $(document).ready(function(e) {
+            $('img[usemap]').rwdImageMaps();
+        });
     </script>
+
+    
 
 
 </head>
