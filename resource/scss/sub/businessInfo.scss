@@ -20,60 +20,60 @@
     }
 }
 
-.sub{
-    &-container{
-        &__inner{
-            max-width: 140rem;
-            width:100%;
-            margin: 6rem auto 10rem auto;
-        }
-    }
-    &-title{
-        margin-bottom: 5rem;
-        font: {
-            size:4.4rem;
-            weight:600;
-        }
-        text-align: center;
-    }
-    &-tab{
-        &__inner{
-            padding:3.5rem 0;
-            margin-bottom: 5rem;
-            border-radius: .5rem;
-            border:.2rem solid #e0e3e8;
-        }
-        ul{
-            @include display-flex;
-            @include justify-center;
-            li{
-                &.on{
-                    a{
-                        color:#005aab;
-                    }
-                }
-                a{
-                    padding:0 5.5rem;
-                    color:#747478;
-                    font: {
-                        size:2.2rem;
-                        weight:500;
-                    }
-                }
-                &+li{
-                    position: relative;
-                    &::before{
-                        position: absolute;
-                        width:1px;
-                        height:100%;
-                        background: #bbbbbb;
-                        content:""
-                    }
-                }
-            }
-        }    
-    }
-}
+// .sub{
+//     &-container{
+//         &__inner{
+//             max-width: 140rem;
+//             width:100%;
+//             margin: 6rem auto 10rem auto;
+//         }
+//     }
+//     &-title{
+//         margin-bottom: 5rem;
+//         font: {
+//             size:4.4rem;
+//             weight:600;
+//         }
+//         text-align: center;
+//     }
+//     &-tab{
+//         &__inner{
+//             padding:3.5rem 0;
+//             margin-bottom: 5rem;
+//             border-radius: .5rem;
+//             border:.2rem solid #e0e3e8;
+//         }
+//         ul{
+//             @include display-flex;
+//             @include justify-center;
+//             li{
+//                 &.on{
+//                     a{
+//                         color:#005aab;
+//                     }
+//                 }
+//                 a{
+//                     padding:0 5.5rem;
+//                     color:#747478;
+//                     font: {
+//                         size:2.2rem;
+//                         weight:500;
+//                     }
+//                 }
+//                 &+li{
+//                     position: relative;
+//                     &::before{
+//                         position: absolute;
+//                         width:1px;
+//                         height:100%;
+//                         background: #bbbbbb;
+//                         content:""
+//                     }
+//                 }
+//             }
+//         }    
+//     }
+// }
 
 .contFlex {
     @include display-flex;

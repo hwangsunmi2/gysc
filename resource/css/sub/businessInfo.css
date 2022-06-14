@@ -2,22 +2,6 @@
 
 .sub-visual__inner { display: flex; display: flex; align-items: center; max-width: 140rem; width: 100%; height: 100%; margin: 0 auto; font-size: 5rem; font-weight: 600; }
 
-.sub-container__inner { max-width: 140rem; width: 100%; margin: 6rem auto 10rem auto; }
-
-.sub-title { margin-bottom: 5rem; font-size: 4.4rem; font-weight: 600; text-align: center; }
-
-.sub-tab__inner { padding: 3.5rem 0; margin-bottom: 5rem; border-radius: .5rem; border: .2rem solid #e0e3e8; }
-
-.sub-tab ul { display: flex; display: flex; justify-content: center; }
-
-.sub-tab ul li.on a { color: #005aab; }
-
-.sub-tab ul li a { padding: 0 5.5rem; color: #747478; font-size: 2.2rem; font-weight: 500; }
-
-.sub-tab ul li + li { position: relative; }
-
-.sub-tab ul li + li::before { position: absolute; width: 1px; height: 100%; background: #bbbbbb; content: ""; }
-
 .contFlex { display: flex; display: flex; margin-top: 1rem; }
 
 .contFlex p { width: 50%; vertical-align: top; }
