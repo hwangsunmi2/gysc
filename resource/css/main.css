@@ -910,18 +910,19 @@
             transform: inherit;
     margin: 0 2.4rem;
     overflow: hidden;
+    width: 93%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
   .se1 .se1Wrap .se1Box1 {
     position: relative;
-    width: 95%;
+    width: 100%;
   }
   .se1 .se1Wrap .se1Box1 .swiper img {
     width: 100%;
   }
   .se1 .se1Wrap .se1Box2 {
-    width: 95%;
+    width: 100%;
     margin-top: 1rem;
     margin-left: 0;
   }
@@ -1146,5 +1147,8 @@
 @media (max-width: 640px) {
   .se3 .se3Wrap .mainBoard .tab_wrap h4 {
     width: 33.1%;
+  }
+  .se4Wrap .videoMaterial .vedio img {
+    height: 100%;
   }
 }
