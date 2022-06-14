@@ -23,6 +23,9 @@
             }
         }
     }
+    .con{
+        font-size: 1.8rem;
+    }
     &__inner{
         position: relative;
         &::before{
@@ -67,6 +70,7 @@
                 content:""
             }
         }
+    
     }
 }
 

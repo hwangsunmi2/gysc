@@ -415,12 +415,38 @@ dl{
             }
         }
         &-tab{
-            ul{
+            &__inner{
                 padding:0;
-                justify-content: flex-start;
+                overflow-x: unset;
+            }
+            ul{
+                @include flex-column;
+                padding:0;
+                //justify-content: flex-start;
                 li{
+                    width:100%;
+                    padding: 2.5rem;
+                    box-sizing: border-box;
                     a{
-                        padding: 0 2.5rem;
+                        @include d-flex;
+                        height: 100%;
+                        padding:0;
+                        font-size:2.2rem;
+                        color:#555555;
+                        text-align: center;
+                    }
+                    &.on{
+                        background: #3c8dc2;
+                        a{
+                            color:#ffffff;
+                            font-weight: 500;
+                        }
+                    }
+                    &+li{
+                        border-top:1px solid #e0e3e8;
+                        &::before{
+                            display: none;
+                        }
                     }
                 }
             }
