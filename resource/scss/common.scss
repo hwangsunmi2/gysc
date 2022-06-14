@@ -684,7 +684,7 @@ header {
             height: 7.9rem;
             color: #005aab;
             font-size: 1.8rem;
-            font-weight: 500;
+            font-weight: 600;
             vertical-align: top;
             box-sizing: border-box;
             letter-spacing: -0.5px;
@@ -813,7 +813,6 @@ header {
                     &+ul {
                         display:inline-block;
                         margin-top:1.5rem;
-                        margin-left:1.5rem;
                         &+ul {
                             position:relative;
                             &::before {
