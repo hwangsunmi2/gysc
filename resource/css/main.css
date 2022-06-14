@@ -833,7 +833,7 @@
   }
   .se4Wrap .activityInfo .searchBox dl dt.dt {
     margin-left: 0 !important;
-    width: 45px;
+    width: 4.5rem;
   }
   .se4Wrap .activityInfo .searchBox dl dd.date {
     display: inline-block;
@@ -921,6 +921,15 @@
   .se1 .se1Wrap .se1Box1 .swiper img {
     width: 100%;
   }
+  .se1 .se1Wrap .se1Box1 .swiper .box1_btn .btnBox .swiper-button-prev {
+    background-size: contain;
+  }
+  .se1 .se1Wrap .se1Box1 .swiper .box1_btn .btnBox .swiper-button-next {
+    background-size: contain;
+  }
+  .se1 .se1Wrap .se1Box1 .swiper .box1_btn .btnBox .swiper-button-pause {
+    background-size: contain;
+  }
   .se1 .se1Wrap .se1Box2 {
     width: 100%;
     margin-top: 1rem;
@@ -928,6 +937,15 @@
   }
   .se1 .se1Wrap .se1Box2 .swiper img {
     width: 100%;
+  }
+  .se1 .se1Wrap .se1Box2 .swiper .box2_btn .popupZone .swiper-button-prev {
+    background-size: contain;
+  }
+  .se1 .se1Wrap .se1Box2 .swiper .box2_btn .popupZone .swiper-button-next {
+    background-size: contain;
+  }
+  .se1 .se1Wrap .se1Box2 .swiper .box2_btn .popupZone .swiper-pagination-fraction {
+    top: 0.4em;
   }
   .se2 {
     padding: 5rem 2.4rem;
@@ -1004,6 +1022,7 @@
   .se3 .se3Wrap .mainBoard .tab_wrap .tab_cont ul li a {
     width: 100%;
     font-size: 2.2rem;
+    padding-top: 0.1rem;
   }
   .se3 .se3Wrap .mainBoard .tab_wrap .tab_cont ul li em {
     display: none;
@@ -1091,6 +1110,12 @@
   .se4 .se4Wrap .se4Box .se4_btn {
     top: -30rem;
   }
+  .se4 .se4Wrap .se4Box .se4_btn .swiper-button-prev {
+    background-size: contain;
+  }
+  .se4 .se4Wrap .se4Box .se4_btn .swiper-button-next {
+    background-size: contain;
+  }
   .se4 .se4Wrap .se4Cont .tit {
     font-size: 2rem;
     line-height: 2.5rem;
@@ -1141,6 +1166,9 @@
 @media (max-width: 900px) {
   .se3 .se3Wrap .mainBoard .tab_wrap h4 {
     width: 33.18%;
+  }
+  .se4 .se4Wrap .activityInfo .searchBox form dl input {
+    width: 46%;
   }
 }
 

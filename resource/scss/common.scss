@@ -872,6 +872,7 @@ body{
                 }
                 .right {
                     font-size:2rem !important;
+                    line-height: 2.8rem;
                 }
             }
         }
@@ -1136,7 +1137,17 @@ body{
                     }
                 }
             }
-           
+            .footerbtn {
+                .swiper-button-prev{
+                    background-size: contain;
+                }
+               .swiper-button-pause {
+                    background-size: contain;
+                }
+                .swiper-button-next {
+                    background-size: contain;
+                }
+            }
         }
         .footerLogo {
             display:none;

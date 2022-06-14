@@ -686,7 +686,7 @@
                         }
                         &.dt {
                             margin-left:0 !important;
-                            width: 45px;
+                            width: 4.5rem;
                         }
                     }
                     dd {
@@ -807,6 +807,19 @@
                     img {
                         width:100%;
                     }
+                    .box1_btn {
+                        .btnBox {
+                            .swiper-button-prev {
+                                background-size: contain;
+                            }
+                            .swiper-button-next {
+                                background-size: contain;
+                            }
+                            .swiper-button-pause {
+                                background-size: contain;
+                            }
+                        }
+                    }
                 }
             }
             .se1Box2 {
@@ -817,10 +830,19 @@
                     img {
                         width:100%;
                     }
-                }
-                .box2_btn {
-                    //padding:2rem !important;
-                   
+                    .box2_btn {
+                        .popupZone {
+                            .swiper-button-prev {
+                                background-size: contain;
+                            }
+                            .swiper-button-next {
+                                background-size: contain;
+                            }
+                            .swiper-pagination-fraction {
+                                top: 0.4em;
+                            }    
+                        }
+                    }
                 }
             }
         }
@@ -899,6 +921,7 @@
                                 a {
                                     width:100%;
                                     font-size:2.2rem;
+                                    padding-top:0.1rem;
                                 }
                                 em {
                                     display:none;
@@ -997,6 +1020,12 @@
             .se4Box {
                 .se4_btn {
                     top:-30rem;
+                    .swiper-button-prev {
+                        background-size: contain;
+                    }
+                    .swiper-button-next {
+                        background-size: contain;
+                    }
                 }
             }
             .se4Cont {
@@ -1061,6 +1090,21 @@
                 .tab_wrap {
                     h4 {
                         width: 33.18%;
+                    }
+                }
+            }
+        }
+    }
+    .se4 {
+        .se4Wrap {
+            .activityInfo {
+                .searchBox {
+                    form {
+                        dl {
+                            input {
+                                width: 46%;
+                            }    
+                        }
                     }
                 }
             }
