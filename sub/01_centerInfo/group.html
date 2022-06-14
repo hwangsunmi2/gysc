@@ -25,6 +25,46 @@
 	<script type="text/javascript" src="../../resource/js/common.js"></script>
 
     <title>경기도청소년활동진흥센터</title>
+
+
+    <script type="text/javascript">
+        // 마우스 커서 위치 담을 변수
+        var mouseX;
+        var mouseY; 
+        function getMousePosition(e){
+            var eObj = window.event? window.event : e; // IE, FF 에 따라 이벤트 처리 하기
+            
+            
+            mouseX = eObj.clientX;
+            var agent = navigator.userAgent.toLowerCase();
+            if (agent.indexOf("chrome") != -1) {
+                if("center" == "center"){
+                     mouseY = eObj.clientY + document.body.scrollTop;
+                }else{
+                     mouseY = eObj.clientY + document.documentElement.scrollTop;
+                }
+            }else{
+                mouseY = eObj.clientY + document.documentElement.scrollTop;
+            }
+        
+            // 화면을 스크롤 했을때를 위한 처리 (스크롤 한 만큼 마우스 Y좌표에 + )
+            // documentElement 가 안된다면 body 바꿔야 한다. 크롬의 경우.. (자동파악 로직 필요)
+        }
+        
+        function moveImg(){
+            // 이미지 위치 파악하기
+            var m_x = parseInt(document.getElementById('img1').style.left.replace('px', ''));
+            var m_y = parseInt(document.getElementById('img1').style.top.replace('px', ''));
+        
+            // 이미지 움직이기
+            document.getElementById('img1').style.left = Math.round(m_x + 2 + ((mouseX - m_x) / 5)) + 'px';
+            document.getElementById('img1').style.top = Math.round(m_y + 2 + ((mouseY - m_y) / 5)) + 'px';
+        }
+        document.onmousemove = getMousePosition; // 마우스가 움직이면 getMousePosition 함수 실행
+        setInterval("moveImg()", 20); // moveImg 함수 반복 실행하여 이미지 움직이기
+        </script>
+
+        <img id="img1" style="position: absolute; left: 0px; top: 0px; z-index: 10000; pointer-events: none; width: 55px; height: 55px;" src="../../resource/image/common/mouse.gif">
 </head>
 <body>
     <div class="wrap">
@@ -277,7 +317,7 @@
                                             <td>권구연</td>
                                             <td>활동진흥센터 업무총괄</td>
                                             <td>11</td>
-                                            <td>yaho2000@ggyouth.or.kr</td>
+                                            <td><a href="mailto:yaho2000@ggyouth.or.kr">yaho2000@ggyouth.or.kr</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -319,7 +359,7 @@
                                                 센터 평가 관리
                                             </td>
                                             <td>14</td>
-                                            <td>always727@ggyouth.or.kr</td>
+                                            <td><a href="mailto:always727@ggyouth.or.kr">always727@ggyouth.or.kr</a></td>
                                         </tr>
                                         <tr>
                                             <td>대리</td>
@@ -332,7 +372,7 @@
                                                 직원의무교육 운영 및 관리
                                             </td>
                                             <td>24</td>
-                                            <td>sh9676@ggyouth.or.kr</td>
+                                            <td><a href="mailto:sh9676@ggyouth.or.kr">sh9676@ggyouth.or.kr</a></td>
                                         </tr>
                                         <tr>
                                             <td>대리</td>
@@ -348,7 +388,7 @@
                                                 비품 및 시설 관리
                                             </td>
                                             <td>24</td>
-                                            <td>aty8317@ggyouth.or.kr</td>
+                                            <td><a href="mailto:aty8317@ggyouth.or.kr">aty8317@ggyouth.or.kr</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -401,7 +441,7 @@
                                                 청소년어울림마당 모니터링
                                             </td>
                                             <td>17</td>
-                                            <td>stella@ggyouth.or.kr</td>
+                                            <td><a href="mailto:stella@ggyouth.or.kr">stella@ggyouth.or.kr</a></td>
                                         </tr>
                                         <tr>
                                             <td>대리</td>
@@ -415,7 +455,7 @@
                                                 센터 홈페이지 관리
                                             </td>
                                             <td>16</td>
-                                            <td>bellho@ggyouth.or.kr</td>
+                                            <td><a href="mailto:bellho@ggyouth.or.kr">bellho@ggyouth.or.kr</a></td>
                                         </tr>
                                         <tr>
                                             <td>대리</td>
@@ -428,7 +468,7 @@
                                                 찾아가는 청소년활동 프로그램 운영
                                             </td>
                                             <td>20</td>
-                                            <td>haha2022@ggyouth.or.kr</td>
+                                            <td><a href="mailto:haha2022@ggyouth.or.kr">haha2022@ggyouth.or.kr</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -469,7 +509,7 @@
                                                 동아리 역량교육 지원
                                             </td>
                                             <td>15</td>
-                                            <td>kjh212@ggyouth.or.kr</td>
+                                            <td><a href="mailto:kjh212@ggyouth.or.kr">kjh212@ggyouth.or.kr</a></td>
                                         </tr>
                                         <tr>
                                             <td>차장</td>
@@ -485,7 +525,7 @@
                                                 청소년성취포상제 포상식 운영
                                             </td>
                                             <td>19</td>
-                                            <td>silverzzy@ggyouth.or.kr</td>
+                                            <td><a href="mailto:silverzzy@ggyouth.or.kr">silverzzy@ggyouth.or.kr</a></td>
                                         </tr>
                                         <tr>
                                             <td>대리</td>
@@ -498,7 +538,7 @@
                                                 위험사회 예방을 위한 청소년지도자 양성 및 힐링 지원
                                             </td>
                                             <td>23</td>
-                                            <td>rds2001@ggyouth.or.kr</td>
+                                            <td><a href="mailto:rds2001@ggyouth.or.kr">rds2001@ggyouth.or.kr</a></td>
                                         </tr>
                                         <tr>
                                             <td>대리</td>
@@ -513,7 +553,7 @@
                                                 청소년수련활동 신고제 교육 운영
                                             </td>
                                             <td>21</td>
-                                            <td>feelwins@ggyouth.or.kr</td>
+                                            <td><a href="mailto:feelwins@ggyouth.or.kr">feelwins@ggyouth.or.kr</a></td>
                                         </tr>
                                         <tr>
                                             <td>-</td>
@@ -574,7 +614,7 @@
                                                 북부권역 신규프로그램 개발 관리
                                             </td>
                                             <td>13</td>
-                                            <td>moiso@ggyouth.or.kr</td>
+                                            <td><a href="mailto:moiso@ggyouth.or.kr">moiso@ggyouth.or.kr</a></td>
                                         </tr>
                                         <tr>
                                             <td>과장</td>
@@ -598,7 +638,7 @@
                                                 북부권역 지역사회 연계
                                             </td>
                                             <td>22</td>
-                                            <td>realu@ggyouth.or.kr</td>
+                                            <td><a href="mailto:realu@ggyouth.or.kr">realu@ggyouth.or.kr</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
