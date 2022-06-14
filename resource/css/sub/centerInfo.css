@@ -307,7 +307,7 @@
 
 .content_map .grayBox_sh .grayBox_wrap .grayBox_4 { width: calc(100%); padding: 1rem 0; background-color: #fff; }
 
-.content_map .grayBox_sh .grayBox_wrap .grayBox_4 img { width: 4.2rem; height: 4.4rem; margin-left: 3%; padding: 2.4% 0; }
+.content_map .grayBox_sh .grayBox_wrap .grayBox_4 img { width: 4.2rem; height: 4.4rem; margin-left: 3%; padding: 2.4% 0; box-sizing: unset; }
 
 .content_map .grayBox_sh .grayBox_wrap .grayBox_4 p { margin-left: 2%; }
 

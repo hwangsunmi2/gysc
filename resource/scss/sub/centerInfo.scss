@@ -967,17 +967,15 @@
                             width: calc(100%);
                             padding: 1rem 0;
                             background-color: #fff;
-
                             img {
                                 width: 4.2rem;
                                 height: 4.4rem;
                                 margin-left: 3%;
                                 padding: 2.4% 0;
+                                box-sizing: unset;
                             }
-
                             p {
                                 margin-left: 2%;
-
                                 span {
                                     display: block;
                                     font-size: 2rem;

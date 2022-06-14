@@ -167,7 +167,8 @@
                     }
                     .tit{
                         margin-bottom: 0rem;
-                        font-size: 2.2rem,;
+                        font-size: 2.2rem;
+                        -webkit-box-orient: vertical;
                     }
                     .button-wrap{
                         .button-viewer{
@@ -235,11 +236,12 @@
                                 }
                             }
                         }
-                        a{
+                        >a{
                             @include display-flex;
-                            @include flex-column;
-                            margin: 1.35rem 1.5rem;
-                            border-bottom: 1px solid;
+                            @include align-center;
+                            //@include flex-column;
+                            //margin: 1.35rem 1.5rem;
+                            //border-bottom: 1px solid;
                         }
                     }
                 }
@@ -266,11 +268,12 @@
                         }
                     }
                     .tit{
+                        @include text-overflow2;
                         height: 7.2rem;
                         margin-bottom: 0rem;
                         font-size: 2.2rem;
                         line-height: 3.6rem;
-                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
                     }
                     .button-wrap{
                         .button-viewer{
@@ -405,6 +408,9 @@
                                 margin-right: 0;
                                 margin-bottom: 3rem;
                                 border: 1px solid #eeeeee;
+                            }
+                            >a{
+                                @include flex-column;
                             }
                         }
                     }
