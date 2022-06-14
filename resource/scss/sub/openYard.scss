@@ -266,13 +266,15 @@
         .button{
             &-wrap{
                 width:100%;
+                button{
+                    width:auto;
+                    margin-top: 1rem;
+                    padding: 0;
+                    background: transparent;
+                }
             }
         }
-        button{
-            margin-top: 1rem;
-            padding: 0;
-            background: transparent;
-        }
+        
     }
 }
 
