@@ -1080,6 +1080,7 @@ body.fixed {
   }
   .footer .footer_info .foot-info .right {
     font-size: 2rem !important;
+    line-height: 2.8rem;
   }
 }
 
@@ -1350,6 +1351,15 @@ body.fixed {
   .footer .banner_zone .swiper-container .swiper-wrapper .swiper-slide a img {
     height: 7.4rem;
     width: 100%;
+  }
+  .footer .banner_zone .footerbtn .swiper-button-prev {
+    background-size: contain;
+  }
+  .footer .banner_zone .footerbtn .swiper-button-pause {
+    background-size: contain;
+  }
+  .footer .banner_zone .footerbtn .swiper-button-next {
+    background-size: contain;
   }
   .footer .footerLogo {
     display: none;
