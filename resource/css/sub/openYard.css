@@ -74,7 +74,7 @@
 
 .inquiry__inner .button-wrap { width: 100%; }
 
-.inquiry__inner button { margin-top: 1rem; padding: 0; background: transparent; }
+.inquiry__inner .button-wrap button { width: auto; margin-top: 1rem; padding: 0; background: transparent; }
 
 /*===================================================================================================
 ===========================================  responsive ==========================================
