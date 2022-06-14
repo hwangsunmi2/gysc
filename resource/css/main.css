@@ -938,6 +938,9 @@
   .se1 .se1Wrap .se1Box2 .swiper img {
     width: 100%;
   }
+  .se1 .se1Wrap .se1Box2 .swiper .box2_btn .popupZone {
+    right: 2rem;
+  }
   .se1 .se1Wrap .se1Box2 .swiper .box2_btn .popupZone .swiper-button-prev {
     background-size: contain;
   }
@@ -1022,7 +1025,7 @@
   .se3 .se3Wrap .mainBoard .tab_wrap .tab_cont ul li a {
     width: 100%;
     font-size: 2.2rem;
-    padding-top: 0.1rem;
+    padding-top: 0.2rem;
   }
   .se3 .se3Wrap .mainBoard .tab_wrap .tab_cont ul li em {
     display: none;
