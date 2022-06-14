@@ -1439,7 +1439,6 @@
             }
         }
         .est{
-
             .top{
                 top: calc(100% - 76rem);
                 .right{
@@ -1447,7 +1446,7 @@
                 }
             }
             .bottom{
-                bottom:-24%;
+                margin-top: -11%;
             }
         }
     }
@@ -1738,13 +1737,6 @@
             .vision-wrap{
                 .vision{
                     &_bottom{
-                        .vision_left{
-                            margin:0;
-                            img{
-                                
-                            }
-                        }
-
                         .vision_right{
                             margin:0;
                             
@@ -1760,6 +1752,7 @@
     .content{
         .est{
             .bottom{
+                margin-top: -6rem;
                 ul{
                     li{
                         &:nth-child(4),&:nth-child(5),&:nth-child(6){
