@@ -41,12 +41,12 @@ $(document).ready(function () {
 function nav() {
   $('.navigation .gnb ul li').mouseover(function () {
     $(this).children().addClass('active');
-    $('.navigation .gnb .show').css('opacity', '1');
+    $('.list').css('opacity', '1');
     $('.navigation .gnb ul li .depth2').css('display', 'block');
   });
   $('.navigation .gnb ul li').mouseleave(function () {
     $(this).children().removeClass('active');
-    $('.navigation .gnb .show').css('opacity', '0');
+    $('.list').css('opacity', '0');
     $('.navigation .gnb ul li .depth2').css('display', 'none');
   });
 }
