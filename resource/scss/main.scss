@@ -716,6 +716,19 @@
     
 }
 @media (max-width: 1400px) {
+    .se1 {
+        .se1Wrap {
+            .se1Box2 {
+                .swiper {
+                    .swiper-slide {
+                        img {
+                            width:95%;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .se3 {
         .se3Wrap {
             justify-content: space-between;

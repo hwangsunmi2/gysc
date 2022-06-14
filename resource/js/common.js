@@ -1,6 +1,42 @@
 $(document).ready(function () {
     nav();
     mMenu();
+    $.fn.setMenu = function () {
+      var depth1LI = $('> a', this);
+      var depth2UL = $('> ul', this);
+      
+      var menu = $('.depth:first-child', this);
+      menu.addClass('active');
+      
+      if ($('>ul', menu).length > 0) {
+        $('>ul', menu).slideDown("fast");
+        menu = $('>ul>li:first', li);
+        menu.addClass('active');
+        if ($('>ul', menu).length > 0) {
+          $('>ul', menu).slideDown("fast");
+          menu = $('>ul>li:first', li);
+          menu.addClass('active');
+        } else {
+        }
+      } else {
+      }
+      $('a', this).click(function () {
+        var depth = $(this).parent();
+        var sibling = depth.siblings();
+      
+        sibling.removeClass('active');
+        $('ul', sibling).slideUp("fast");
+        depth.toggleClass('active');
+      
+        var ul = $('>ul', depth);
+        if (ul.length > 0) {
+          ul.slideToggle("fast", function () {
+          });
+          return false;
+        } else if ($(this).attr('target') != '_blank') {
+        }
+      });
+    }
     subDepth2();
     footer_Swiper();
 });    
@@ -39,42 +75,7 @@ function subDepth2(){
     $('.category > li').setMenu();
   }
   
-  $.fn.setMenu = function () {
-    var depth1LI = $('> a', this);
-    var depth2UL = $('> ul', this);
-    
-    var menu = $('.depth:first-child', this);
-    menu.addClass('active');
-    
-    if ($('>ul', menu).length > 0) {
-      $('>ul', menu).slideDown("fast");
-      menu = $('>ul>li:first', li);
-      menu.addClass('active');
-      if ($('>ul', menu).length > 0) {
-        $('>ul', menu).slideDown("fast");
-        menu = $('>ul>li:first', li);
-        menu.addClass('active');
-      } else {
-      }
-    } else {
-    }
-    $('a', this).click(function () {
-      var depth = $(this).parent();
-      var sibling = depth.siblings();
-    
-      sibling.removeClass('active');
-      $('ul', sibling).slideUp("fast");
-      depth.toggleClass('active');
-    
-      var ul = $('>ul', depth);
-      if (ul.length > 0) {
-        ul.slideToggle("fast", function () {
-        });
-        return false;
-      } else if ($(this).attr('target') != '_blank') {
-      }
-    });
-  }
+  
 
 
 function footer_Swiper(){
