@@ -7,3 +7,10 @@
 .contFlex p { width: 50%; vertical-align: top; }
 
 .contFlex p + p { margin-left: 1rem; margin-top: 0 !important; }
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/
+@media screen and (max-width: 720px) { .youthCouncil-bottom .contFlex { flex-direction: column; margin-top: 0rem; }
+  .youthCouncil-bottom .contFlex p { width: 100%; vertical-align: top; margin-top: 1rem; }
+  .youthCouncil-bottom .contFlex p + p { margin-left: 0rem; margin-top: 1rem !important; } }

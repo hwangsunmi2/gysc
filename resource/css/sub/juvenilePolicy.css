@@ -163,6 +163,7 @@
   .youthCouncil-des__box .button-wrap { width: 100%; }
   .youthCouncil-des__box p { margin-top: 1rem; }
   .youthCouncil-des__box p br { display: none; }
+  .youthCouncil-bottom .cont p { width: 100% !important; }
   .volunteer__inner ul li { flex-direction: column; }
   .volunteer__inner .type { margin-right: 0; margin-bottom: 3rem; }
   .volunteer__inner .info { width: 100%; padding-top: 0; padding-bottom: 3rem; }
