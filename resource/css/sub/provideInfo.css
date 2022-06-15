@@ -55,4 +55,4 @@
   .cho_place .form-search input { height: 100%; }
   .cho_place .form-search .btn-search { height: 100%; }
   .cho_place .form-select { height: 5rem; }
-  .cho_place .form-select select { height: 100%; } }
+  .cho_place .form-select select { width: 100%; height: 100%; } }

@@ -57,6 +57,7 @@
             @include display-flex;
             height: 5rem;
             select{
+                
                 flex:1;
                 font-size: 1.8rem;
                 color:#555555;
@@ -193,6 +194,7 @@
             &-select{
                 height: 5rem;
                 select{
+                    width:100%;
                     height: 100%;
                 }
             }
