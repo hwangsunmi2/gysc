@@ -168,4 +168,5 @@
   .volunteer__inner .info { width: 100%; padding-top: 0; padding-bottom: 3rem; }
   .youthReportPro .box-blue { padding: 5rem 3rem; } }
 
-@media screen and (max-width: 500px) { .youthCouncil-bottom .progress__inner > div:nth-child(1) .step-box:nth-child(4)::before { bottom: -1rem; } }
+@media screen and (max-width: 500px) { .youthCouncil-top .img-wrap img { max-width: 15.8rem; }
+  .youthCouncil-bottom .progress__inner > div:nth-child(1) .step-box:nth-child(4)::before { bottom: -1rem; } }
