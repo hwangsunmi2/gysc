@@ -119,7 +119,15 @@ dl > div { display: flex; display: flex; }
   .sub-tab ul { width: 100%; padding: 0 5rem; }
   .sub-tab ul li { flex: none; } }
 
-@media screen and (max-width: 1024px) { .border-box__inner { padding: 5rem 3rem; }
+@media screen and (max-width: 1024px) { .sub-tab__inner { padding: 0; overflow-x: unset; }
+  .sub-tab ul { flex-direction: column; padding: 0; }
+  .sub-tab ul li { width: 100%; padding: 2.5rem; box-sizing: border-box; }
+  .sub-tab ul li a { display: flex; align-items: center; justify-content: center; height: 100%; padding: 0; font-size: 2.2rem; color: #555555; text-align: center; }
+  .sub-tab ul li.on { background: #3c8dc2; }
+  .sub-tab ul li.on a { color: #ffffff; font-weight: 500; }
+  .sub-tab ul li + li { border-top: 1px solid #e0e3e8; }
+  .sub-tab ul li + li::before { display: none; }
+  .border-box__inner { padding: 5rem 3rem; }
   .border-box__inner img { max-width: 100%; }
   .top-des__inner { padding: 3rem; }
   .top-des.program { padding-bottom: 19rem; background-size: 35.3rem 19.9rem; }
@@ -130,13 +138,5 @@ dl > div { display: flex; display: flex; }
   .sub-visual.businessInfo { background-image: url(../../image/sub/sub-visual__mobile.jpg); }
   .sub-visual__inner { font-size: 4rem; }
   .sub-container__inner { padding: 0 2.4rem; box-sizing: border-box; }
-  .sub-tab__inner { padding: 0; overflow-x: unset; }
-  .sub-tab ul { flex-direction: column; padding: 0; }
-  .sub-tab ul li { width: 100%; padding: 2.5rem; box-sizing: border-box; }
-  .sub-tab ul li a { display: flex; align-items: center; justify-content: center; height: 100%; padding: 0; font-size: 2.2rem; color: #555555; text-align: center; }
-  .sub-tab ul li.on { background: #3c8dc2; }
-  .sub-tab ul li.on a { color: #ffffff; font-weight: 500; }
-  .sub-tab ul li + li { border-top: 1px solid #e0e3e8; }
-  .sub-tab ul li + li::before { display: none; }
   .top-des.visitProgram { padding-top: 22rem; padding-left: 0; background-size: 28.5rem 18.6rem; background-position: center top 4rem; }
   .top-des.visitProgram .top-des__inner { padding-left: 6rem; } }
