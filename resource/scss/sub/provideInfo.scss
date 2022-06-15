@@ -35,6 +35,10 @@
         width: 62rem;
         border:1px solid #dfdfdf;
         .list{
+            display: block;
+            position: unset;
+            height: auto;
+            background: none;
             img{
                 display: none;
             }

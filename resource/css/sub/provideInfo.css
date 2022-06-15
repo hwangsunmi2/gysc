@@ -10,6 +10,8 @@
 
 .area-img { width: 62rem; border: 1px solid #dfdfdf; }
 
+.area-img .list { display: block; position: unset; height: auto; background: none; }
+
 .area-img .list img { display: none; }
 
 .area-img .list.active img { display: block; }
