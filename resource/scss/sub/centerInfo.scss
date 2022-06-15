@@ -1,41 +1,7 @@
 @import "../_mixin";
 
 /* tab */
-.tab {
-    @include d-flex;
-    width:100%;
-    li {
-        @include d-flex;
-        height: 7rem;
-        flex: 1;
 
-        font : {
-            size: 2.2rem;
-            weight: 500;
-        }
-
-        color:#555555;
-        background: #eef1f6;
-
-        &.current {
-            position: relative;
-            color: #000000;
-            box-shadow: .03rem .03rem 1.8rem rgba(0, 0, 0, 0.18);
-            border: solid 1px #005aab;
-            background-color: #fff;
-            z-index: 1;
-
-            font : {
-                size: 2rem;
-                weight: 500;
-            }
-        }
-
-        a {
-            @include d-flex;
-        }
-    }
-}
 
 
 
@@ -86,6 +52,41 @@
                 background: #eeeeee;
                 &-drag{
                     background: #747478;
+                }
+            }
+        }
+        .tab {
+            @include d-flex;
+            width:100%;
+            li {
+                @include d-flex;
+                height: 7rem;
+                flex: 1;
+        
+                font : {
+                    size: 2.2rem;
+                    weight: 500;
+                }
+        
+                color:#555555;
+                background: #eef1f6;
+        
+                &.current {
+                    position: relative;
+                    color: #000000;
+                    box-shadow: .03rem .03rem 1.8rem rgba(0, 0, 0, 0.18);
+                    border: solid 1px #005aab;
+                    background-color: #fff;
+                    z-index: 1;
+        
+                    font : {
+                        size: 2rem;
+                        weight: 500;
+                    }
+                }
+        
+                a {
+                    @include d-flex;
                 }
             }
         }
