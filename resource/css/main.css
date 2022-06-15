@@ -194,6 +194,11 @@
   font-size: 2.4rem;
 }
 
+.se1 .se1Wrap .se1Box1 .swiper .box1_btn .swiper-counter .total {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
 .se1 .se1Wrap .se1Box2 {
   overflow: hidden;
   display: inline-block;
