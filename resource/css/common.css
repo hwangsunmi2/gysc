@@ -1025,6 +1025,10 @@ header {
   color: #000;
 }
 
+.footer .footer_info .inner .foot-info ul.row {
+  margin-left: 0;
+}
+
 .footer .footer_info .inner .foot-info ul li {
   display: inline-block;
   font-size: 1.4rem;
