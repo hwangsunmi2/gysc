@@ -152,7 +152,7 @@
   .youthCouncil-bottom > ul > li { padding: 5rem 0; flex-direction: column; }
   .youthCouncil-bottom .title { width: 100%; margin-left: 0; padding-right: 0rem; padding-bottom: 3rem; box-sizing: border-box; }
   .youthCouncil-bottom .cont p { padding: 1rem; }
-  .youthCouncil-bottom .cont.w-50 { width: 100%; }
+  .youthCouncil-bottom .cont.w-50 { width: 100% !important; }
   .youthCouncil-bottom .title { margin-left: 0; } }
 
 @media screen and (max-width: 720px) { .youthCouncil-top .img-wrap { width: auto; margin: 0 3.5rem 0 2.8rem; }
