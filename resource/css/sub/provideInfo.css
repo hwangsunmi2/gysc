@@ -18,7 +18,7 @@
 
 .cho_place .form-select { display: flex; display: flex; height: 5rem; }
 
-.cho_place .form-select select { flex: 1; font-size: 1.8rem; color: #555555; background-color: #ffffff; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8'%3E%3Cpath fill-rule='evenodd' fill='rgb(85, 85, 85)' d='M4.994 8.003-.001-.003h9.99L4.994 8.003Z'/%3E%3C/svg%3E"); border: 1px solid #dddddd; line-height: 100%; }
+.cho_place .form-select select { flex: 1; font-size: 1.8rem; color: #555555; background-color: #ffffff; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8'%3E%3Cpath fill-rule='evenodd' fill='rgb(85, 85, 85)' d='M4.994 8.003-.001-.003h9.99L4.994 8.003Z'/%3E%3C/svg%3E"); border: 1px solid #dddddd; line-height: 5rem; }
 
 .cho_place .form-select select + select { margin-left: 4px; }
 
