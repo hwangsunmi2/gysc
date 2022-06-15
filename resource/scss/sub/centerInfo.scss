@@ -518,6 +518,7 @@
                 }
             }
             div{
+                
                 font : {
                     size: 1.8rem;
                     weight:500;
@@ -536,6 +537,7 @@
             }
         }
         .progress{
+            height: auto;
             &__inner{
                 @include display-flex;
                 flex-wrap: wrap;
