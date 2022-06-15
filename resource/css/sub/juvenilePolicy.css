@@ -56,7 +56,7 @@
 
 .youthCouncil-des__box { flex-wrap: wrap; }
 
-.youthCouncil-bottom > ul > li { display: flex; display: flex; padding: 5rem 0; }
+.youthCouncil-bottom > ul > li { display: flex; display: flex; padding: 5rem 10.7rem; }
 
 .youthCouncil-bottom > ul > li + li { border-top: 1px dashed #dddddd; }
 
@@ -66,7 +66,7 @@
 
 .youthCouncil-bottom .list-dashed li::before { position: absolute; top: 1.5rem; left: 0; width: .4rem; height: 1px; background: #000000; content: ""; }
 
-.youthCouncil-bottom .title { position: relative; width: 21.5rem; margin-left: 10.7rem; padding-left: 6rem; padding-right: 9.5rem; line-height: 3.6rem; letter-spacing: -.075rem; font-size: 2.4rem; font-weight: 600; flex: none; box-sizing: unset; }
+.youthCouncil-bottom .title { position: relative; width: 21.5rem; padding-left: 6rem; padding-right: 9.5rem; line-height: 3.6rem; letter-spacing: -.075rem; font-size: 2.4rem; font-weight: 600; flex: none; box-sizing: unset; }
 
 .youthCouncil-bottom .title::before { position: absolute; top: 1.6rem; left: 0; width: 4rem; height: 1px; background: #000000; content: ""; }
 
@@ -86,6 +86,58 @@
 
 .youthCouncil-bottom .progress__inner > div { width: 100%; }
 
+.youthCouncil-bottom .progress__inner > div:nth-child(1) { padding-bottom: 5rem; }
+
+.youthCouncil-bottom .progress__inner > div:nth-child(1) .step-box:nth-child(4) { background-image: none; }
+
+.youthCouncil-bottom .progress__inner > div:nth-child(1) .step-box:nth-child(4)::before { top: auto; right: auto; left: 47%; bottom: -2rem; transform: rotate(90deg); }
+
+.youthCouncil-bottom .progress__inner > div:nth-child(2) { flex-direction: row-reverse; }
+
+.youthCouncil-bottom .progress__inner > div:nth-child(2) .step-box { flex-flow: row-reverse; }
+
+.youthCouncil-bottom .progress__inner > div:nth-child(2) .step-box::before { top: 30%; transform: rotate(180deg); content: ""; }
+
+.youthCouncil-bottom .progress__inner > div:nth-child(2) .step-box:nth-child(1) { background-image: none; }
+
+.youthCouncil-bottom .progress__inner > div:nth-child(2) .step-box:nth-child(1) .step-num::before { height: 65%; }
+
+.youthCouncil-bottom .progress__inner > div:nth-child(2) .step-box:nth-child(1)::before { display: none; }
+
+.youthCouncil-bottom .progress__inner > div:nth-child(2) .step-box:nth-child(2) .step-num::before { height: 85%; }
+
+.youthCouncil-bottom .progress__inner > div:nth-child(2) .step-box:nth-child(3) .step-num::before { height: 100%; }
+
+.youthCouncil-bottom .progress__inner > div:nth-child(2) .step-box:nth-child(4) { background-position: right top 3.8rem; }
+
+.youthCouncil-bottom .progress__inner > div:nth-child(2) .step-box:nth-child(4) .step-num { color: #ffffff; background: #005aab; }
+
+.youthCouncil-bottom .progress__inner > div:nth-child(2) .step-box:nth-child(4) .step-num span { color: #ffffff; }
+
+.youthCouncil-bottom .progress__inner > div:nth-child(2) .step-box:nth-child(4) .step-num__inner { background: #005aab; font-weight: 400; }
+
+.youthCouncil-bottom .step-box { position: relative; width: calc(100% / 4); }
+
+.youthCouncil-bottom .step-box::before { position: absolute; top: 18%; right: -.75rem; width: 1.5rem; height: 1.7rem; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='17'%3E%3Cpath fill-rule='evenodd' fill='rgb(222, 222, 222)' d='M15.001 8.614 0 16.998.137.001l14.864 8.613Z'/%3E%3C/svg%3E"); background-size: cover; content: ""; }
+
+.youthCouncil-bottom .step-box:nth-child(2) .step-num::before { height: calc(100% / 5); }
+
+.youthCouncil-bottom .step-box:nth-child(3) .step-num::before { height: calc(100% / 4); }
+
+.youthCouncil-bottom .step-box:nth-child(4) .step-num::before { height: 50%; }
+
+.youthCouncil-bottom .step-num { display: flex; align-items: center; justify-content: center; position: relative; width: 9rem; height: 9rem; margin: 0 auto; margin-bottom: 1rem; border-radius: 100%; background: #dfeaf2; overflow: hidden; }
+
+.youthCouncil-bottom .step-num::before { position: absolute; bottom: 0; width: 100%; height: calc(100% / 8); background: #005aab; content: ""; z-index: 0; }
+
+.youthCouncil-bottom .step-num__inner { display: flex; align-items: center; justify-content: center; flex-direction: column; position: relative; width: 7.5rem; height: 7.5rem; background: #ffffff; border-radius: 100%; font-size: 2.4rem; font-weight: 500; line-height: 100%; z-index: 1; }
+
+.youthCouncil-bottom .step-num__inner span { display: inline-block; margin-bottom: .5rem; font-size: 1.6rem; color: #747478; }
+
+.youthCouncil-bottom .step-des { text-align: center; font-size: 1.8rem; font-weight: 500; line-height: 2.4rem; }
+
+.youthCouncil-bottom .step-des a { font-size: 1.6rem; font-weight: 500; color: #005aab; word-break: break-all; text-decoration: underline; text-underline-position: under; }
+
 .youthReportPro .img-wrap img { display: block; margin: 0 auto; max-width: 100%; }
 
 .youthReportPro .box-blue { padding: 5rem; background: #f5f8f9; }
@@ -93,18 +145,20 @@
 /*===================================================================================================
 ===========================================  responsive ==========================================
 ==================================================================================================*/
+@media screen and (max-width: 1200px) { .youthCouncil-bottom > ul > li { padding: 5rem; } }
+
 @media screen and (max-width: 1024px) { .youthCouncil-top .img-wrap { width: 50%; }
   .youthCouncil-top .button-wrap button { min-width: unset; max-width: none; }
+  .youthCouncil-bottom > ul > li { padding: 5rem 0; flex-direction: column; }
+  .youthCouncil-bottom .title { width: 100%; margin-left: 0; padding-right: 0rem; padding-bottom: 3rem; box-sizing: border-box; }
+  .youthCouncil-bottom .cont p { padding: 1rem; }
+  .youthCouncil-bottom .cont.w-50 { width: 100%; }
   .youthCouncil-bottom .title { margin-left: 0; } }
 
 @media screen and (max-width: 720px) { .youthCouncil-top .img-wrap { width: auto; margin: 0 3.5rem 0 2.8rem; }
   .youthCouncil-top .img-wrap img { width: 100%; max-width: 23.8rem; }
   .youthCouncil-top .button-wrap button { min-width: unset; max-width: none; padding: 1rem; height: auto; }
   .youthCouncil-top .title { line-height: 4rem; }
-  .youthCouncil-bottom > ul > li { flex-direction: column; }
-  .youthCouncil-bottom .title { width: 100%; margin-left: 0; padding-right: 0rem; padding-bottom: 3rem; box-sizing: border-box; }
-  .youthCouncil-bottom .cont p { padding: 1rem; }
-  .youthCouncil-bottom .cont.w-50 { width: 100%; }
   .youthCouncil-des { padding-right: 3rem; }
   .youthCouncil-des__box .button-wrap { width: 100%; }
   .youthCouncil-des__box p { margin-top: 1rem; }
@@ -113,3 +167,5 @@
   .volunteer__inner .type { margin-right: 0; margin-bottom: 3rem; }
   .volunteer__inner .info { width: 100%; padding-top: 0; padding-bottom: 3rem; }
   .youthReportPro .box-blue { padding: 5rem 3rem; } }
+
+@media screen and (max-width: 500px) { .youthCouncil-bottom .progress__inner > div:nth-child(1) .step-box:nth-child(4)::before { bottom: -1rem; } }
