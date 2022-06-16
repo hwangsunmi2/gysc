@@ -35,7 +35,7 @@
 
 .table-wrap td.tit { text-align: left; }
 
-.table-wrap td.tit a { overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 1; font-size: 2.2rem; font-weight: 500; }
+.table-wrap td.tit a { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; line-height: 2.3rem; height: 2.3rem; word-wrap: break-word; -webkit-line-clamp: 1; font-size: 2.2rem; font-weight: 500; }
 
 .table-wrap td.file { display: flex; align-items: center; justify-content: center; }
 

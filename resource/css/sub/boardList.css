@@ -109,9 +109,10 @@
 ===========================================  responsive ==========================================
 ==================================================================================================*/
 @media screen and (max-width: 1024px) { .board-list .board-list__inner > ul { margin: -1.2rem; }
-  .board-list .board-list__inner > ul > li { flex-direction: column; height: 100%; padding: 1.2rem; width: 50%; }
+  .board-list .board-list__inner > ul > li { flex-direction: column; height: 100%; padding: 1.2rem; }
   .board-list .board-list__inner > ul > li .img-wrap { max-width: none; margin-right: 0; margin-bottom: 3rem; border: 1px solid #eeeeee; box-sizing: border-box; }
   .board-list .board-list__inner > ul > li .img-wrap img { width: 100%; }
+  .board-list .board-list__inner > ul > li .button-wrap { margin-top: 3rem; }
   .board-list .board-list__inner > ul > li a { margin: 0; }
   .board-list .info { width: 100%; }
   .board-list .info ul li { flex-direction: row; flex-wrap: wrap; }

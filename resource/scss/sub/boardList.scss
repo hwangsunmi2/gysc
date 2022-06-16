@@ -362,9 +362,9 @@
                     margin: -1.2rem;
                     >li{
                         flex-direction: column;
+                        //width: 50%;
                         height: 100%;
                         padding: 1.2rem;
-                        width: 50%;
                         .img-wrap{
                             max-width: none;
                             margin-right: 0;
@@ -374,6 +374,9 @@
                             img{
                                 width:100%;
                             }
+                        }
+                        .button-wrap{
+                            margin-top: 3rem;
                         }
                         a{
                             margin: 0;

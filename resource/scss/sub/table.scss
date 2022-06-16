@@ -102,10 +102,18 @@
         a{
             font-size: 1.8rem;
         }
+
         &.tit{
             text-align: left;
             a{
-                @include text-overflow;
+                display:-webkit-box;
+                overflow:hidden;
+                text-overflow:ellipsis;
+                line-height:2.3rem;
+                height:2.3rem;
+                word-wrap:break-word;
+                -webkit-line-clamp:1;
+                -webkit-box-orient:vertical;
                 font: {
                     size: 2.2rem;
                     weight: 500;
