@@ -803,6 +803,9 @@ header {
 
                 }
                 ul {
+                    &.row {
+                        margin-left:0;
+                    }
                     li {
                         display: inline-block;
                         font-size:1.4rem;
@@ -1207,16 +1210,15 @@ body{
             }
         }
     }
-    
 }
 
-@media (max-width: 480px) {
+@media (max-width: 620px) {
     .mMenu {
         .topBlue {
             .button_container {
                 &.active {
                     .bottom {
-                        top: 3.5rem;
+                        top: 3.6rem;
                     }
                 }
             }
@@ -1224,5 +1226,6 @@ body{
     }
     
 }
+
 
 
