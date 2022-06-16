@@ -124,4 +124,5 @@
 
 @media screen and (max-width: 720px) { .board-list__inner ul li { flex-direction: column; }
   .board-list__inner .img-wrap { margin-right: 0; margin-bottom: 3rem; }
-  .board-list__inner .button-wrap { margin-left: 0; margin-top: 3rem; } }
+  .board-list__inner .button-wrap { margin-left: 0; margin-top: 3rem; }
+  .board-list.hor3 ul li .img-wrap .badge { width: 7rem; height: 3rem; } }
