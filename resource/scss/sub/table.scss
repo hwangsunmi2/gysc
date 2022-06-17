@@ -280,6 +280,7 @@
                         weight:400;
                     }
                     color:#555555;
+                    line-height: normal;
                 }
             }
         }
@@ -452,6 +453,7 @@
 
 .viewer{
     &-wrap{
+        padding: 1rem 0;
         ul{
             margin: 0;
             //padding: 2rem 0;

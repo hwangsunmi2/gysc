@@ -244,6 +244,7 @@
   font-size: 1.8rem;
   font-weight: 400;
   color: #555555;
+  line-height: normal;
 }
 .table-wrap.thin thead tr {
   background: #f8fafc;
@@ -372,6 +373,9 @@
   border: 1px solid #000000;
 }
 
+.viewer-wrap {
+  padding: 1rem 0;
+}
 .viewer-wrap ul {
   margin: 0;
 }
