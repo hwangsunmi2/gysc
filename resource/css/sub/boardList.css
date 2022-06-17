@@ -18,6 +18,8 @@
   height: 16rem;
   margin-right: 3rem;
   flex: none;
+  border: 1px solid #ededed;
+  box-sizing: border-box;
 }
 .board-list__inner .img-wrap img {
   max-width: 100%;
