@@ -412,6 +412,9 @@
     margin-left: 0;
     margin-top: 3rem;
   }
+  .board-list.hor .board-list__inner > ul > li {
+    width: 50%;
+  }
 
   .board-list.hor3 ul li .img-wrap .badge {
     width: 7rem;

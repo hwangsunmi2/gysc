@@ -436,19 +436,32 @@
 }
 
 @media screen and(max-width:720px){
-    .board-list__inner{
-        ul{
-            li{
-                @include flex-column;
+    .board-list{
+        &__inner{
+            ul{
+                li{
+                    @include flex-column;
+                }
+            }
+            
+            .img-wrap{
+                margin-right: 0;
+                margin-bottom: 3rem;
+            }
+            .button-wrap{
+                margin-left: 0;
+                margin-top: 3rem;
             }
         }
-        .img-wrap{
-            margin-right: 0;
-            margin-bottom: 3rem;
-        }
-        .button-wrap{
-            margin-left: 0;
-            margin-top: 3rem;
+        &.hor{
+            .board-list__inner{
+                >ul{
+                    >li{
+                        width:50%;
+                    }
+                }
+            }
+            
         }
     }
     .board-list.hor3 ul li .img-wrap .badge{
