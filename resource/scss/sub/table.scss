@@ -100,7 +100,7 @@
     }
     td{
         a{
-            font-size: 1.8rem;
+            font-size: 1.8rem; 
         }
         &.tit{
             text-align: left;
@@ -471,6 +471,10 @@
                 }
             }
         }
+    }
+    &-file{
+        @include display-flex;
+        @include align-center;
     }
 }
 
