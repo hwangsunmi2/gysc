@@ -1407,6 +1407,9 @@ body.fixed {
 }
 
 @media (max-width: 640px) {
+  .mMenu {
+    padding-top: 2.3rem;
+  }
   .mMenu .topBlue .button_container.active .bottom {
     top: 2.8rem;
   }
