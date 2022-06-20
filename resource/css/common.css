@@ -1158,7 +1158,7 @@ body.fixed {
     width: 80%;
     height: 13.4rem;
     background-color: #005aab;
-    z-index: 3;
+    z-index: 30;
   }
   .mMenu .topBlue.active .button_container {
     position: absolute;
@@ -1285,7 +1285,7 @@ body.fixed {
             align-items: flex-start;
     width: 80%;
     height: 100vh;
-    z-index: 2;
+    z-index: 20;
     overflow: auto;
   }
   .mMenu .overlay .overlayBox .overlay-menu {
@@ -1327,6 +1327,8 @@ body.fixed {
     padding: 5.8rem 0 5.8rem 6rem;
     border-top: 1px solid #005aab;
     background-color: #e5eef6;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .mMenu .overlay .overlayBox .overlay-menu ul.depth2 li + li {
     border-top: 0;
@@ -1416,5 +1418,11 @@ body.fixed {
   }
   .mMenu .topBlue .button_container.active .bottom {
     top: 2.8rem !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .mMenu .topBlue .button_container.active .bottom {
+    top: 3.7rem !important;
   }
 }

@@ -942,7 +942,7 @@ body{
                 width:80%;
                 height:13.4rem;
                 background-color:#005aab;
-                z-index:3;
+                z-index:30;
 
                 .button_container {
                     position: absolute;
@@ -1056,7 +1056,7 @@ body{
                 align-items: flex-start;
                 width: 80%;
                 height: 100vh;
-                z-index: 2;
+                z-index: 20;
                 overflow:auto;
 
                 .overlay-menu {
@@ -1099,6 +1099,7 @@ body{
                             padding:5.8rem 0 5.8rem 6rem;
                             border-top:1px solid #005aab;
                             background-color:#e5eef6;
+                            box-sizing:border-box;
                             li {
                                 &+li {
                                     border-top:0;
@@ -1208,7 +1209,7 @@ body{
             .button_container {
                 &.active {
                     .bottom {
-                        top: 2.8rem !important ;
+                        top: 2.8rem !important;
                     }
                 }
             }
@@ -1216,6 +1217,19 @@ body{
     }
 }
 
+@media (max-width: 540px) {
+    .mMenu {
+        .topBlue {
+            .button_container {
+                &.active {
+                    .bottom {
+                        top: 3.7rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
