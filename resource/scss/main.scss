@@ -606,6 +606,7 @@
             .vBox {
                 position:relative;
                 &::before {
+                    display:none;
                     position:absolute;
                     top:50%;
                     left:50%;
