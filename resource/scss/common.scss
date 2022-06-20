@@ -1208,7 +1208,7 @@ body{
             .button_container {
                 &.active {
                     .bottom {
-                        top: 2.8rem;
+                        top: 2.8rem !important ;
                     }
                 }
             }
