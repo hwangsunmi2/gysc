@@ -92,7 +92,7 @@ function se1Box2_Swiper(){
         delay: 3000,
         disableOnInteraction: false
       },
-      spaceBetween: 30,
+      spaceBetween: 22,
       slidesPerView: 2,
       loop: true,
       loopFillGroupWithBlank: true,

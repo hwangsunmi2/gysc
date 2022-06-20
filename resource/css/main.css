@@ -552,6 +552,7 @@
   margin-top: 0;
   margin-bottom: 3.4rem;
   font-size: 2.4rem;
+  font-weight: 600;
   line-height: 100%;
 }
 
@@ -661,6 +662,7 @@
   padding-right: 4.5rem;
   background: url(../../resource/image/common/icon/icon_calendar.png) no-repeat right 1.3rem center;
   background-color: #fff;
+  border-radius: 0;
 }
 
 .se4Wrap .activityInfo .searchBox form dl input.search {
@@ -674,6 +676,7 @@
   margin: 0 0.5rem;
   width: 18rem;
   height: 4rem;
+  line-height: 4rem;
   border: 1px solid #dddddd;
   background: #fff url(../../resource/image/common/icon/icon_arrowDown_small.png) no-repeat right 1.3rem center;
   font-size: 1.4rem;
@@ -765,6 +768,7 @@
 }
 
 .se4Wrap .videoMaterial .vedio .vBox::before {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -966,6 +970,7 @@
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     border-left: 0;
+    margin-bottom: 0;
   }
   .se2 .iconWrap .icon {
     width: 50%;
