@@ -112,7 +112,7 @@
                 margin: 3rem 0;
                 .tit{
                     margin-bottom: 2rem;
-                    font-size: 2.2rem,;
+                    font-size: 2.2rem;
                 }
                 .date{
                     margin-bottom: 1.2rem;
@@ -172,8 +172,20 @@
                         margin-bottom: 0rem;
                         font-size: 2.2rem;
                         -webkit-box-orient: vertical;
+                        a{
+                            @include text-overflow;
+                            margin: 0;
+                            font : {
+                                size: 2.2rem;
+                                weight: 500;
+                            }
+                            border-bottom:0;
+                        }
                     }
                     .button-wrap{
+                        >input, >a{
+                            display: none;
+                        }
                         .button-viewer{
                             width: 12rem;
                             height: 5rem;

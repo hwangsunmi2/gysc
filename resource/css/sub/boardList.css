@@ -177,6 +177,21 @@
   font-size: 2.2rem;
   -webkit-box-orient: vertical;
 }
+.board-list.hor2 .info .tit a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 500;
+  border-bottom: 0;
+}
+.board-list.hor2 .info .button-wrap > input, .board-list.hor2 .info .button-wrap > a {
+  display: none;
+}
 .board-list.hor2 .info .button-wrap .button-viewer {
   width: 12rem;
   height: 5rem;
