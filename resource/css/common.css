@@ -1231,12 +1231,14 @@ body.fixed {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    height: 0%;
-    z-index: 2;
+    z-index: 20;
     overflow: hidden;
   }
   .mMenu .overlay.open {
     height: 100%;
+  }
+  .mMenu .overlay.open .overlayBox {
+    display: block;
   }
   .mMenu .overlay.open li {
     -webkit-animation: fadeInRight .45s ease forwards;
@@ -1269,24 +1271,17 @@ body.fixed {
             animation-delay: .48s;
   }
   .mMenu .overlay .overlayBox {
-    position: absolute;
+    position: fixed;
+    overflow-x: clip;
+    overflow-y: scroll;
     margin-top: 13.4rem;
     background-color: #fff;
     top: 0;
     right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     width: 80%;
-    height: 100vh;
     z-index: 20;
-    overflow: auto;
+    display: none;
+    height: -webkit-fill-available;
   }
   .mMenu .overlay .overlayBox .overlay-menu {
     width: 100%;
