@@ -75,16 +75,16 @@
 }
 
 
-.forumBoardList {
+.pressData__inner {
     .yearLine {
         display: inline-block;
         
     }
-    .yearWrap {
+    .pressData-item {
         position: relative;
         //padding: 140px 0 30px;
         
-        &:nth-child(odd){
+        &.odd{
             .left{
                 text-align: right;
             }
@@ -92,7 +92,7 @@
                 padding-left: 3rem;
             }
         }
-        &:nth-child(even){
+        &.even{
             .left{
                 text-align: left;
                 padding-left: 3rem;
@@ -109,6 +109,7 @@
                 flex-direction: row-reverse;
             }
         }
+
         &:last-child{
             .itemBox{
                 padding-bottom: 5rem
@@ -317,8 +318,6 @@
         &::before{
             left: 3rem
         }
-    } 
-    .forumBoardList {
         .title{
             line-height: normal
         }
@@ -334,7 +333,7 @@
                 padding: 0;
             }
         }
-        .yearWrap{
+        .pressData-item{
             .right{
                 width: 100%;
                 &::after{
@@ -342,7 +341,7 @@
                     left: -3.8rem;
                 }
             }
-            &:nth-child(odd){
+            &.odd{
                 .left{
                     padding-right: 0;
                 }
@@ -352,7 +351,7 @@
                 }
                 
             }
-            &:nth-child(even){
+            &.even{
                 .itemBox{
                     @include flex-column;
                     padding-left: 6rem;
@@ -371,7 +370,8 @@
                 }
             }
         }
-    }
+    } 
+    
     .inquiry__inner{
         padding:5rem;
         .img-wrap{
