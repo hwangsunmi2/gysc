@@ -400,12 +400,14 @@
                             box-sizing: border-box;
                             img{
                                 width:100%;
+                                border:0;
                             }
                         }
                         .button-wrap{
                             margin-top: 3rem;
                         }
                         a{
+                            width:100%;
                             margin: 0;
                         }
                     }

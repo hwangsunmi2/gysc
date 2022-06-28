@@ -388,11 +388,13 @@
   }
   .board-list .board-list__inner > ul > li .img-wrap img {
     width: 100%;
+    border: 0;
   }
   .board-list .board-list__inner > ul > li .button-wrap {
     margin-top: 3rem;
   }
   .board-list .board-list__inner > ul > li a {
+    width: 100%;
     margin: 0;
   }
   .board-list .info {
