@@ -94,9 +94,13 @@
                     box-sizing: border-box;
                     .img-wrap{
                         max-width: 100%;
+                        
                         width: 100%;
-                        max-height: 24.4rem;
+                        min-width: 32.6rem;
+                        max-width: 32.6rem;
                         height: 100%;
+                        max-height: 24.4rem;
+                        min-height: 24.4rem;
                         margin-right: 0;
                         overflow: hidden;
                     }
@@ -111,6 +115,14 @@
             .info{
                 margin: 3rem 0;
                 .tit{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    line-height: 1.5;
+                    height: 3.5rem;
+                    word-wrap: break-word;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
                     margin-bottom: 2rem;
                     font-size: 2.2rem;
                 }
