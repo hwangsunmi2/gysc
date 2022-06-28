@@ -1097,7 +1097,18 @@
             box-sizing: border-box;
 
         }
+
         
+        
+    }
+    .content_map {
+        .grayBox_sh {
+            .info {
+                .busBox {
+                    width: 41%;
+                }
+            }
+        }
     }
 
 
@@ -1232,8 +1243,10 @@
                         .bus {
                             
                             &1,
-                            &2 {
+                            &2,
+                            &3 {
                                 margin-left: 1.4rem;
+                                width:100%;
                             }
                         }
                     }
@@ -1448,6 +1461,11 @@
             }
 
             .info {
+                .right{
+                    p {
+                        width:100%;
+                    }
+                }
                 p {
                     width: 80%;
                     margin: 0 auto;
@@ -1553,7 +1571,8 @@
                         .bus {
 
                             &1,
-                            &2 {
+                            &2,
+                            &3  {
                                 width: 100%;
                                 margin: 0 auto;
 

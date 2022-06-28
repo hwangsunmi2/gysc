@@ -1135,6 +1135,9 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
+  .content_map .grayBox_sh .info .busBox {
+    width: 41%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1213,8 +1216,9 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .content_map .grayBox_sh .info .bus1, .content_map .grayBox_sh .info .bus2 {
+  .content_map .grayBox_sh .info .bus1, .content_map .grayBox_sh .info .bus2, .content_map .grayBox_sh .info .bus3 {
     margin-left: 1.4rem;
+    width: 100%;
   }
   .content_map .grayBox_wrap .grayBox_13 .grayBox_1, .content_map .grayBox_wrap .grayBox_13 .grayBox_2, .content_map .grayBox_wrap .grayBox_13 .grayBox_3 {
     padding: 3.2% 2.7%;
@@ -1365,6 +1369,9 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+  .grayBox_sh .info .right p {
+    width: 100%;
+  }
   .grayBox_sh .info p {
     width: 80%;
     margin: 0 auto;
@@ -1424,11 +1431,11 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .content_map .grayBox_sh .info .bus1, .content_map .grayBox_sh .info .bus2 {
+  .content_map .grayBox_sh .info .bus1, .content_map .grayBox_sh .info .bus2, .content_map .grayBox_sh .info .bus3 {
     width: 100%;
     margin: 0 auto;
   }
-  .content_map .grayBox_sh .info .bus1 > p, .content_map .grayBox_sh .info .bus2 > p {
+  .content_map .grayBox_sh .info .bus1 > p, .content_map .grayBox_sh .info .bus2 > p, .content_map .grayBox_sh .info .bus3 > p {
     padding-left: 1rem;
     padding-right: 1rem;
   }
