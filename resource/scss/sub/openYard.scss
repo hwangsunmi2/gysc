@@ -43,6 +43,9 @@
                 position: relative;
                 height: 12rem;
                 margin-bottom: 2.7rem;
+                &:nth-child(n+2){
+                    margin-top: 2rem
+                }
             }
             @include d-flex;
             position: absolute;
