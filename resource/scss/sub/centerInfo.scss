@@ -709,14 +709,22 @@
                 @include display-flex;
                 justify-content: flex-start;
                 text-align: center;
-
+                flex-flow: row wrap;
                 &::before {
                     background-color: #fff;
                 }
 
+                .busBox {
+                    width:43%;
+                    .right {
+                        margin-top:-0.2rem;
+                    }
+                }
+
                 p {
-                    @include display-flex;
-                    @include flex-wrap;
+                    display: block;
+                    font-size:1.8rem;
+                    text-align: left;
                 }
 
                 img {
@@ -725,29 +733,41 @@
 
                 span {
                     display: block;
+                    width:100%;
+                    font-size:1.8rem;
+                    color:#747478;
+                    font-weight:400;
+                    text-align: left;
                 }
 
                 .bus {
+                    
 
                     &1,
-                    &2 {
+                    &2,
+                    &3 {
                         @include display-flex;
-
-                        >p {
-                            padding-left: 1rem;
-                        }
                     }
 
                     &1 {
-                        margin-left: 12.4rem;
+                        margin-left: 13.5rem;
                     }
 
                     &2 {
                         margin-left: 3.6rem;
                     }
 
+                    &3 {
+                        margin-top:2.7rem;
+                        margin-left: 13.5rem;
+                    }
+
+
                     &_default,
-                    &_stand {
+                    &_stand,
+                    &_direct,
+                    &_subway {
+                        margin-right:1rem;
                         line-height: 3.4rem;
                         text-align: center;
                         width: 8.4rem;
@@ -760,11 +780,17 @@
                     }
 
                     &_default {
-                        background-color: #1ec144;
+                        background-color: #4ab300;
                     }
 
                     &_stand {
                         background-color: #c52116;
+                    }
+                    &_direct {
+                        background-color: #78169d;
+                    }
+                    &_subway {
+                        background-color: #7dc4a5;
                     }
 
 
@@ -799,7 +825,7 @@
                             font-size: 1.8rem;
                             margin-left: 3.8rem;
                             line-height: 2.8rem;
-                            letter-spacing: -0.25rem;
+                            letter-spacing: -0.2rem;
                             font-weight: 400;
                         }
                     }
@@ -807,14 +833,21 @@
                     .grayBox {
                         &_4 {
                             width: calc(100%);
-                            padding: 1rem 0;
+                            padding: 4rem 0 3rem 0;
                             background-color: #fff;
+                            &.subway {
+                                padding: 5rem 0 3rem 0;
+                            }
                             img {
-                                width: 4.2rem;
-                                height: 4.4rem;
+                                position: relative;
+                                top: -0.4rem;
+                                width: 5.4rem;
+                                height: 6.1rem;
                                 margin-left: 3%;
-                                padding: 2.4% 0;
                                 box-sizing: unset;
+                                &.icon_subway{
+                                    top:-1rem;
+                                }
                             }
                             p {
                                 margin-left: 2%;
@@ -825,6 +858,7 @@
                                     margin-bottom: 1rem;
                                 }
                             }
+
                         }
                     }
                 }
