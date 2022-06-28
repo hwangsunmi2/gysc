@@ -97,7 +97,7 @@
 .board-list.hor ul li .img-wrap {
   max-width: 100%;
   width: 100%;
-  min-width: 32.6rem;
+  min-width: 100%;
   max-width: 32.6rem;
   height: 100%;
   max-height: 24.4rem;
