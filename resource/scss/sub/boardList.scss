@@ -96,7 +96,7 @@
                         max-width: 100%;
                         
                         width: 100%;
-                        min-width: 32.6rem;
+                        min-width: 100%;
                         max-width: 32.6rem;
                         height: 100%;
                         max-height: 24.4rem;
@@ -400,12 +400,14 @@
                             box-sizing: border-box;
                             img{
                                 width:100%;
+                                border:0;
                             }
                         }
                         .button-wrap{
                             margin-top: 3rem;
                         }
                         a{
+                            width:100%;
                             margin: 0;
                         }
                     }

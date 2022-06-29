@@ -706,6 +706,19 @@
   align-items: center;
 }
 
+.se4Wrap .activityInfo .se4Box .swiper .swiper-slide .se4Info {
+  overflow: hidden;
+  width: 100%;
+  height: 21.7rem;
+}
+
+.se4Wrap .activityInfo .se4Box .swiper .swiper-slide .se4Info img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: unset;
+     object-fit: unset;
+}
+
 .se4Wrap .activityInfo .se4Box .swiper .swiper-slide {
   display: block;
   width: 39.6rem;

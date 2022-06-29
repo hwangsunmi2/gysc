@@ -552,6 +552,16 @@
                     -ms-flex-align: center;
                     -webkit-align-items: center;
                     align-items: center;
+                    .se4Info{
+                        overflow:hidden;
+                        width:100%;
+                        height:21.7rem;
+                        img {
+                            width: 100%;
+                            height:100%;
+                            object-fit: unset;
+                        }
+                    }
                 }
                 .swiper-slide {
                     display: block;
