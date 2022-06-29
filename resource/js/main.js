@@ -88,10 +88,10 @@ function se1Box2_Swiper(){
   
   function se4_Swiper(){
     var se4Swiper = new Swiper(".se4Box .mySwiper", {
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false
-      },
+    //   autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false
+    //   },
       spaceBetween: 22,
       slidesPerView: 2,
       loop: true,
