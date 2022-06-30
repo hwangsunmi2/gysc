@@ -1,52 +1,243 @@
 @charset "UTF-8";
+/* 청소년기관지원 */
+.textSort .ul-list {
+  vertical-align: top;
+}
+
+.textSort .ul-list li {
+  position: relative;
+  display: block;
+  padding-left: 1rem;
+  line-height: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.textSort .ul-list li span {
+  display: inline-block;
+  margin-top: 0.2rem;
+  vertical-align: top;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.textSort .ul-list li::before {
+  position: absolute;
+  top: 0.8rem;
+  left: -1rem;
+  width: 0.5rem;
+  height: 0.1rem;
+  background-color: #000;
+  content: '';
+}
+
+.textSort .ul-list li + li {
+  margin-top: 0.5rem;
+}
+
+.textSort .ul-list li.mt_5 {
+  margin-top: 5rem;
+}
+
+.textSort .ul-list li .text-indent {
+  display: inline-block;
+}
+
+.textSort .ul-list li .text-indent.calc {
+  width: calc(100% - 9rem);
+}
+
+.textSort .ul-list li .text-indent li {
+  padding-left: 0.5rem;
+  word-break: keep-all;
+}
+
+.textSort .ul-list li .text-indent li::Before {
+  display: none;
+}
+
+.textSort .ul-list li .text-indent li + li {
+  margin-top: 0.3rem;
+}
+
+.textSort .ul-list li .table {
+  margin-top: 2rem;
+  margin-left: -1rem;
+}
+
+.textSort .ul-list li .table li {
+  padding-left: 0;
+}
+
+.textSort .ul-list li .table li::before {
+  display: none;
+}
+
+.textSort .ul-list li .table li + li {
+  margin-top: 5rem;
+}
+
+.textSort .ul-list li .table li .table-wrap.thin tr td {
+  padding-left: 2rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+.textSort .ul-list li .chart {
+  margin-left: -2rem;
+}
+
+.textSort .ul-list li .chart li {
+  padding-left: 0;
+}
+
+.textSort .ul-list li .chart li::before {
+  display: none;
+}
+
+.textSort .ul-list li .chart li .blueTitle {
+  position: relative;
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  color: #005aab;
+  letter-spacing: -0.5px;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.textSort .ul-list li .chart li .blueTitle::before {
+  position: absolute;
+  top: 0.6rem;
+  left: 0;
+  width: 0.3rem;
+  height: 0.3rem;
+  background-color: #005aab;
+  border-radius: 50%;
+  content: '';
+}
+
+.textSort .ul-list li .chart li img {
+  margin-top: 3rem;
+}
+
+.textSort .ul-list li .chart li + li {
+  margin-top: 5rem;
+}
+
+.support3 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.support3-top {
+  position: relative;
+  padding: 5rem;
+  margin-top: 4.8rem;
+  width: 100%;
+  height: 29.1rem;
+  background-color: #f5f8f9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.support3-top::after {
+  position: absolute;
+  right: 5rem;
+  bottom: 0;
+  width: 55.2rem;
+  height: 29.1rem;
+  background: url(../../image/sub/support03.png) no-repeat;
+  content: '';
+}
+
+.support3-top .tit {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #005aab;
+}
+
+.support3-top .txt {
+  display: inline-block;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 3.5rem;
+  color: #000;
+}
+
 /* 청소년기관 현황 */
 .area-wrap > div {
+  display: -webkit-box;
   display: flex;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .area-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   background: #f3f4f6;
   padding: 0 5rem;
 }
+
 .area-select .cho_place .tit {
   margin-bottom: 3rem;
   font-size: 3rem;
   font-weight: 500;
 }
+
 .area-select .cho_place .des {
   margin-bottom: 5rem;
   font-size: 2rem;
   font-weight: 500;
   line-height: normal;
 }
+
 .area-img {
   width: 62rem;
   border: 1px solid #dfdfdf;
 }
+
 .area-img .list {
   display: block;
   position: unset;
   height: auto;
   background: none;
 }
+
 .area-img .list img {
   display: none;
 }
+
 .area-img .list.active img {
   display: block;
 }
 
 .cho_place .form-select {
+  display: -webkit-box;
   display: flex;
+  display: -ms-flexbox;
   display: flex;
   height: 5rem;
 }
+
 .cho_place .form-select select {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   font-size: 1.8rem;
   color: #555555;
   background-color: #ffffff;
@@ -54,32 +245,48 @@
   border: 1px solid #dddddd;
   line-height: 5rem;
 }
+
 .cho_place .form-select select + select {
   margin-left: 4px;
 }
+
 .cho_place .form-search {
+  display: -webkit-box;
   display: flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 5rem;
   margin-top: 1rem;
   border: 1px solid #dddddd;
 }
+
 .cho_place .form-search input {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
-.cho_place .form-search input::-moz-placeholder {
+
+.cho_place .form-search input::-webkit-input-placeholder {
   font-size: 1.8rem;
   color: #b5b5b5;
 }
+
 .cho_place .form-search input:-ms-input-placeholder {
   font-size: 1.8rem;
   color: #b5b5b5;
 }
+
+.cho_place .form-search input::-ms-input-placeholder {
+  font-size: 1.8rem;
+  color: #b5b5b5;
+}
+
 .cho_place .form-search input::placeholder {
   font-size: 1.8rem;
   color: #b5b5b5;
 }
+
 .cho_place .form-search .btn-search {
   width: 11.9rem;
   color: #ffffff;
@@ -98,6 +305,7 @@
 .youthPop__inner {
   font-size: 2.2rem;
 }
+
 .youthPop__inner * {
   font-size: 2.2rem;
   line-height: 4rem;
@@ -116,6 +324,7 @@
     padding: 0 3rem;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .area-img {
     width: 100%;
@@ -127,18 +336,20 @@
     padding: 5rem;
   }
   .area-wrap > div {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
+
 @media screen and (max-width: 720px) {
   .youthPop__inner .img-wrap img {
     width: 100%;
   }
-
   .area-img .list img {
     width: 100%;
   }
-
   .cho_place .form-search {
     height: 5rem;
   }

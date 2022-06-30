@@ -132,6 +132,17 @@
     &-top{
         position: relative;
         margin-bottom: 5rem;
+        &.noBg{
+            &::before {
+                display:none;
+            }
+            .img-wrap {
+                img{
+                    border-radius: 0;
+                    box-shadow: none;
+                }
+            }
+        }
         &::before{
             position: absolute;
             top: 6.5rem;

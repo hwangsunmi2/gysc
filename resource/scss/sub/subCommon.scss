@@ -170,6 +170,9 @@ button, select, input{
             @include justify-center;
             margin-bottom: 0;
             li{
+                padding:0 3rem;
+                line-height: 2.1rem;
+                text-align: center;
                 &.on{
                     a{
                         color:#005aab;
@@ -177,8 +180,8 @@ button, select, input{
                     }
                 }
                 a{
-                    padding:0 5rem;
                     color:#747478;
+                    word-break: keep-all;
                     font: {
                         size:2.2rem;
                         weight:500;
@@ -190,6 +193,7 @@ button, select, input{
                         position: absolute;
                         width:1px;
                         height:100%;
+                        left: 0;
                         background: #bbbbbb;
                         content:""
                     }
