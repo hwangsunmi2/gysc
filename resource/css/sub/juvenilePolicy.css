@@ -158,6 +158,10 @@
   margin-bottom: 5rem;
 }
 
+.youthCouncil-top.noBg {
+  margin-bottom: 0;
+}
+
 .youthCouncil-top.noBg::before {
   display: none;
 }

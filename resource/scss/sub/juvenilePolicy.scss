@@ -133,6 +133,7 @@
         position: relative;
         margin-bottom: 5rem;
         &.noBg{
+            margin-bottom:0;
             &::before {
                 display:none;
             }
