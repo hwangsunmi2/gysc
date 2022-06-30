@@ -564,6 +564,15 @@
 /*===================================================================================================
 ===========================================  responsive ==========================================
 ==================================================================================================*/
+@media screen and (max-width: 1400px) {
+  .youthCouncil-top.noBg .img-wrap {
+    width: 100%;
+  }
+  .youthCouncil-top.noBg .img-wrap img {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .youthCouncil-bottom > ul > li {
     padding: 5rem;
@@ -621,6 +630,15 @@
   }
   .youthCouncil-top .title {
     line-height: 4rem;
+  }
+  .youthCouncil-top.noBg {
+    margin-bottom: 0;
+  }
+  .youthCouncil-top.noBg .img-wrap {
+    margin: 0;
+  }
+  .youthCouncil-top.noBg .img-wrap img {
+    max-width: 100%;
   }
   .youthCouncil-des {
     padding-right: 3rem;

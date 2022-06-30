@@ -300,7 +300,41 @@
             }
         } 
     } 
+
+    .textSort {
+        .ul-list {
+            li {
+                .chart {
+                    li {
+                        img {
+                            width:100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
+@media screen and(max-width:1200px) {
+    .support3 {
+        line-height:2.5rem;
+        word-break: keep-all;
+    }
+    .support3-top::after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 55.2rem;
+        height: 29.1rem;
+        background: url(../../image/sub/support03.png) no-repeat;
+        content: '';
+        background-size: contain;
+        width: 50%;
+        background-position: bottom;
+        opacity: 0.5;
+    }
+}    
 
 @media screen and(max-width:1024px){
     .area{
