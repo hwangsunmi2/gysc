@@ -9,7 +9,7 @@
     background-size:cover;
     
     .se1Wrap {
-        @include d-flex;
+        display: inline-block;
         position: relative;
         width:100%;
         top: 50%;

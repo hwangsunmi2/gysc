@@ -9,6 +9,30 @@
                     border-bottom:1px solid #dddddd;
                     padding:5rem 0;
                     text-align: center;
+                    &.view2 {
+                        padding:4rem 10rem;
+                        background-color:#f5f8f9;
+                        .view-info {
+                            justify-content: flex-start;
+                            img {
+                                width: 300px;
+                                height: 225px;
+                                object-fit: unset;
+                            }
+                            .title {
+                                padding:3rem 5rem;
+                                p {
+                                    text-align:left;
+                                    &.view-title {
+                                        margin-bottom:3rem;
+                                    }
+                                    &.view-date {
+                                        margin-bottom:1.6rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
                 &-title{
                     font: {
@@ -221,6 +245,26 @@
 /*===================================================================================================
 ===========================================  responsive ==========================================
 ==================================================================================================*/ 
+@media screen and(max-width:1200px){
+    .board-view__inner {
+        .view-header.view2 {
+            padding: 4rem 4rem;
+            .view-info {
+                img {
+                    margin:0 auto;
+                }
+                .title {
+                    p{
+                        &.view-title{
+                            word-break: keep-all;
+                            line-height:4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}    
 
 @media screen and(max-width:720px){
     .board-view{
@@ -228,6 +272,13 @@
             .view{
                 &-header{
                     padding:3rem 0;
+                    &.view2{
+                        .view-info {
+                            .title {
+                                padding:3rem 0;
+                            }
+                        }
+                    }
                 }
                 &-title{
                     &__wrap{
