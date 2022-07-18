@@ -894,10 +894,11 @@
                                 <th>첨부파일</th>
                                 <td>
                                     <!-- 전달사항 :: 파일명 표출 하단 스크립트 참고해 주세요. -->
-                                    <div class="filebox text-left form-group d-flex">
+                                    <div class="filebox text-left d-flex filebox bs3-primary">
                                         <input class="upload-name" value="" disabled="disabled">
-                                        <label for="ex_filename">첨부파일</label>
-                                        <input type="file" id="ex_filename" class="upload-hidden">
+            
+                                        <label for="ex_filename">첨부파일</label> 
+                                      <input type="file" id="ex_filename" class="upload-hidden"> 
                                     </div>
                                 </td>
                             </tr>
@@ -1067,17 +1068,19 @@
 </body>
 
 <script>
-  $(document).ready(function () {
-        var fileTarget = $('.filebox .upload-hidden');
-        fileTarget.on('change', function () {
-            if (window.FileReader) {
-                var filename = $(this)[0].files[0].name;
-            } else {
-                var filename = $(this).val().split('/').pop().split('\\').pop();
-            }
-            $(this).siblings('.upload-name').val(filename);
-        });
+  $(document).ready(function(){
+  var fileTarget = $('.filebox .upload-hidden');
+
+    fileTarget.on('change', function(){
+        if(window.FileReader){
+            var filename = $(this)[0].files[0].name;
+        } else {
+            var filename = $(this).val().split('/').pop().split('\\').pop();
+        }
+
+        $(this).siblings('.upload-name').val(filename);
     });
+}); 
 </script>
 
 </html>
