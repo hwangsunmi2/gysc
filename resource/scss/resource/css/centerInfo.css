@@ -179,8 +179,8 @@
 }
 
 .content .introTitle span {
-  display:block;
-  padding-top:2.2rem;
+  display: block;
+  padding-top: 2.2rem;
   font-weight: 600;
   color: #005aab;
 }
@@ -198,8 +198,8 @@
 .content .grayBox .info {
   position: relative;
   display: inline-block;
-  width: calc(100% - 390px);
-  margin-left: 9.8rem;
+  width: calc(100% - 815px);
+  margin-left: 11rem;
   vertical-align: top;
 }
 
@@ -221,12 +221,8 @@
   letter-spacing: -0.5px;
 }
 
-.content .grayBox .info p.ta-l {
-  text-align:right;
-}
-
 .content .grayBox .info p + p {
-  padding-top: 3.2rem;
+  padding-top: 4.8rem;
 }
 
 .content .est {
@@ -1097,7 +1093,7 @@
     padding: 5rem 2.4rem;
   }
   .content .grayBox .info {
-    width: calc(100% - 42rem);
+    width: calc(100% - 85rem);
   }
   .content .grayBox .info img {
     width: inherit;
@@ -1177,9 +1173,7 @@
     display: block;
   }
   .content .grayBox img {
-    display:block;
-    margin:0 auto;
-    width: 40%;
+    width: 100%;
   }
   .content .grayBox .info {
     display: block;
@@ -1281,10 +1275,6 @@
   .youthCouncil-bottom .title {
     margin-left: 0;
   }
-}
-
-@media screen and (max-width: 900px) {
-  .content .introTitle span {line-height:5rem;}
 }
 
 @media screen and (max-width: 720px) {
