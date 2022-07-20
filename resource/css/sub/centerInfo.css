@@ -198,19 +198,9 @@
 .content .grayBox .info {
   position: relative;
   display: inline-block;
-  width: calc(100% - 390px);
-  margin-left: 9.8rem;
+  width: calc(100% - 200px);
+  margin-left: 3rem;
   vertical-align: top;
-}
-
-.content .grayBox .info::before {
-  position: absolute;
-  top: -5rem;
-  left: -5rem;
-  width: 1px;
-  height: 52.8rem;
-  background-color: #fff;
-  content: '';
 }
 
 .content .grayBox .info p {
@@ -226,7 +216,7 @@
 }
 
 .content .grayBox .info p + p {
-  padding-top: 3.2rem;
+  padding-top: 2.5rem;
 }
 
 .content .est {

@@ -89,6 +89,20 @@
   background: #cdcdcd;
 }
 
+.board-view__inner .view-title__wrap .badge.url-copy {
+  width: 9rem;
+  height: 4rem;
+  background: #dfdfdf;
+  color: #005aab !important;
+}
+.button-viewer {
+  width: 9rem;
+  height: 4rem;
+  font-size: 1.7rem;
+  font-weight: 300;
+  background: #555555;
+  color:#fff;
+}
 .board-view__inner .view-info {
   display: -webkit-box;
   display: flex;
